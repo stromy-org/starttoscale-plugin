@@ -1,0 +1,5 @@
+<svg viewBox="0 0 600 8" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Section divider">
+  <!-- Thin navy rule with amber accent on the right — signals "ascending" direction -->
+  <line x1="0" y1="4" x2="540" y2="4" stroke="#0A1F3D" stroke-width="1.5"/>
+  <line x1="540" y1="4" x2="600" y2="4" stroke="#E8A33D" stroke-width="1.5"/>
+</svg>

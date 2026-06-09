@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "brand": "starttoscale",
+  "generated": "2026-06-01",
+  "slide_dimensions": {
+    "width": 1920,
+    "height": 1080,
+    "aspect": "16:9"
+  },
+  "gradients": [
+    "gradients/navy-hero.png",
+    "gradients/paper-soft.png",
+    "gradients/navy-amber-diag.png",
+    "gradients/navy-vignette.png"
+  ],
+  "motifs": [
+    "motifs/pattern-full-paper.png",
+    "motifs/pattern-full-navy.png",
+    "motifs/corner-three-steps.png"
+  ],
+  "overlays": [
+    "overlays/i1-01-navy55.jpg",
+    "overlays/i1-01-navy35.jpg",
+    "overlays/i1-01-bw-amber.jpg",
+    "overlays/i1-02-navy55.jpg",
+    "overlays/i1-02-navy35.jpg",
+    "overlays/i1-02-bw-amber.jpg",
+    "overlays/i1-03-navy55.jpg",
+    "overlays/i1-03-navy35.jpg",
+    "overlays/i1-04-navy55.jpg",
+    "overlays/i1-04-navy35.jpg",
+    "overlays/i1-04-bw-amber.jpg",
+    "overlays/i2-01-navy55.jpg",
+    "overlays/i2-01-navy35.jpg",
+    "overlays/i2-02-navy55.jpg",
+    "overlays/i2-02-navy35.jpg",
+    "overlays/i2-03-navy55.jpg",
+    "overlays/i2-03-navy35.jpg",
+    "overlays/i2-04-navy55.jpg",
+    "overlays/i2-04-navy35.jpg"
+  ]
+}

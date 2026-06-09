@@ -1,0 +1,22 @@
+<svg viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Start to Scale Financial Management">
+  <!-- Three Steps symbol, scaled into 64x64 box, vertically centered (y 28 .. 92) -->
+  <g transform="translate(0,28)">
+    <rect x="6"  y="36" width="12" height="20" fill="#0A1F3D" rx="1"/>
+    <rect x="26" y="20" width="12" height="36" fill="#0A1F3D" rx="1"/>
+    <rect x="46" y="4"  width="12" height="52" fill="#0A1F3D" rx="1"/>
+    <rect x="46" y="4"  width="12" height="12" fill="#E8A33D" rx="1"/>
+  </g>
+  <!-- Wordmark — Newsreader Medium. Convert to outlined paths before production print/PDF. -->
+  <text x="92" y="68"
+        font-family="Newsreader, Georgia, 'Times New Roman', serif"
+        font-weight="500"
+        font-size="42"
+        letter-spacing="-0.5"
+        fill="#0A1F3D">Start to Scale</text>
+  <text x="92" y="92"
+        font-family="Inter, system-ui, sans-serif"
+        font-weight="500"
+        font-size="13"
+        letter-spacing="3.2"
+        fill="#6B7280">FINANCIAL MANAGEMENT</text>
+</svg>

@@ -1,0 +1,7 @@
+{
+  "name": "starttoscale",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Claude Code plugin for Start to Scale branded deliverables",
+  "dependencies": {}
+}

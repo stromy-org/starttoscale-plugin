@@ -1,0 +1,397 @@
+{
+  "version": "1.0",
+  "fonts": [
+    {
+      "family": "Inter",
+      "weight": 400,
+      "style": "italic",
+      "sha256": "acd98e64795781b2058f07b18475e0ecee2a0fe2b42a49e2f9e37d0d6bf66ce6",
+      "mime": "font/ttf",
+      "name": "Inter-Italic[opsz,wght].ttf"
+    },
+    {
+      "family": "Inter",
+      "weight": 400,
+      "style": "normal",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "mime": "font/ttf",
+      "name": "Inter[opsz,wght].ttf"
+    },
+    {
+      "family": "JetBrains Mono",
+      "weight": 700,
+      "style": "normal",
+      "sha256": "a2349098b9e45419e7bf0e2958d6c4937a049dded37387b08be725be4c7615f3",
+      "mime": "font/ttf",
+      "name": "JetBrainsMono-Bold.ttf"
+    },
+    {
+      "family": "JetBrains Mono",
+      "weight": 400,
+      "style": "normal",
+      "sha256": "b6b1ff4ddefe36d7f2a6174e1d001cab374e594519ee9049af028d577b64c5f5",
+      "mime": "font/ttf",
+      "name": "JetBrainsMono-Regular.ttf"
+    },
+    {
+      "family": "Newsreader",
+      "weight": 400,
+      "style": "italic",
+      "sha256": "796668611f80b64d5adf182fde3b6f29ed83b4e7cbec7b96937e84ac01364792",
+      "mime": "font/ttf",
+      "name": "Newsreader-Italic[opsz,wght].ttf"
+    },
+    {
+      "family": "Newsreader",
+      "weight": 400,
+      "style": "normal",
+      "sha256": "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1",
+      "mime": "font/ttf",
+      "name": "Newsreader[opsz,wght].ttf"
+    }
+  ],
+  "logos": [
+    {
+      "name": "apple-touch-icon-180.png",
+      "sha256": "ef253f73d9dc7fc63b1472ebafe087a0cbc008ed243b64c55a5d842146a87f8e",
+      "mime": "image/png"
+    },
+    {
+      "name": "favicon-16.png",
+      "sha256": "f06b32e2e2dc63eb5dacbb6ac397c957e42e913b07b6d0c87b89cdb777ca45b3",
+      "mime": "image/png"
+    },
+    {
+      "name": "favicon-192.png",
+      "sha256": "ca3f7d85b04d21b4d18ae5a87d839e18adad84f7da220e34dccfa4b511212298",
+      "mime": "image/png"
+    },
+    {
+      "name": "favicon-32.png",
+      "sha256": "c1aba9832656d058a9b059e8f86d55004df41b2fb60b9d9f09e1bebcc015b206",
+      "mime": "image/png"
+    },
+    {
+      "name": "favicon-512.png",
+      "sha256": "62ed330b8824f1b8ce3eb31f0ba07fbf733c2dcc7fd267f2366f4bdb69d4d484",
+      "mime": "image/png"
+    },
+    {
+      "name": "favicon.svg",
+      "sha256": "44712b21abdcad00e707ca0cb719a7ac0c7e5eb51e25dfe6a3644ca2f6c1b6a5",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "icon_dark.png",
+      "sha256": "849b927fa474b393d74d8a2cbe155db936ed5925b2ecaa8282b3ad1b27e4fae5",
+      "mime": "image/png"
+    },
+    {
+      "name": "icon_dark.svg",
+      "sha256": "fdc6b453c1732186247452715c6f129985a851767e4b7fa20de761fde7c18fa5",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo.png",
+      "sha256": "05a0d03b59da09ce314264ee0c1e24562b6c8752db8ed326a03e8b7e76d7b27d",
+      "mime": "image/png"
+    },
+    {
+      "name": "logo.svg",
+      "sha256": "5d86f476783ed30ffc55481a9b7c24e5ef2b1eb856e166bcf44f2db71dbd6a10",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo@2x.png",
+      "sha256": "43d95a2a9ace9b415177b1f8c0fd0d8f090aa8736cef8b23b8e0ec55650f585e",
+      "mime": "image/png"
+    },
+    {
+      "name": "logo@3x.png",
+      "sha256": "3898c1126eecc157ed372ffc79d4226fb44bc3e954045ea31a4c7a388c4afe32",
+      "mime": "image/png"
+    },
+    {
+      "name": "logo_mono.svg",
+      "sha256": "ff37a2ca237da9b15b59f18aff97624ba5223121b7e1da4ec19ca7cd71018bde",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo_white.png",
+      "sha256": "3cba87dd6ee3119df5c328c705f1f484986849d47bc6e91c923b740b2e9e0749",
+      "mime": "image/png"
+    },
+    {
+      "name": "logo_white.svg",
+      "sha256": "c3602cd3b007f481caf3cb0b615d24fe5f198fa7c9488c45981236d3319ce095",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo_white@2x.png",
+      "sha256": "44c07ab5f59f42c6aab3fed06ab6c0f90490993257ded200b76e840211144501",
+      "mime": "image/png"
+    },
+    {
+      "name": "symbol.png",
+      "sha256": "8c7b30fd39d5507578c5d72b0148c542c834b216b8e55325cce03a31eb74b6b5",
+      "mime": "image/png"
+    },
+    {
+      "name": "symbol.svg",
+      "sha256": "93d77db078da11cfd771e50459e860a5046244ae91ede50afb828bfe12daa474",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "symbol_white.png",
+      "sha256": "dbe85b08215cc3e012906072b2a64422fa8fffce1645470a9302d1610abf579b",
+      "mime": "image/png"
+    },
+    {
+      "name": "symbol_white.svg",
+      "sha256": "984ef8411bbbc62cc8148310164f537e88b58b054e094e3fdef9b0ecea48ca36",
+      "mime": "image/svg+xml"
+    }
+  ],
+  "images": [
+    {
+      "name": "i1-01-16x9.jpg",
+      "sha256": "d4adea71edf29fb97df34f3ccceba2337c531fcb07e67646918ccd3aea92314f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-01-1x1.jpg",
+      "sha256": "530f12f69db394f8729da00d84b56cf82a6522a057dd6391027c3d59c8ae52b3",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-01-2x1.jpg",
+      "sha256": "4a7b1bb65e45525c04e22ca089c5c1957b425e54192b721bf062989cdb0134a7",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-01-branded.jpg",
+      "sha256": "8e22201ec00c5717367011a84a07b8b8b83a9e99b3057228c32da22b078fdf2d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-01-text-safe.jpg",
+      "sha256": "41dbd6c090491a2b1aa12ad18cc91ad090985ce47dc090235b24b97132785c12",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-01.jpg",
+      "sha256": "fb4ed30653f8e5194a7eb03c37d5bbfe72ec4348e684a9578b998d7b117de495",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-02-16x9.jpg",
+      "sha256": "315550ad7ba73fc8a91778204e60b9c08b11acbef532645ff8f6aaeb86537f1e",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-02-1x1.jpg",
+      "sha256": "9e8a25e82eb454db8c556869b015321f87b3e0283b1769d7aabdd35a1e9f535a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-02-2x1.jpg",
+      "sha256": "29706b56e67c5f99521158ecaf4e6a1828b94dcdf891ba37e0c98f59cb6cae0c",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-02-branded.jpg",
+      "sha256": "70fc9c8a56b0acdf03c1750ee047a30a541168a6fc1cd31b85af11d8011bd61f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-02-text-safe.jpg",
+      "sha256": "064640e05fc6e1ddf7ffcedb53aa3a1ff4d3d05a97bb9806537816b593bc30ae",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-02.jpg",
+      "sha256": "09dc7c033719582e5d0f1f00f1b5cfd55110ebbef8bc1b01b3113b8ef349e286",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-03-16x9.jpg",
+      "sha256": "944c8c3f68cbb1dbfa73f7c3ffe288bc8442f0bc9372eeed8374076c8018862e",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-03-1x1.jpg",
+      "sha256": "3ba518dde743e8ba01ce48a2ebfb23ca7d2852d97ad3ae6e6fbf0b42a333d3df",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-03-2x1.jpg",
+      "sha256": "b24264be97a0b505b198873ebb3a876a0c7f1397fb49e041d85cfbd1253a30c6",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-03-branded.jpg",
+      "sha256": "40781e1fcaf58e3211763d020b55091162506487f502ccbd83588790d65b11aa",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-03-text-safe.jpg",
+      "sha256": "5e06a7902e1affa5a23ce26eead46e7979d9a87486aa6dede77801468acde5a7",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-03.jpg",
+      "sha256": "2f9271b8d793786a377af352ed8c49807366cb7791f088f19196c1d7f1b6a3c0",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-04-16x9.jpg",
+      "sha256": "ae83abda75072682a2305f89c370fe9f6c9ee69f1a16d88986224d3a126d1182",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-04-1x1.jpg",
+      "sha256": "f2d9af2c582a94cdc3f398d8784d0790bcbb210c6c21dd14a6d45cf8b0b1ac34",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-04-2x1.jpg",
+      "sha256": "8584039b5b4492d284564e51e4fb1c03ce623f2534bb3fa5e0e4eb4826779147",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-04-branded.jpg",
+      "sha256": "ccd0b984319abeb8387c3d85a0d213d753032778e8871070b731099f035678e3",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-04-text-safe.jpg",
+      "sha256": "379146efcdf6dd87443e81d802663013d24d7888fa3db6166bec1d9840004616",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-04.jpg",
+      "sha256": "6182dc6c682be72fb452209e0bcd5a6ff43ab57ca7f2afd52cabcae723a81bed",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-01-16x9.jpg",
+      "sha256": "4e047f510dfdc83dfbcb74b0867766d3a84b8da6dea87ece635ba74d7843f36f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-01-1x1.jpg",
+      "sha256": "fe277e28ea5270efcafa54597e4e7045a4409b46ec0425ee1a3d67f1c1c68cd8",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-01-2x1.jpg",
+      "sha256": "e5471498a4c8cbac8e279254657e5a444e249d26fdf4217ca34d0f4b8c8f3a27",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-01-branded.jpg",
+      "sha256": "ddaa196cb4966d3591a9b2d7ccc1659997e878dd9dddc487db2e9897379311fc",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-01-text-safe.jpg",
+      "sha256": "bb31f0dde9e7c3b3e1862494f34afd6d0ca976a6c8b70a929499a4190e51df7f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-01.jpg",
+      "sha256": "cd9f2b22bd94567f800762a85227189516ac9aba42547ad8405fa6edc541a14f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-02-16x9.jpg",
+      "sha256": "929db5efe0ebdd1c2dce2f5f372a9f7f83eb92d5ee1b01e26a50d993abf974e6",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-02-1x1.jpg",
+      "sha256": "6e7b3ca19fdff13221a276407ca197026002be40a7dd40af85282eb4946c3d3b",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-02-2x1.jpg",
+      "sha256": "3737b0dcd191b79a0018c77ed31a1975634150bd36837c7d3296112fc62bd3e3",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-02-branded.jpg",
+      "sha256": "b344ed307286663cf053d0b7786214353f14d81661f735307661ab40a82396f3",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-02-text-safe.jpg",
+      "sha256": "01793ac91217315ab421c26ecc3e95aa7a70211327f17441a1bdde439acb9acc",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-02.jpg",
+      "sha256": "083d5330823db579f7133950b5c5142efb5d2b00c7b3e05f23ff83c2a92dd4a7",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-03-16x9.jpg",
+      "sha256": "0887d9c36eca63a318871bc24d49f52da1b40a03a6df010486d707b57a7c7b4e",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-03-1x1.jpg",
+      "sha256": "c37ea00f7f442497aa71c11341c70eac690a101eaa7a7d305c96e8b0ae2a10d9",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-03-2x1.jpg",
+      "sha256": "3d3caa876e42df23935d7c5a2f9dffe8dfdfd4eec5e10d22fda99478733d5e2c",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-03-branded.jpg",
+      "sha256": "d2643acf8e2031798cda8b749ee11b39b7e6b47d910158958f0a7376de1f3c73",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-03-text-safe.jpg",
+      "sha256": "053556862ba1f23c747df37f63a749023b74d436fcccde8626bb8a99f12eae26",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-03.jpg",
+      "sha256": "89b62bf755bed26a3523214c3067143eddbce0e6755123a0f651ea280c90985d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-04-16x9.jpg",
+      "sha256": "e685ed6033e9dc3b54c26a45b29bb607cbf95fdab66fcb4f02a6b0a3cd63837f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-04-1x1.jpg",
+      "sha256": "92cf676db2ecb1c4536a22f34ec8f35c2cd098ce0f2a09773e0ccd861a851a9d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-04-2x1.jpg",
+      "sha256": "c925b0182a6408afd98413cf78d0493fb74dfcac3feddb4ae515a38809466b33",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-04-branded.jpg",
+      "sha256": "f0e497306910497ecccb922988917c16bca4ec6a3c7915694e94f6627b556058",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-04-text-safe.jpg",
+      "sha256": "e9d197f3726c5439d0194b43e8abee621826293607c1a6a675c2d4fbc51901e8",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-04.jpg",
+      "sha256": "95441f13cbe4e99f9e75922a195adf9787446865e8b9f09fe0611f9a597965c4",
+      "mime": "image/jpeg"
+    }
+  ]
+}

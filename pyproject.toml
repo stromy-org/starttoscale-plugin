@@ -1,0 +1,6 @@
+[project]
+name = "starttoscale"
+version = "0.1.0"
+description = "Claude Code plugin for Start to Scale branded deliverables"
+requires-python = ">=3.11"
+dependencies = []

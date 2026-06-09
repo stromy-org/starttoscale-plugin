@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "tier": "producer",
+    "displayName": "Start to Scale Financial Management",
+    "shortName": "Start to Scale",
+    "slug": "starttoscale",
+    "tagline_nl": "Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.",
+    "tagline_en": "Finance that scales with you.",
+    "industry": "Financial advisory · fractional CFO",
+    "founder": "Wilgert Hart",
+    "founderTitle": "Managing Partner",
+    "geography": "Netherlands (Amersfoort) — international touchpoints",
+    "primaryLanguage": "nl",
+    "supportLanguages": ["en"],
+    "domain": "starttoscalefinance.com",
+    "backers": "Duke Strategies (Ingo Heijnen, Arien Stuijt — silent partners)",
+    "archetype": { "primary": "Sage", "secondary": "Caregiver" },
+    "protection_class": "available",
+    "reviewState": "frozen",
+    "frozenDate": "2026-06-01",
+    "buildDate": "2026-05-27",
+    "decisions": {
+      "logo": "L3 — Three Steps Up (abstract mark, three rising bars)",
+      "palette": "P1 — Midnight Authority (navy + amber)",
+      "typography": "T1 — Newsreader + Inter",
+      "tagline_en": "TG1 — Finance that scales with you.",
+      "imagery": ["I1 — Architectural Minimalism", "I2 — Data Clarity"]
+    }
+  },
+  "brand": {
+    "archetype": "Sage / Caregiver",
+    "essence": "Senior CFO leadership that turns gut-feel finance into the structure a scale-up actually needs.",
+    "positioning": "Start to Scale Financial Management is the senior finance partner that takes a growing SME from the kladje-on-the-back-of-the-envelope to a fully professional finance function — diagnosis, roadmap, hands-on implementation, and ongoing operation. Wilgert Hart brings nearly 30 years of CFO experience at WPP, EMI and Warner Music Benelux, backed by a network of finance professionals.",
+    "audience": "Owners and boards of NL-based start-ups making the scale-up transition (€1M–€20M revenue, growing fast, finance still informal).",
+    "personality": ["Senior", "Calm", "Structured", "Pragmatic", "Trustworthy"],
+    "toneOfVoice": "Plain Dutch. No jargon, no false urgency. Speaks like a senior CFO at a board table: direct, honest about what's broken, confident about how to fix it."
+  },
+  "colors": {
+    "primary": "#0A1F3D",
+    "primaryAlt": "#1A3358",
+    "secondary": "#1A3358",
+    "accent": "#E8A33D",
+    "accentHover": "#D08F2D",
+    "background": "#FAF8F3",
+    "backgroundAlt": "#FFFFFF",
+    "text": "#0A1F3D",
+    "textLight": "#6B7280",
+    "success": "#4A7A5A",
+    "warning": "#C28F3D",
+    "error": "#B85648",
+    "info": "#4A6390"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Newsreader",
+      "fallback": "Georgia, 'Times New Roman', serif",
+      "weight": "500"
+    },
+    "body": {
+      "family": "Inter",
+      "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
+      "weight": "400"
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "fallback": "'SF Mono', Consolas, 'Liberation Mono', monospace",
+      "weight": "400"
+    },
+    "googleFontsImport": "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "logo": {
+    "primary": "logos/logo.svg",
+    "white": "logos/logo_white.svg",
+    "mono": "logos/logo_mono.svg",
+    "symbol": "logos/symbol.svg",
+    "symbolWhite": "logos/symbol_white.svg",
+    "favicon": "logos/favicon.svg",
+    "iconDark": "logos/icon_dark.svg",
+    "png": "logos/logo.png",
+    "png2x": "logos/logo@2x.png",
+    "png3x": "logos/logo@3x.png",
+    "whitePng": "logos/logo_white.png",
+    "whitePng2x": "logos/logo_white@2x.png",
+    "symbolPng": "logos/symbol.png",
+    "symbolWhitePng": "logos/symbol_white.png",
+    "iconDarkPng": "logos/icon_dark.png",
+    "maxWidth": "180pt",
+    "maxHeight": "60pt",
+    "sizing": "contain",
+    "_note": "Wordmark PNGs render via rsvg-convert with system font fallback (Georgia for Newsreader, system-ui for Inter). Convert wordmark SVG text to outlined paths via fontTools before final production print/PDF for exact Newsreader fidelity."
+  },
+  "favicons": {
+    "svg": "logos/favicon.svg",
+    "png16": "logos/favicon-16.png",
+    "png32": "logos/favicon-32.png",
+    "png180": "logos/apple-touch-icon-180.png",
+    "png192": "logos/favicon-192.png",
+    "png512": "logos/favicon-512.png"
+  },
+  "images": {
+    "themes": [
+      {
+        "id": "I1",
+        "name": "Architectural Minimalism",
+        "name_nl": "Architecturaal Minimalisme",
+        "keywords": ["stillness", "structure", "light", "authority"],
+        "roles": ["cover", "divider", "closing"],
+        "rationale": "Clean lines, controlled light, sense of order — visual proxy for the structured finance function S2S installs."
+      },
+      {
+        "id": "I2",
+        "name": "Data Clarity",
+        "name_nl": "Data Helderheid",
+        "keywords": ["precision", "signal", "order", "insight"],
+        "roles": ["divider", "background"],
+        "rationale": "Charts, tables, dashboards rendered as quiet objects — turning raw data into decision-grade insight."
+      }
+    ],
+    "manifest": "images/manifest.json",
+    "catalog": [
+      { "id": "i1-01", "theme": "I1", "file": "images/16x9/i1-01-16x9.jpg", "branded": "images/branded/i1-01-branded.jpg", "textSafe": "images/text-safe/i1-01-text-safe.jpg", "description": "Concrete corridor — strong shadow geometry", "roles": ["cover", "divider"] },
+      { "id": "i1-02", "theme": "I1", "file": "images/16x9/i1-02-16x9.jpg", "branded": "images/branded/i1-02-branded.jpg", "textSafe": "images/text-safe/i1-02-text-safe.jpg", "description": "Modernist facade — vertical rhythm", "roles": ["cover", "closing"] },
+      { "id": "i1-03", "theme": "I1", "file": "images/16x9/i1-03-16x9.jpg", "branded": "images/branded/i1-03-branded.jpg", "textSafe": "images/text-safe/i1-03-text-safe.jpg", "description": "Atrium — controlled overhead light", "roles": ["divider"] },
+      { "id": "i1-04", "theme": "I1", "file": "images/16x9/i1-04-16x9.jpg", "branded": "images/branded/i1-04-branded.jpg", "textSafe": "images/text-safe/i1-04-text-safe.jpg", "description": "Quiet interior — diagonal light, single chair", "roles": ["cover", "closing"] },
+      { "id": "i2-01", "theme": "I2", "file": "images/16x9/i2-01-16x9.jpg", "branded": "images/branded/i2-01-branded.jpg", "textSafe": "images/text-safe/i2-01-text-safe.jpg", "description": "Line chart on laptop — restrained editorial", "roles": ["divider", "background"] },
+      { "id": "i2-02", "theme": "I2", "file": "images/16x9/i2-02-16x9.jpg", "branded": "images/branded/i2-02-branded.jpg", "textSafe": "images/text-safe/i2-02-text-safe.jpg", "description": "Printed report — tabular columns close-up", "roles": ["divider", "background"] },
+      { "id": "i2-03", "theme": "I2", "file": "images/16x9/i2-03-16x9.jpg", "branded": "images/branded/i2-03-branded.jpg", "textSafe": "images/text-safe/i2-03-text-safe.jpg", "description": "Dashboard panel — analytical tile grid", "roles": ["divider", "background"] },
+      { "id": "i2-04", "theme": "I2", "file": "images/16x9/i2-04-16x9.jpg", "branded": "images/branded/i2-04-branded.jpg", "textSafe": "images/text-safe/i2-04-text-safe.jpg", "description": "Charts on paper — high-contrast print", "roles": ["divider", "background"] }
+    ],
+    "overlay": { "color": "primary", "opacity": 0.55 },
+    "logoVariantOnImage": "white",
+    "_note": "8 sourced photos × 6 variants each (source, 16x9, 2x1, 1x1, text-safe, branded) = 48 files. Full per-file map and credits in images/manifest.json."
+  },
+  "document": {
+    "paperSize": "A4",
+    "margins": { "top": "1in", "bottom": "1in", "left": "1in", "right": "1in" },
+    "header": { "content": "{{company.name}}", "logo": true },
+    "footer": { "content": "Confidential", "pageNumbers": true },
+    "headingColor": "primary",
+    "tableHeaderColor": "primary"
+  },
+  "presentation": {
+    "slideMargin": "40pt",
+    "titleMargin": "30pt",
+    "contentMargin": "20pt",
+    "aspectRatio": "16:9",
+    "defaultTheme": "light"
+  },
+  "video": {
+    "resolution": "1920x1080",
+    "fps": 30
+  },
+  "website": {
+    "archetype": "sage",
+    "aesthetic": "minimalist",
+    "layout": {
+      "density": "balanced",
+      "symmetry": "symmetric",
+      "flowDirection": "linear",
+      "heroStyle": "typographic",
+      "gridSystem": "12col-centered",
+      "maxWidth": "1280px",
+      "sectionSpacing": "generous",
+      "sectionDividers": "thin-line",
+      "footerStyle": "minimal",
+      "whitespaceStrategy": "breathing"
+    },
+    "texture": {
+      "backgroundTreatment": "solid",
+      "surfaceFinish": "matte",
+      "borderStyle": "thin-line",
+      "shadowDepth": "subtle",
+      "cornerRadius": "slight",
+      "overlayStyle": "brand-tint",
+      "patternDensity": "none"
+    },
+    "typography": {
+      "headingStyle": "serif-display",
+      "headingScale": 1.2,
+      "bodyLineHeight": 1.7,
+      "letterSpacing": "normal",
+      "textTransform": "uppercase-labels",
+      "pullQuoteStyle": "bordered-left",
+      "listStyle": "standard"
+    },
+    "motion": {
+      "intensity": "subtle",
+      "revealStyle": "fade",
+      "scrollBehavior": "smooth",
+      "hoverBehavior": "color-shift",
+      "transitionSpeed": "relaxed",
+      "loadingAnimation": "stagger-fade",
+      "cursorStyle": "default",
+      "interactionMode": "hover-focus",
+      "ambientScope": "none",
+      "reducedMotionPolicy": "auto-disable-decorative"
+    },
+    "components": {
+      "navigation": "sticky-minimal",
+      "cards": "outlined",
+      "buttons": "rounded",
+      "forms": "minimal-underline",
+      "imagePresentation": "rectangular",
+      "testimonials": "simple-quote",
+      "ctaStyle": "inline",
+      "socialProof": "logo-strip",
+      "codeBlocks": "default"
+    },
+    "colorApplication": {
+      "darkSections": true,
+      "darkSectionFrequency": 2,
+      "accentUsage": "sparring",
+      "gradientDirection": "none",
+      "colorBlockSections": false,
+      "imageOverlayBehavior": "brand-tint"
+    },
+    "pages": {
+      "home": {
+        "enabled": true,
+        "sections": [
+          { "type": "hero", "variant": "typographic" },
+          { "type": "positioning", "variant": "centered-statement" },
+          { "type": "services", "variant": "alternating-rows" },
+          { "type": "approach", "variant": "numbered-steps" },
+          { "type": "about", "variant": "founder-bio" },
+          { "type": "cta", "variant": "minimal" }
+        ]
+      },
+      "diensten": { "enabled": true, "_note": "Services / What we do" },
+      "aanpak": { "enabled": true, "_note": "Approach / Methodology" },
+      "over": { "enabled": true, "_note": "About Wilgert + backers" },
+      "contact": { "enabled": true, "layout": "mailto-or-calendar" }
+    },
+    "i18n": {
+      "enabled": true,
+      "defaultLocale": "nl",
+      "locales": ["nl", "en"],
+      "labels": { "nl": "Nederlands", "en": "English" },
+      "routing": "prefix-default",
+      "fallbackLocale": "nl",
+      "localeDetection": true,
+      "translationWorkflow": "manual",
+      "translateContentCollections": true
+    },
+    "deployment": {
+      "platform": "azure-swa",
+      "domain": "starttoscalefinance.com",
+      "analytics": "plausible",
+      "contactForm": "mailto"
+    }
+  },
+  "formatting": {
+    "headingThreshold": 24,
+    "accentCycleColors": ["accent", "primary", "primaryAlt"],
+    "autoContrastText": true
+  },
+  "plotly": {
+    "categoricalPalette": ["#0A1F3D", "#E8A33D", "#1A3358", "#4A6390", "#788BAF"],
+    "defaultHeight": 500,
+    "titleFontSize": 18,
+    "axisFontSize": 12,
+    "legendFontSize": 11,
+    "margins": { "top": 80, "bottom": 70, "left": 60, "right": 50 },
+    "gridColor": "#E5E2DA",
+    "secondaryTextColor": "#6B7280"
+  },
+  "excalidraw": {
+    "strokeColor": "#0A1F3D",
+    "backgroundColor": "#FAF8F3",
+    "fillColors": ["#0A1F3D", "#E8A33D", "#1A3358", "#4A6390", "#788BAF"],
+    "textColor": "#0A1F3D",
+    "fontFamily": 2,
+    "fontSize": 16,
+    "strokeWidth": 2,
+    "roughness": 0,
+    "arrowColor": "#1A3358",
+    "labelFontSize": 14
+  },
+  "motif": {
+    "name": "Three Steps",
+    "rationale": "Three ascending bars encode the brand's core promise: chaos → control → scale-up. Geometric, calm, repeatable at any scale.",
+    "files": {
+      "primary": "assets/svg/motif-three-steps.svg",
+      "divider": "assets/svg/divider-line.svg",
+      "dividerWhite": "assets/svg/divider-line-white.svg",
+      "patternTile": "assets/svg/pattern-tile.svg"
+    },
+    "rules": {
+      "lineWeight": "1.5px",
+      "barWidthRatio": "12:6 (bar:gap)",
+      "heightProgression": "20 / 36 / 52 (1 : 1.8 : 2.6)",
+      "accentRule": "Tallest bar gets a 12-unit amber cap signalling the scale-up outcome"
+    }
+  },
+  "templates": {
+    "html": {
+      "email-signature": "templates/html/email-signature.html"
+    },
+    "docx": {
+      "styles": "templates/docx/styles.docx",
+      "letterhead": "templates/docx/letterhead.docx"
+    },
+    "pptx": {
+      "cover": "templates/pptx/cover.html",
+      "section-divider": "templates/pptx/section-divider.html",
+      "content": "templates/pptx/content.html",
+      "closing": "templates/pptx/closing.html",
+      "footer-bar": "templates/pptx/footer-bar.html"
+    }
+  },
+  "pptxAssets": {
+    "manifest": "pptx-assets/manifest.json",
+    "gradients": [
+      "pptx-assets/gradients/navy-hero.png",
+      "pptx-assets/gradients/paper-soft.png",
+      "pptx-assets/gradients/navy-amber-diag.png",
+      "pptx-assets/gradients/navy-vignette.png"
+    ],
+    "motifs": [
+      "pptx-assets/motifs/pattern-full-paper.png",
+      "pptx-assets/motifs/pattern-full-navy.png",
+      "pptx-assets/motifs/corner-three-steps.png"
+    ],
+    "overlays": "pptx-assets/overlays/",
+    "_note": "19 overlay variants (navy-55, navy-35 for all 8 photos; bw-amber for cover/closing roles). Full list in pptx-assets/manifest.json."
+  },
+  "boilerplate": "boilerplate.json"
+}

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 120 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three Steps motif">
+  <!-- Primary motif — section openers, slide divider corners, hero accents -->
+  <rect x="12" y="44" width="20" height="12" fill="#0A1F3D"/>
+  <rect x="44" y="32" width="20" height="24" fill="#0A1F3D"/>
+  <rect x="76" y="12" width="20" height="44" fill="#0A1F3D"/>
+  <rect x="76" y="12" width="20" height="8"  fill="#E8A33D"/>
+</svg>

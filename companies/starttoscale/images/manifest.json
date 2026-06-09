@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "brand": "starttoscale",
+  "generated": "2026-06-01",
+  "themes": [
+    {
+      "id": "I1",
+      "name": "Architectural Minimalism",
+      "name_nl": "Architecturaal Minimalisme",
+      "keywords": [
+        "stillness",
+        "structure",
+        "light",
+        "authority"
+      ]
+    },
+    {
+      "id": "I2",
+      "name": "Data Clarity",
+      "name_nl": "Data Helderheid",
+      "keywords": [
+        "precision",
+        "signal",
+        "order",
+        "insight"
+      ]
+    }
+  ],
+  "treatment": {
+    "overlay_color": "#0A1F3D",
+    "branded_opacity": 0.55,
+    "text_safe_opacity": 0.4,
+    "logo_variant_on_image": "white"
+  },
+  "sources": [
+    "Unsplash"
+  ],
+  "catalog": [
+    {
+      "id": "i1-01",
+      "theme": "I1",
+      "name": "Concrete corridor — strong shadow geometry",
+      "roles": [
+        "cover",
+        "divider"
+      ],
+      "credit": {
+        "source": "Unsplash",
+        "url": "https://unsplash.com/photos/1487958449943-2429e8be8625",
+        "license": "Unsplash License (free for commercial use)"
+      },
+      "source_dimensions": {
+        "width": 2400,
+        "height": 1600
+      },
+      "files": {
+        "source": "source/i1-01.jpg",
+        "16x9": "16x9/i1-01-16x9.jpg",
+        "2x1": "2x1/i1-01-2x1.jpg",
+        "1x1": "1x1/i1-01-1x1.jpg",
+        "text-safe": "text-safe/i1-01-text-safe.jpg",
+        "branded": "branded/i1-01-branded.jpg"
+      }
+    },
+    {
+      "id": "i1-02",
+      "theme": "I1",
+      "name": "Modernist facade — vertical rhythm",
+      "roles": [
+        "cover",
+        "closing"
+      ],
+      "credit": {
+        "source": "Unsplash",
+        "url": "https://unsplash.com/photos/1518391846015-55a9cc003b25",
+        "license": "Unsplash License (free for commercial use)"
+      },
+      "source_dimensions": {
+        "width": 2400,
+        "height": 1600
+      },
+      "files": {
+        "source": "source/i1-02.jpg",
+        "16x9": "16x9/i1-02-16x9.jpg",
+        "2x1": "2x1/i1-02-2x1.jpg",
+        "1x1": "1x1/i1-02-1x1.jpg",
+        "text-safe": "text-safe/i1-02-text-safe.jpg",
+        "branded": "branded/i1-02-branded.jpg"
+      }
+    },
+    {
+      "id": "i1-03",
+      "theme": "I1",
+      "name": "Atrium — controlled overhead light",
+      "roles": [
+        "divider"
+      ],
+      "credit": {
+        "source": "Unsplash",
+        "url": "https://unsplash.com/photos/1497366216548-37526070297c",
+        "license": "Unsplash License (free for commercial use)"
+      },
+      "source_dimensions": {
+        "width": 2400,
+        "height": 1602
+      },
+      "files": {
+        "source": "source/i1-03.jpg",
+        "16x9": "16x9/i1-03-16x9.jpg",
+        "2x1": "2x1/i1-03-2x1.jpg",
+        "1x1": "1x1/i1-03-1x1.jpg",
+        "text-safe": "text-safe/i1-03-text-safe.jpg",
+        "branded": "branded/i1-03-branded.jpg"
+      }
+    },
+    {
+      "id": "i1-04",
+      "theme": "I1",
+      "name": "Quiet interior — diagonal light, single chair",
+      "roles": [
+        "cover",
+        "closing"
+      ],
+      "credit": {
+        "source": "Unsplash",
+        "url": "https://unsplash.com/photos/1545324418-cc1a3fa10c00",
+        "license": "Unsplash License (free for commercial use)"
+      },
+      "source_dimensions": {
+        "width": 2400,
+        "height": 3200
+      },
+      "files": {
+        "source": "source/i1-04.jpg",
+        "16x9": "16x9/i1-04-16x9.jpg",
+        "2x1": "2x1/i1-04-2x1.jpg",
+        "1x1": "1x1/i1-04-1x1.jpg",
+        "text-safe": "text-safe/i1-04-text-safe.jpg",
+        "branded": "branded/i1-04-branded.jpg"
+      }
+    },
+    {
+      "id": "i2-01",
+      "theme": "I2",
+      "name": "Line chart on laptop — restrained editorial",
+      "roles": [
+        "divider",
+        "background"
+      ],
+      "credit": {
+        "source": "Unsplash",
+        "url": "https://unsplash.com/photos/1551288049-bebda4e38f71",
+        "license": "Unsplash License (free for commercial use)"
+      },
+      "source_dimensions": {
+        "width": 2400,
+        "height": 1600
+      },
+      "files": {
+        "source": "source/i2-01.jpg",
+        "16x9": "16x9/i2-01-16x9.jpg",
+        "2x1": "2x1/i2-01-2x1.jpg",
+        "1x1": "1x1/i2-01-1x1.jpg",
+        "text-safe": "text-safe/i2-01-text-safe.jpg",
+        "branded": "branded/i2-01-branded.jpg"
+      }
+    },
+    {
+      "id": "i2-02",
+      "theme": "I2",
+      "name": "Printed report — tabular columns close-up",
+      "roles": [
+        "divider",
+        "background"
+      ],
+      "credit": {
+        "source": "Unsplash",
+        "url": "https://unsplash.com/photos/1543286386-2e659306cd6c",
+        "license": "Unsplash License (free for commercial use)"
+      },
+      "source_dimensions": {
+        "width": 2400,
+        "height": 1600
+      },
+      "files": {
+        "source": "source/i2-02.jpg",
+        "16x9": "16x9/i2-02-16x9.jpg",
+        "2x1": "2x1/i2-02-2x1.jpg",
+        "1x1": "1x1/i2-02-1x1.jpg",
+        "text-safe": "text-safe/i2-02-text-safe.jpg",
+        "branded": "branded/i2-02-branded.jpg"
+      }
+    },
+    {
+      "id": "i2-03",
+      "theme": "I2",
+      "name": "Dashboard panel — analytical tile grid",
+      "roles": [
+        "divider",
+        "background"
+      ],
+      "credit": {
+        "source": "Unsplash",
+        "url": "https://unsplash.com/photos/1460925895917-afdab827c52f",
+        "license": "Unsplash License (free for commercial use)"
+      },
+      "source_dimensions": {
+        "width": 2400,
+        "height": 1709
+      },
+      "files": {
+        "source": "source/i2-03.jpg",
+        "16x9": "16x9/i2-03-16x9.jpg",
+        "2x1": "2x1/i2-03-2x1.jpg",
+        "1x1": "1x1/i2-03-1x1.jpg",
+        "text-safe": "text-safe/i2-03-text-safe.jpg",
+        "branded": "branded/i2-03-branded.jpg"
+      }
+    },
+    {
+      "id": "i2-04",
+      "theme": "I2",
+      "name": "Charts on paper — high-contrast print",
+      "roles": [
+        "divider",
+        "background"
+      ],
+      "credit": {
+        "source": "Unsplash",
+        "url": "https://unsplash.com/photos/1535320903710-d993d3d77d29",
+        "license": "Unsplash License (free for commercial use)"
+      },
+      "source_dimensions": {
+        "width": 2400,
+        "height": 1600
+      },
+      "files": {
+        "source": "source/i2-04.jpg",
+        "16x9": "16x9/i2-04-16x9.jpg",
+        "2x1": "2x1/i2-04-2x1.jpg",
+        "1x1": "1x1/i2-04-1x1.jpg",
+        "text-safe": "text-safe/i2-04-text-safe.jpg",
+        "branded": "branded/i2-04-branded.jpg"
+      }
+    }
+  ]
+}
