@@ -5,6 +5,8 @@ author_name: William Masquelier
 client_name: Start to Scale
 client_slug: starttoscale
 description: Claude Code plugin for Start to Scale branded deliverables
+enable_asset_broker: true
+enable_stromy_format: true
 github_org: stromy-org
 include_mcp: false
 include_node: true
