@@ -324,5 +324,113 @@
     "overlays": "pptx-assets/overlays/",
     "_note": "19 overlay variants (navy-55, navy-35 for all 8 photos; bw-amber for cover/closing roles). Full list in pptx-assets/manifest.json."
   },
-  "boilerplate": "boilerplate.json"
+  "boilerplate": "boilerplate.json",
+
+  "identity": {
+    "archetype": {
+      "primary": "sage",
+      "secondary": "caregiver",
+      "status": "approved",
+      "rationale": "Primary Sage: Wilgert Hart's 30-year CFO background is expressed as structured, diagnostic wisdom — turning gut-feel finance into professional rigour. Caregiver is secondary and structural: the brand installs a finance function and stays on to operate it, a hands-on support role grounded in structure rather than emotional warmth. Confirmed by Wilgert 2026-06-01 (charter.json meta.archetype + BUILD_LOG Phase 0 decision)."
+    },
+    "essence": "Senior CFO leadership that turns gut-feel finance into the structure a scale-up actually needs.",
+    "positioning": "Start to Scale Financial Management is the senior finance partner that takes a growing SME from kladje-on-the-back-of-the-envelope to a fully professional finance function — diagnosis, roadmap, hands-on implementation, and ongoing operation. Wilgert Hart brings nearly 30 years of CFO experience at WPP, EMI and Warner Music Benelux, backed by a network of finance professionals.",
+    "personalityTraits": ["Senior", "Calm", "Structured", "Pragmatic", "Trustworthy"],
+    "personalityAxes": {
+      "warmth_vs_authority": 0.3,
+      "expressive_vs_restrained": 0.15,
+      "innovative_vs_traditional": 0.35,
+      "playful_vs_serious": 0.1,
+      "accessible_vs_exclusive": 0.4
+    }
+  },
+
+  "expression": {
+    "source": "co_created",
+    "confidence": "approved",
+    "status": "approved",
+    "principles": [
+      "Amber is a signal, not decoration — one amber element per surface (logo cap, CTA button, or data accent), never both a button and a link amber on the same page.",
+      "Body text is navy, not black — warmth and authority together; pure black reads cold and impersonal for a finance partner.",
+      "Backgrounds default to warm Paper (#FAF8F3), not pure white — paper reads as a professional partner, white reads as a software product.",
+      "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Three Steps motif.",
+      "The Three Steps motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
+      "Board-table voice: name what is broken, then say what fixes it. No jargon, no false urgency, no brochure register.",
+      "Images always carry a 55% navy tint overlay on hero/cover surfaces; the white logo variant is used on all image surfaces."
+    ],
+    "visualAxes": {
+      "density": "spacious",
+      "contrast": "high",
+      "symmetry": "symmetric",
+      "geometry": "rectilinear",
+      "typeExpression": "editorial",
+      "imageTreatment": "documentary-muted",
+      "motifProminence": "accent",
+      "colorRhythm": "dark-light-indexed",
+      "ornament": "restrained"
+    },
+    "signatureElements": [
+      "Three ascending bars (ratio 1:1.8:2.6, bar width 12, gap 6) with a single amber cap on the tallest bar — the only place amber appears in the mark.",
+      "Warm Paper background (#FAF8F3) as default surface, not pure white — distinguishes the advisory register from a software product.",
+      "Navy-90 / amber-10 horizontal divider (thin 1.5px line with amber terminal at right) — encodes the 'ascend' direction, structural punctuation between sections.",
+      "NL three-line tagline staircase as typographic hero — structurally echoes the ascending bar motif and is never translated literally to English.",
+      "Newsreader Medium (contemporary literary serif, -0.02em tracking) for all display and heading — carries the considered, sage register without classical stiffness.",
+      "Inter overline caps at 0.18em tracking, 11px — labels sections, wordmark subtitle 'FINANCIAL MANAGEMENT', badges; same tracking as the logo caption.",
+      "JetBrains Mono reserved exclusively for numbers, tables, and data-adjacent contexts — signals that figures are decision-grade, not decoration.",
+      "Dual image themes of equal weight: Architectural Minimalism (structural still-life) and Data Clarity (charts/dashboards as quiet artefacts) — no people, no handshakes, no mountains."
+    ],
+    "antiPatterns": [
+      "Multiple amber elements on a single surface (amber is a single-use signal per page).",
+      "Pure black (#000000) or pure white (#FFFFFF) as primary background or body text — both break the warm advisory register.",
+      "Gradients on body sections (gradientDirection is 'none' by design; gradient only appears in nav-amber-diag pptx asset).",
+      "Tilted, rotated, or recoloured Three Steps motif — must be upright navy bars with amber cap, no exceptions.",
+      "Fourth bar or dropped bar in the motif — the 1:1.8:2.6 progression is load-bearing meaning.",
+      "Mountains, Alpine, Dolomite, or Dutch-landscape stock photography (explicitly flagged by Wilgert Hart).",
+      "Handshake or suits-in-meeting stock photography — contra the architectural and data-clarity direction.",
+      "Mixed NL+EN within the same sentence in copy.",
+      "Buzzwords: 'synergy', 'next-level', 'agile', or any phrase that sounds like a brochure.",
+      "Pattern tile at full opacity on reading surfaces — restricted to 6–8% opacity on slide/section backgrounds only."
+    ],
+    "requiredMotifs": [
+      "Three Steps ascending bars on all deliverable covers (small, left-aligned over section title in decks; as hero accent below the NL tagline on web).",
+      "Navy-90 / amber-10 thin-line divider as section rule on web and documents.",
+      "Warm Paper (#FAF8F3) as the default background surface on all light-mode deliverables.",
+      "White wordmark variant on all navy or image-overlay surfaces.",
+      "55% navy tint overlay on all hero and cover photograph treatments."
+    ],
+    "evidence": [
+      {
+        "path": "clients/starttoscale/guidelines.md",
+        "kind": "brand_guidelines",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current"
+      },
+      {
+        "path": "clients/starttoscale/charter.json",
+        "kind": "brand_guidelines",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current"
+      },
+      {
+        "path": "clients/starttoscale/tokens.css",
+        "kind": "design_tokens",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current"
+      },
+      {
+        "path": "clients/starttoscale/content/website.json",
+        "kind": "website",
+        "sourceAuthority": "co_created",
+        "confidence": "high",
+        "surface": "all",
+        "freshness": "current"
+      }
+    ]
+  }
 }
