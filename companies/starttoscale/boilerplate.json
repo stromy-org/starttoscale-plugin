@@ -1,16 +1,10 @@
 {
-  "schema_version": "1.0",
-  "brand": "starttoscale",
-  "generated": "2026-06-01",
-  "_comment": "Fixed cross-deliverable strings. Single source of truth for pptx, pptx-hd, docx, pdf, pdf-hd, xlsx formatter skills. Edit here when wording changes; downstream skills re-read on each generation.",
-
-  "company": {
-    "displayName": "Start to Scale Financial Management",
-    "shortName": "Start to Scale",
-    "domain": "starttoscale.nl",
-    "primaryContact": "wilgert@starttoscale.nl"
-  },
-
+  "$schema": "../../schema/boilerplate.schema.json",
+  "version": "1.0",
+  "description": "Fixed cross-deliverable strings for Start to Scale Financial Management. Single source of truth for the pptx/pptx-hd/docx/pdf/pdf-hd/xlsx format skills. Company facts live in profile.json. Edit here when wording changes; downstream skills re-read on each generation.",
+  "$comment": "TBC: legal.trademark needs counsel review before external use; primary phone number to be added across deliverables once registered.",
+  "website": "starttoscale.nl",
+  "email": "wilgert@starttoscale.nl",
   "confidentiality": {
     "default": "Confidential",
     "default_nl": "Vertrouwelijk",
@@ -19,7 +13,6 @@
     "internal_only": "Internal — Start to Scale",
     "internal_only_nl": "Intern — Start to Scale"
   },
-
   "footer": {
     "document_default": "Confidential · Start to Scale Financial Management",
     "document_default_nl": "Vertrouwelijk · Start to Scale Financial Management",
@@ -28,7 +21,6 @@
     "watermark": "Start to Scale · {date}",
     "page_number_format": "{n} / {total}"
   },
-
   "legal": {
     "copyright": "© 2026 Start to Scale Financial Management. All rights reserved.",
     "copyright_nl": "© 2026 Start to Scale Financial Management. Alle rechten voorbehouden.",
@@ -36,21 +28,14 @@
     "trademark_nl": "\"Start to Scale\" en het Drie-Treden-merk zijn handelsmerken van Start to Scale Financial Management.",
     "_note": "Legal counsel to confirm trademark filing status before any external use of this clause."
   },
-
   "sign_off": {
     "default_nl": "Met vriendelijke groet,",
     "default_en": "Kind regards,",
     "formal_nl": "Hoogachtend,",
     "formal_en": "Yours sincerely,"
   },
-
   "contact_block": {
     "default_nl": "Wilgert Hart · Managing Partner\nStart to Scale Financial Management\nwilgert@starttoscale.nl · starttoscale.nl",
     "default_en": "Wilgert Hart · Managing Partner\nStart to Scale Financial Management\nwilgert@starttoscale.nl · starttoscale.nl"
-  },
-
-  "_tbc": [
-    "legal.trademark — needs counsel review before external use",
-    "primary phone number — needs to be added across all deliverables once registered"
-  ]
+  }
 }

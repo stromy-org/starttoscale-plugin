@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0",
+  "generatedFrom": {
+    "charterSha": "5e5a0bd431172a3c560eeb9e633c25e5e392599a0f532d7095a77031adaa89dd",
+    "compiler": "1.0"
+  },
+  "tier": "producer",
+  "colors": {
+    "primary": "#0A1F3D",
+    "primaryAlt": "#1A3358",
+    "secondary": "#1A3358",
+    "accent": "#E8A33D",
+    "accentHover": "#D08F2D",
+    "background": "#FAF8F3",
+    "backgroundAlt": "#FFFFFF",
+    "text": "#0A1F3D",
+    "textLight": "#6B7280",
+    "success": "#4A7A5A",
+    "warning": "#C28F3D",
+    "error": "#B85648",
+    "info": "#4A6390"
+  },
+  "typography": {
+    "heading": {
+      "family": "Newsreader",
+      "weight": "500",
+      "fallback": "Georgia, 'Times New Roman', serif"
+    },
+    "body": {
+      "family": "Inter",
+      "weight": "400",
+      "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif"
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "weight": "400",
+      "fallback": "'SF Mono', Consolas, 'Liberation Mono', monospace"
+    }
+  },
+  "tokens_css": "/* ============================================================\n   Start to Scale Financial Management — Design Tokens\n   Van chaos naar controle. Van onderbuik naar inzicht.\n   Van start-up naar serieuze scale-up.\n\n   Version:  1.0.0\n   Date:     2026-06-01\n   Brand:    Start to Scale Financial Management\n   Primary:  Midnight Navy (#0A1F3D)\n   Accent:   Amber (#E8A33D)\n\n   All values derive from charter.json. When charter.json changes,\n   regenerate this file in the same promotion step.\n   ============================================================ */\n\n:root {\n\n  /* -- Primary Palette ---------------------------------------- */\n  --brand-dark:          #0B0E14;\n  --brand-primary:       #0A1F3D;     /* Midnight Navy */\n  --brand-primary-alt:   #1A3358;     /* Lighter navy for hover/secondary surfaces */\n  --brand-accent:        #E8A33D;     /* Amber — signal/CTA, use sparingly */\n  --brand-accent-hover:  #D08F2D;\n  --brand-text:          #0A1F3D;\n  --brand-text-light:    #6B7280;\n  --brand-background:    #FAF8F3;     /* Warm off-white, paper */\n  --brand-background-alt:#FFFFFF;\n\n  /* -- Navy Scale --------------------------------------------- */\n  --navy-50:             #EEF1F7;\n  --navy-100:            #D7DEEA;\n  --navy-200:            #B0BCD0;\n  --navy-300:            #788BAF;\n  --navy-400:            #4A6390;\n  --navy-500:            #2D4670;\n  --navy-600:            #1A3358;\n  --navy-700:            #15315A;\n  --navy-800:            #0A1F3D;     /* = --brand-primary */\n  --navy-900:            #050F1F;\n\n  /* -- Amber Scale -------------------------------------------- */\n  --amber-50:            #FCF4E5;\n  --amber-100:           #FAEAD0;\n  --amber-200:           #F6DAAE;\n  --amber-300:           #F1C786;\n  --amber-400:           #EDB55E;\n  --amber-500:           #E8A33D;     /* = --brand-accent */\n  --amber-600:           #D08F2D;\n  --amber-700:           #B27921;\n  --amber-800:           #8E6017;\n  --amber-900:           #6D4A0F;\n\n  /* -- Brand Color Scale (aliases) ---------------------------- */\n  --brand-900:           var(--navy-900);\n  --brand-800:           var(--navy-800);    /* = --brand-primary */\n  --brand-700:           var(--navy-700);\n  --brand-600:           var(--navy-600);\n  --brand-500:           var(--navy-500);\n  --brand-400:           var(--navy-400);\n  --brand-300:           var(--navy-300);\n  --brand-200:           var(--navy-200);\n  --brand-100:           var(--navy-100);\n  --brand-50:            var(--navy-50);\n\n  /* -- Accent Color Scale (aliases) --------------------------- */\n  --accent-900:          var(--amber-900);\n  --accent-700:          var(--amber-700);\n  --accent-500:          var(--amber-500);   /* = --brand-accent */\n  --accent-300:          var(--amber-300);\n  --accent-100:          var(--amber-100);\n  --accent-50:           var(--amber-50);\n\n  /* -- Neutral Scale ------------------------------------------ */\n  --neutral-50:          #FAF8F3;     /* Paper */\n  --neutral-100:         #F0EEE9;\n  --neutral-200:         #E5E2DA;\n  --neutral-300:         #C9C5BB;\n  --neutral-400:         #ACA89C;\n  --neutral-500:         #8E8A7E;\n  --neutral-600:         #6B7280;\n  --neutral-700:         #4D5460;\n  --neutral-800:         #2D3340;\n  --neutral-900:         #181C24;\n  --neutral-950:         #0B0E14;\n  --neutral-white:       #FFFFFF;\n\n  /* -- Semantic Colors (palette-aligned, muted) --------------- */\n  --success:             #4A7A5A;\n  --success-light:       #E8F0EB;\n  --warning:             #C28F3D;\n  --warning-light:       #F7EDD9;\n  --error:               #B85648;\n  --error-light:         #F4E0DC;\n  --info:                #4A6390;     /* navy-400 — info derives from brand */\n  --info-light:          #E5EAF1;\n\n  /* -- Typography --------------------------------------------- */\n  --font-display:        'Newsreader', Georgia, 'Times New Roman', serif;\n  --font-heading:        'Newsreader', Georgia, 'Times New Roman', serif;\n  --font-body:           'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;\n  --font-mono:           'JetBrains Mono', 'SF Mono', Consolas, 'Liberation Mono', monospace;\n\n  /* -- Type Scale --------------------------------------------- */\n  --text-display-xl:     3.5rem;      /* 56px */\n  --text-display-lg:     2.75rem;     /* 44px */\n  --text-display-md:     2.25rem;     /* 36px */\n  --text-display-sm:     1.75rem;     /* 28px */\n  --text-h1:             2rem;        /* 32px */\n  --text-h2:             1.625rem;    /* 26px */\n  --text-h3:             1.375rem;    /* 22px */\n  --text-h4:             1.125rem;    /* 18px */\n  --text-body-lg:        1.0625rem;   /* 17px */\n  --text-body:           1rem;        /* 16px */\n  --text-body-sm:        0.875rem;    /* 14px */\n  --text-caption:        0.75rem;     /* 12px */\n  --text-overline:       0.6875rem;   /* 11px */\n  --text-micro:          0.625rem;    /* 10px */\n\n  /* -- Line Heights ------------------------------------------- */\n  --leading-tight:       1.1;\n  --leading-snug:        1.25;\n  --leading-display:     1.15;\n  --leading-heading:     1.25;\n  --leading-body:        1.7;\n  --leading-body-sm:     1.55;\n  --leading-caption:     1.4;\n\n  /* -- Letter Spacing ----------------------------------------- */\n  --tracking-tightest:   -0.04em;\n  --tracking-tight:      -0.02em;\n  --tracking-snug:       -0.01em;\n  --tracking-normal:     0;\n  --tracking-wide:       0.04em;\n  --tracking-wider:      0.08em;\n  --tracking-widest:     0.18em;       /* Overlines, FINANCIAL MANAGEMENT caption */\n\n  /* -- Font Weights ------------------------------------------- */\n  --weight-light:        300;\n  --weight-regular:      400;\n  --weight-medium:       500;          /* Newsreader display default */\n  --weight-semibold:     600;\n  --weight-bold:         700;\n\n  /* -- Spacing Scale (4px base) ------------------------------- */\n  --space-1:   0.25rem;\n  --space-2:   0.5rem;\n  --space-3:   0.75rem;\n  --space-4:   1rem;\n  --space-5:   1.25rem;\n  --space-6:   1.5rem;\n  --space-8:   2rem;\n  --space-10:  2.5rem;\n  --space-12:  3rem;\n  --space-16:  4rem;\n  --space-20:  5rem;\n  --space-24:  6rem;\n  --space-32:  8rem;\n\n  /* -- Border Radius ------------------------------------------ */\n  --radius-sm:   4px;\n  --radius-md:   6px;\n  --radius-lg:   8px;\n  --radius-xl:   12px;\n  --radius-2xl:  16px;\n  --radius-full: 9999px;\n\n  /* -- Shadows (subtle, advisory-firm restraint) -------------- */\n  --shadow-sm:   0 1px 2px rgba(10,31,61,0.05);\n  --shadow-md:   0 2px 8px rgba(10,31,61,0.08);\n  --shadow-lg:   0 6px 20px rgba(10,31,61,0.10);\n  --shadow-xl:   0 12px 32px rgba(10,31,61,0.12);\n\n  /* -- Transitions -------------------------------------------- */\n  --ease-out:        cubic-bezier(0.16, 1, 0.3, 1);\n  --ease-in-out:     cubic-bezier(0.4, 0, 0.2, 1);\n  --duration-fast:   120ms;\n  --duration-normal: 240ms;\n  --duration-slow:   480ms;\n\n  /* -- Brand Motif (Three Steps) ------------------------------ */\n  --motif-line-color:       var(--brand-primary);\n  --motif-line-color-light: var(--navy-300);\n  --motif-accent-color:     var(--brand-accent);\n  --motif-line-weight:      1.5px;\n  --motif-bar-width:        12px;\n  --motif-bar-gap:          6px;\n  --motif-step-ratio-1:     1;\n  --motif-step-ratio-2:     1.8;\n  --motif-step-ratio-3:     2.6;\n\n  /* -- Layout ------------------------------------------------- */\n  --content-width:    720px;\n  --content-wide:     960px;\n  --content-max:      1280px;\n}\n\n/* ============================================================\n   UTILITY CLASSES\n   ============================================================ */\n\n.font-display { font-family: var(--font-display); font-weight: var(--weight-medium); letter-spacing: var(--tracking-tight); }\n.font-body    { font-family: var(--font-body);    font-weight: var(--weight-regular); }\n.font-mono    { font-family: var(--font-mono);    font-weight: var(--weight-regular); }\n\n.text-primary   { color: var(--brand-primary); }\n.text-accent    { color: var(--brand-accent); }\n.text-light     { color: var(--brand-text-light); }\n.bg-primary     { background: var(--brand-primary); color: var(--brand-background); }\n.bg-paper       { background: var(--brand-background); }\n.bg-surface-alt { background: var(--brand-background-alt); }\n\n.overline {\n  font-family: var(--font-body);\n  font-size: var(--text-overline);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-widest);\n  text-transform: uppercase;\n  color: var(--brand-text-light);\n}\n\n.divider {\n  height: 1.5px;\n  background: linear-gradient(to right, var(--brand-primary) 0%, var(--brand-primary) 90%, var(--brand-accent) 90%, var(--brand-accent) 100%);\n  border: none;\n  margin: var(--space-8) 0;\n}\n\n.btn-primary {\n  font-family: var(--font-body);\n  font-weight: var(--weight-medium);\n  font-size: var(--text-body-sm);\n  letter-spacing: var(--tracking-wide);\n  padding: var(--space-3) var(--space-6);\n  background: var(--brand-primary);\n  color: var(--brand-background);\n  border: 1.5px solid var(--brand-primary);\n  border-radius: var(--radius-sm);\n  cursor: pointer;\n  transition: background var(--duration-normal) var(--ease-out);\n}\n.btn-primary:hover { background: var(--brand-primary-alt); }\n\n.btn-accent {\n  font-family: var(--font-body);\n  font-weight: var(--weight-medium);\n  font-size: var(--text-body-sm);\n  letter-spacing: var(--tracking-wide);\n  padding: var(--space-3) var(--space-6);\n  background: var(--brand-accent);\n  color: var(--brand-primary);\n  border: 1.5px solid var(--brand-accent);\n  border-radius: var(--radius-sm);\n  cursor: pointer;\n  transition: background var(--duration-normal) var(--ease-out);\n}\n.btn-accent:hover { background: var(--brand-accent-hover); }\n\n.btn-ghost {\n  font-family: var(--font-body);\n  font-weight: var(--weight-medium);\n  font-size: var(--text-body-sm);\n  padding: var(--space-3) var(--space-6);\n  background: transparent;\n  color: var(--brand-primary);\n  border: 1.5px solid var(--brand-primary);\n  border-radius: var(--radius-sm);\n}\n\n.card {\n  background: var(--brand-background-alt);\n  border: 1px solid var(--neutral-200);\n  border-radius: var(--radius-md);\n  padding: var(--space-6);\n}\n\n.badge {\n  display: inline-block;\n  font-family: var(--font-body);\n  font-size: var(--text-caption);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-wide);\n  text-transform: uppercase;\n  padding: 2px 8px;\n  border-radius: var(--radius-sm);\n}\n.badge-success { background: var(--success-light); color: var(--success); }\n.badge-warning { background: var(--warning-light); color: var(--warning); }\n.badge-error   { background: var(--error-light);   color: var(--error); }\n.badge-info    { background: var(--info-light);    color: var(--info); }\n\n/* ============================================================\n   DARK / LIGHT SURFACE TOKENS\n   ============================================================ */\n\n@media (prefers-color-scheme: dark) {\n  :root {\n    --surface:         var(--navy-900);\n    --surface-raised:  var(--navy-800);\n    --text-primary:    var(--neutral-50);\n    --text-secondary:  var(--neutral-300);\n    --text-tertiary:   var(--neutral-500);\n    --border:          var(--navy-700);\n    --border-subtle:   var(--navy-800);\n  }\n}\n\n@media (prefers-color-scheme: light) {\n  :root {\n    --surface:         var(--brand-background);\n    --surface-raised:  var(--brand-background-alt);\n    --text-primary:    var(--brand-primary);\n    --text-secondary:  var(--neutral-600);\n    --text-tertiary:   var(--neutral-500);\n    --border:          var(--neutral-200);\n    --border-subtle:   var(--neutral-100);\n  }\n}\n",
+  "identity": {
+    "essence": "Senior CFO leadership that turns gut-feel finance into the structure a scale-up actually needs.",
+    "positioning": "Start to Scale Financial Management is the senior finance partner that takes a growing SME from kladje-on-the-back-of-the-envelope to a fully professional finance function — diagnosis, roadmap, hands-on implementation, and ongoing operation. Wilgert Hart brings nearly 30 years of CFO experience at WPP, EMI and Warner Music Benelux, backed by a network of finance professionals.",
+    "personalityTraits": [
+      "Senior",
+      "Calm",
+      "Structured",
+      "Pragmatic",
+      "Trustworthy"
+    ],
+    "personalityAxes": {
+      "warmth_vs_authority": 0.3,
+      "expressive_vs_restrained": 0.15,
+      "innovative_vs_traditional": 0.35,
+      "playful_vs_serious": 0.1,
+      "accessible_vs_exclusive": 0.4
+    },
+    "company": {
+      "name": "Start to Scale Financial Management",
+      "services": [
+        {
+          "id": "diagnosis",
+          "name": "Finance Diagnosis",
+          "name_nl": "Finance Diagnose",
+          "summary": "Two-week deep read of current finance function. Quantified gap report. Roadmap to a professional finance function.",
+          "duration": "2 weeks",
+          "deliverable": "Diagnosis report + 12-month roadmap"
+        },
+        {
+          "id": "roadmap-implementation",
+          "name": "Roadmap Implementation",
+          "name_nl": "Roadmap Implementatie",
+          "summary": "Hands-on installation of the diagnosed structure: chart of accounts, monthly close, KPI dashboard, cash forecast, board reporting cadence.",
+          "duration": "3–6 months",
+          "deliverable": "Working finance operating system"
+        },
+        {
+          "id": "fractional-cfo",
+          "name": "Fractional CFO",
+          "name_nl": "Fractionele CFO",
+          "summary": "Ongoing CFO-level leadership at 1–3 days per week. Board prep, capital decisions, investor communication, finance team mentoring.",
+          "duration": "Ongoing retainer",
+          "deliverable": "CFO function as a service"
+        },
+        {
+          "id": "interim-cfo",
+          "name": "Interim CFO",
+          "name_nl": "Interim CFO",
+          "summary": "Full-time CFO seat during transitions: fundraise, M&A, founder transition, finance leadership vacancy.",
+          "duration": "3–12 months",
+          "deliverable": "CFO seat coverage with handover"
+        }
+      ]
+    }
+  },
+  "boilerplate": {
+    "footer": "Confidential · Start to Scale Financial Management",
+    "confidentiality": "Confidential",
+    "copyright": "© 2026 Start to Scale Financial Management. All rights reserved."
+  },
+  "expression": {
+    "sourceLevel": "surface-template",
+    "principles": [
+      "Amber is a signal, not decoration — one amber element per surface (logo cap, CTA button, or data accent), never both a button and a link amber on the same page.",
+      "Body text is navy, not black — warmth and authority together; pure black reads cold and impersonal for a finance partner.",
+      "Backgrounds default to warm Paper (#FAF8F3), not pure white — paper reads as a professional partner, white reads as a software product.",
+      "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Three Steps motif.",
+      "The Three Steps motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
+      "Board-table voice: name what is broken, then say what fixes it. No jargon, no false urgency, no brochure register.",
+      "Images always carry a 55% navy tint overlay on hero/cover surfaces; the white logo variant is used on all image surfaces."
+    ],
+    "visualAxes": {
+      "density": "spacious",
+      "contrast": "high",
+      "symmetry": "symmetric",
+      "geometry": "rectilinear",
+      "typeExpression": "editorial",
+      "imageTreatment": "documentary-muted",
+      "motifProminence": "accent",
+      "colorRhythm": "dark-light-indexed",
+      "ornament": "restrained"
+    },
+    "signatureElements": [
+      "Three ascending bars (ratio 1:1.8:2.6, bar width 12, gap 6) with a single amber cap on the tallest bar — the only place amber appears in the mark.",
+      "Warm Paper background (#FAF8F3) as default surface, not pure white — distinguishes the advisory register from a software product.",
+      "Navy-90 / amber-10 horizontal divider (thin 1.5px line with amber terminal at right) — encodes the 'ascend' direction, structural punctuation between sections.",
+      "NL three-line tagline staircase as typographic hero — structurally echoes the ascending bar motif and is never translated literally to English.",
+      "Newsreader Medium (contemporary literary serif, -0.02em tracking) for all display and heading — carries the considered, sage register without classical stiffness.",
+      "Inter overline caps at 0.18em tracking, 11px — labels sections, wordmark subtitle 'FINANCIAL MANAGEMENT', badges; same tracking as the logo caption.",
+      "JetBrains Mono reserved exclusively for numbers, tables, and data-adjacent contexts — signals that figures are decision-grade, not decoration.",
+      "Dual image themes of equal weight: Architectural Minimalism (structural still-life) and Data Clarity (charts/dashboards as quiet artefacts) — no people, no handshakes, no mountains."
+    ],
+    "antiPatterns": [
+      "Multiple amber elements on a single surface (amber is a single-use signal per page).",
+      "Pure black (#000000) or pure white (#FFFFFF) as primary background or body text — both break the warm advisory register.",
+      "Gradients on body sections (gradientDirection is 'none' by design; gradient only appears in nav-amber-diag pptx asset).",
+      "Tilted, rotated, or recoloured Three Steps motif — must be upright navy bars with amber cap, no exceptions.",
+      "Fourth bar or dropped bar in the motif — the 1:1.8:2.6 progression is load-bearing meaning.",
+      "Mountains, Alpine, Dolomite, or Dutch-landscape stock photography (explicitly flagged by Wilgert Hart).",
+      "Handshake or suits-in-meeting stock photography — contra the architectural and data-clarity direction.",
+      "Mixed NL+EN within the same sentence in copy.",
+      "Buzzwords: 'synergy', 'next-level', 'agile', or any phrase that sounds like a brochure.",
+      "Pattern tile at full opacity on reading surfaces — restricted to 6–8% opacity on slide/section backgrounds only."
+    ],
+    "requiredMotifs": [
+      "Three Steps ascending bars on all deliverable covers (small, left-aligned over section title in decks; as hero accent below the NL tagline on web).",
+      "Navy-90 / amber-10 thin-line divider as section rule on web and documents.",
+      "Warm Paper (#FAF8F3) as the default background surface on all light-mode deliverables.",
+      "White wordmark variant on all navy or image-overlay surfaces.",
+      "55% navy tint overlay on all hero and cover photograph treatments."
+    ]
+  },
+  "surfaceExpression": {
+    "presentation": {
+      "visualAxes": {
+        "density": "spacious",
+        "contrast": "high",
+        "symmetry": "symmetric",
+        "geometry": "rectilinear",
+        "typeExpression": "editorial",
+        "imageTreatment": "documentary-muted",
+        "motifProminence": "accent",
+        "colorRhythm": "dark-light-indexed",
+        "ornament": "restrained"
+      },
+      "principles": [
+        "Amber is a signal, not decoration — one amber element per surface (logo cap, CTA button, or data accent), never both a button and a link amber on the same page.",
+        "Body text is navy, not black — warmth and authority together; pure black reads cold and impersonal for a finance partner.",
+        "Backgrounds default to warm Paper (#FAF8F3), not pure white — paper reads as a professional partner, white reads as a software product.",
+        "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Three Steps motif.",
+        "The Three Steps motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
+        "Board-table voice: name what is broken, then say what fixes it. No jargon, no false urgency, no brochure register.",
+        "Images always carry a 55% navy tint overlay on hero/cover surfaces; the white logo variant is used on all image surfaces."
+      ]
+    },
+    "document": {
+      "visualAxes": {
+        "density": "spacious",
+        "contrast": "high",
+        "symmetry": "symmetric",
+        "geometry": "rectilinear",
+        "typeExpression": "editorial",
+        "imageTreatment": "documentary-muted",
+        "motifProminence": "accent",
+        "colorRhythm": "dark-light-indexed",
+        "ornament": "restrained"
+      },
+      "principles": [
+        "Amber is a signal, not decoration — one amber element per surface (logo cap, CTA button, or data accent), never both a button and a link amber on the same page.",
+        "Body text is navy, not black — warmth and authority together; pure black reads cold and impersonal for a finance partner.",
+        "Backgrounds default to warm Paper (#FAF8F3), not pure white — paper reads as a professional partner, white reads as a software product.",
+        "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Three Steps motif.",
+        "The Three Steps motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
+        "Board-table voice: name what is broken, then say what fixes it. No jargon, no false urgency, no brochure register.",
+        "Images always carry a 55% navy tint overlay on hero/cover surfaces; the white logo variant is used on all image surfaces."
+      ]
+    }
+  },
+  "plotly_theme": {
+    "colorway": [
+      "#0A1F3D",
+      "#E8A33D",
+      "#1A3358",
+      "#4A7A5A",
+      "#C28F3D",
+      "#B85648"
+    ],
+    "baseTemplate": "plotly_white",
+    "font": {
+      "family": "Inter",
+      "color": "#0A1F3D"
+    },
+    "titleFontSize": 18,
+    "gridColor": "#E5E2DA",
+    "sentiment": {
+      "positive": "#4A7A5A",
+      "negative": "#B85648",
+      "neutral": "#6B7280"
+    },
+    "categoricalPalette": [
+      "#0A1F3D",
+      "#E8A33D",
+      "#1A3358",
+      "#4A6390",
+      "#788BAF"
+    ],
+    "defaultHeight": 500,
+    "axisFontSize": 12,
+    "legendFontSize": 11,
+    "margins": {
+      "top": 80,
+      "bottom": 70,
+      "left": 60,
+      "right": 50
+    },
+    "secondaryTextColor": "#6B7280"
+  },
+  "excalidraw_theme": {
+    "strokeColor": "#0A1F3D",
+    "fillColors": [
+      "#0A1F3D",
+      "#E8A33D",
+      "#1A3358",
+      "#4A6390",
+      "#788BAF"
+    ],
+    "textColor": "#0A1F3D",
+    "arrowColor": "#1A3358",
+    "backgroundColor": "#FAF8F3",
+    "roughness": 0,
+    "headingFont": "Newsreader",
+    "bodyFont": "Inter",
+    "fontFamily": 2,
+    "fontSize": 16,
+    "strokeWidth": 2,
+    "labelFontSize": 14
+  },
+  "formatting": {
+    "slideMargin": "40pt",
+    "titleMargin": "30pt",
+    "contentMargin": "20pt",
+    "aspectRatio": "16:9",
+    "defaultTheme": "light",
+    "headingThreshold": 24,
+    "accentCycleColors": [
+      "accent",
+      "primary",
+      "primaryAlt"
+    ],
+    "autoContrastText": true
+  },
+  "document": {
+    "paperSize": "A4",
+    "margins": {
+      "top": "1in",
+      "bottom": "1in",
+      "left": "1in",
+      "right": "1in"
+    },
+    "header": {
+      "content": "{{company.name}}",
+      "logo": true
+    },
+    "footer": {
+      "content": "Confidential",
+      "pageNumbers": true
+    },
+    "headingColor": "primary",
+    "tableHeaderColor": "primary"
+  },
+  "images": {
+    "overlay": {
+      "color": "primary",
+      "opacity": 0.55
+    },
+    "logoVariantOnImage": "white"
+  },
+  "logo": {
+    "primary": "logos/logo.svg",
+    "white": "logos/logo_white.svg",
+    "mono": "logos/logo_mono.svg",
+    "symbol": "logos/symbol.svg",
+    "symbolWhite": "logos/symbol_white.svg",
+    "favicon": "logos/favicon.svg",
+    "iconDark": "logos/icon_dark.svg",
+    "png": "logos/logo.png",
+    "png2x": "logos/logo@2x.png",
+    "png3x": "logos/logo@3x.png",
+    "whitePng": "logos/logo_white.png",
+    "whitePng2x": "logos/logo_white@2x.png",
+    "symbolPng": "logos/symbol.png",
+    "symbolWhitePng": "logos/symbol_white.png",
+    "iconDarkPng": "logos/icon_dark.png",
+    "maxWidth": "180pt",
+    "maxHeight": "60pt",
+    "sizing": "contain",
+    "_note": "Wordmark PNGs render via rsvg-convert with system font fallback (Georgia for Newsreader, system-ui for Inter). Convert wordmark SVG text to outlined paths via fontTools before final production print/PDF for exact Newsreader fidelity."
+  },
+  "fallbacksUsed": [],
+  "warnings": []
+}
