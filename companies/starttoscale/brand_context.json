@@ -42,6 +42,12 @@
   "identity": {
     "essence": "Senior CFO leadership that turns gut-feel finance into the structure a scale-up actually needs.",
     "positioning": "Start to Scale Financial Management is the senior finance partner that takes a growing SME from kladje-on-the-back-of-the-envelope to a fully professional finance function — diagnosis, roadmap, hands-on implementation, and ongoing operation. Wilgert Hart brings nearly 30 years of CFO experience at WPP, EMI and Warner Music Benelux, backed by a network of finance professionals.",
+    "archetype": {
+      "primary": "sage",
+      "secondary": "caregiver",
+      "status": "approved",
+      "rationale": "Primary Sage: Wilgert Hart's 30-year CFO background is expressed as structured, diagnostic wisdom — turning gut-feel finance into professional rigour. Caregiver is secondary and structural: the brand installs a finance function and stays on to operate it, a hands-on support role grounded in structure rather than emotional warmth. Confirmed by Wilgert 2026-06-01 (charter.json meta.archetype + BUILD_LOG Phase 0 decision)."
+    },
     "personalityTraits": [
       "Senior",
       "Calm",
@@ -97,10 +103,57 @@
   "boilerplate": {
     "footer": "Confidential · Start to Scale Financial Management",
     "confidentiality": "Confidential",
-    "copyright": "© 2026 Start to Scale Financial Management. All rights reserved."
+    "copyright": "© 2026 Start to Scale Financial Management. All rights reserved.",
+    "sign_off": {
+      "default_nl": "Met vriendelijke groet,",
+      "default_en": "Kind regards,",
+      "formal_nl": "Hoogachtend,",
+      "formal_en": "Yours sincerely,"
+    },
+    "contact_block": {
+      "default_nl": "Wilgert Hart · Managing Partner\nStart to Scale Financial Management\nwilgert@starttoscale.nl · starttoscale.nl",
+      "default_en": "Wilgert Hart · Managing Partner\nStart to Scale Financial Management\nwilgert@starttoscale.nl · starttoscale.nl"
+    }
   },
   "expression": {
     "sourceLevel": "surface-template",
+    "status": "approved",
+    "confidence": "approved",
+    "source": "co_created",
+    "evidence": [
+      {
+        "path": "clients/starttoscale/guidelines.md",
+        "kind": "brand_guidelines",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current"
+      },
+      {
+        "path": "clients/starttoscale/charter.json",
+        "kind": "brand_guidelines",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current"
+      },
+      {
+        "path": "clients/starttoscale/tokens.css",
+        "kind": "design_tokens",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current"
+      },
+      {
+        "path": "clients/starttoscale/content/website.json",
+        "kind": "website",
+        "sourceAuthority": "co_created",
+        "confidence": "high",
+        "surface": "all",
+        "freshness": "current"
+      }
+    ],
     "principles": [
       "Amber is a signal, not decoration — one amber element per surface (logo cap, CTA button, or data accent), never both a button and a link amber on the same page.",
       "Body text is navy, not black — warmth and authority together; pure black reads cold and impersonal for a finance partner.",
@@ -316,6 +369,10 @@
     "maxHeight": "60pt",
     "sizing": "contain",
     "_note": "Wordmark PNGs render via rsvg-convert with system font fallback (Georgia for Newsreader, system-ui for Inter). Convert wordmark SVG text to outlined paths via fontTools before final production print/PDF for exact Newsreader fidelity."
+  },
+  "video": {
+    "resolution": "1920x1080",
+    "fps": 30
   },
   "fallbacksUsed": [],
   "warnings": []
