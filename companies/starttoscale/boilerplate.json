@@ -3,8 +3,8 @@
   "version": "1.0",
   "description": "Fixed cross-deliverable strings for Start to Scale Financial Management. Single source of truth for the pptx/pptx-hd/docx/pdf/pdf-hd/xlsx format skills. Company facts live in profile.json. Edit here when wording changes; downstream skills re-read on each generation.",
   "$comment": "TBC: legal.trademark needs counsel review before external use; primary phone number to be added across deliverables once registered.",
-  "website": "starttoscale.nl",
-  "email": "wilgert@starttoscale.nl",
+  "website": "starttoscalefinance.com",
+  "email": "wilgert@starttoscalefinance.com",
   "confidentiality": {
     "default": "Confidential",
     "default_nl": "Vertrouwelijk",
@@ -35,7 +35,7 @@
     "formal_en": "Yours sincerely,"
   },
   "contact_block": {
-    "default_nl": "Wilgert Hart · Managing Partner\nStart to Scale Financial Management\nwilgert@starttoscale.nl · starttoscale.nl",
-    "default_en": "Wilgert Hart · Managing Partner\nStart to Scale Financial Management\nwilgert@starttoscale.nl · starttoscale.nl"
+    "default_nl": "Wilgert Hart · Managing Partner\nStart to Scale Financial Management\nwilgert@starttoscalefinance.com · starttoscalefinance.com",
+    "default_en": "Wilgert Hart · Managing Partner\nStart to Scale Financial Management\nwilgert@starttoscalefinance.com · starttoscalefinance.com"
   }
 }

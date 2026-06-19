@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
   "generatedFrom": {
-    "profileSha": "1cb6d135f7408af07d17041d8745a4fd2ac7bce09792a658fa7ae3e557b7880c",
+    "profileSha": "811ebcd60bdef2f81a7b52abc5b4123e8d62220200608f71f0e336885bcfaeb1",
+    "peopleSha": "dc0d9ed9af3808219dbcd4134af3251f55de6f6356a78855b5fa62cdce8b45ea",
     "compiler": "1.0"
   },
   "company": {
@@ -61,7 +62,19 @@
       ]
     }
   },
+  "people": [
+    {
+      "id": "person-001",
+      "name": "Wilgert Hart",
+      "title": "Founder & Managing Partner",
+      "publicRole": "spokesperson",
+      "publicBio": "Wilgert Hart is founder and managing partner of Start to Scale Financial Management. He spent nearly three decades in senior finance, including CFO roles at Hill & Knowlton (WPP's global communications firm) and earlier finance roles at EMI Music Netherlands and Warner Music Benelux. He brings that operator's experience to Dutch scale-ups, taking a growing company's finance function from informal to fully professional and running it until a permanent CFO takes over.",
+      "quoteStyle": "Warm, steady senior-finance register; practical and people-oriented; plain Dutch over jargon; writes in Dutch and English."
+    }
+  ],
   "redactions": [
-    "company direct email"
+    "company direct email",
+    "company registration numbers",
+    "personal contact (email / phone)"
   ]
 }
