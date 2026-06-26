@@ -8,9 +8,9 @@ license: Proprietary. LICENSE.txt has complete terms
 
 ## Inputs from client-data
 
-- `companies/{client_slug}/charter.json` — brand identity; read `expression` (optional) for compact brand direction (`principles`, `signatureElements`, `antiPatterns`) and `identity.positioning`
+- `companies/{client_slug}/brand_context.json` — resolved brand; read `expression` (`principles`, `signatureElements`, `antiPatterns`) for compact brand direction and `identity.positioning`. **Reference, never bind** — prose guidance, not hard rules.
 - `companies/{client_slug}/company_context.json` — redacted public company facts: `company` (name, description, services, industries, positioning, values, stats, publicContact), `credentials`, `pricing.publicModels` (+ `paymentTerms`, `discounts`), `legal.publicTerms`, `people` (id, name, title, publicRole, publicBio, quoteStyle)
-- `companies/{client_slug}/logos/` (optional) — logo files (paths resolved from the charter `logo` section)
+- `companies/{client_slug}/logos/` (optional) — logo files (paths resolved from `brand_context.logo`)
 - `companies/{client_slug}/proposals/` (optional) — proposal content library (case studies, prior proposals)
 - `companies/{client_slug}/proposals/methodologies.json` (optional) — methodology library
 - `companies/{client_slug}/boilerplate.json` (optional) — boilerplate sections, including `sign_off` (closing salutation, locale/register-keyed: `default_en`/`default_nl`/`formal_en`/`formal_nl`) and `contact_block` (signer + firm + contact lines, locale-keyed)
@@ -85,6 +85,8 @@ Use this skill when a user asks to:
 
 > **No overlay → STOP.** If this plugin has no `companies/` directory, do not fabricate a brand, default to a self/Stromy brand, or attempt to produce a proposal. Surface: "no client overlay found — I cannot produce a proposal without company data." Only the user can supply the missing overlay.
 
+> **Empty `people`/`credentials` → ask or omit, never fabricate.** The overlay can be present yet incomplete — a present-but-empty data field is still missing data, not a license to improvise a real person's profile. If `company_context.people[]` is empty or absent, do **not** write team bios or assign roles/titles to named individuals from the service catalogue, `business-cards/`, or inference — ask the user which team to feature, or omit the **Team & Qualifications** section. Likewise if `credentials` is empty: omit or flag it, never synthesize certifications, awards, or positioning presented as credentials. Names, titles, and contacts from `business-cards/` may be listed verbatim, but **no bio or specialism may be attributed to a named person without a `publicBio` source** (in `company_context.people[]` or `proposals/team-bios.json`). This is the within-overlay twin of the no-overlay STOP above.
+
 This skill draws from structured company data in the invoking plugin's `companies/{client_slug}/` overlay.
 
 ### Discovery
@@ -101,7 +103,7 @@ This skill draws from structured company data in the invoking plugin's `companie
 
 ```
 companies/{client_slug}/company_context.json  → Company facts: name, services, pricing, credentials, legal, people
-companies/{client_slug}/charter.json          → Visual identity (colors, fonts, logo, format settings)
+companies/{client_slug}/brand_context.json    → Resolved brand: expression, identity, colors, fonts, logo
 companies/{client_slug}/proposals/             → Proposal content library:
   ├── case-studies.json      → Past performance
   ├── team-bios.json         → Key personnel with bio variants
@@ -260,10 +262,11 @@ Draft each section **in the deliverable canvas**, following the guidance in [sec
 
 - **Pull from content library first** — reuse and adapt case studies, bios, and methodology descriptions before writing new content
 - **Substantiate every claim** — each assertion needs a proof point (case study reference, metric with source, certification)
+- **Maintain the unsourced ledger as you draft** — record each section's `basis` in an in-canvas ledger *when you write it* (not reconstructed at the end): `client_data` (every claim/bio traces to the overlay), `inferred` (extrapolated from real data), or `fabricated` (no client-data source). Any named person's bio/role with no `publicBio` source, or any claim with no proof point, is `fabricated` — which means you must revisit the empty-`people`/`credentials` guard (ask or omit). This ledger seeds `asset-feedback.unsourced_content` at close-out (Step 7).
 - **Write for the evaluator** — lead with the answer, then provide supporting detail
 - **Maintain consistent voice** — same tense, same level of formality, same terminology throughout
 - **Skip the executive summary** — it gets written in Step 4
-- **Apply brand expression (if present).** Read `expression` from `charter.json`. If present, use as prose guidance — not hard layout rules:
+- **Apply brand expression (if present) — reference, never bind.** Read `expression` from `brand_context.json`. If present, use as prose guidance — not hard layout rules:
   - `expression.principles` — let these inform tone and emphasis (e.g., "measured authority" → lead with evidence, not assertion)
   - `expression.signatureElements` — weave into structure where natural (e.g., a brand that uses "indexed rules" may benefit from numbered evidence citations)
   - `expression.antiPatterns` — avoid these constructions in the prose and section framing
@@ -282,11 +285,11 @@ Draft each section **in the deliverable canvas**, following the guidance in [sec
 
 Produce the document in the chosen output format. Pass the following context to `format-prepare-document`:
 
-- **Brand charter**: `companies/{client_slug}/charter.json`
-- **Logo**: `companies/{client_slug}/logos/` (path in charter `logo` section)
+- **Brand**: `companies/{client_slug}/brand_context.json` (resolved expression + identity + colors/fonts/logo)
+- **Logo**: `companies/{client_slug}/logos/` (path in `brand_context.logo`)
 - **Drafted sections**: the content from Step 2
 - **Tone and archetype**: from intake Phase 2/3
-- **Brand expression**: include `expression` (if resolved from charter) and `deliverable_genre: "proposal"` in the envelope so the downstream renderer applies the same compact direction
+- **Brand expression**: include `expression` (if resolved from `brand_context.json`) and `deliverable_genre: "proposal"` in the envelope so the downstream renderer applies the same compact direction
 
 `format-prepare-document` then routes to the terminal renderer:
 - DOCX output → `format-docx`
@@ -342,6 +345,15 @@ Produce final deliverables:
 
 After handoff, *mention* (never auto-activate) that the user can capture feedback on the proposal with `asset-feedback`, and file your own `source: agent` retrospective there if the run hit an instruction gap or tool-call failure worth fixing.
 
+**Close-out grounding (file a truthful retrospective).** Before filing the `asset-feedback` retrospective, inspect the overlay you actually used — inspecting an artifact you already loaded is itself an `external_signal`, not a judgement call:
+
+- If `company_context.people[]` was empty/absent **and** you nonetheless produced a Team & Qualifications section, record `{section: "Team & Qualifications", basis: inferred|fabricated}` in `unsourced_content`.
+- If `credentials` was empty **and** you presented credentials, record that section in `unsourced_content` likewise.
+- For every explicit ask you could not satisfy from client-data (e.g. "include real credentials" with none present), add an `unmet_asks` entry (`reason: no_data`, `resolution` = what you actually did: `stopped` / `asked_user` / `flagged_in_output` / `improvised`).
+- Carry the in-canvas unsourced ledger (Step 6) straight into `unsourced_content`; a section you filled by inference or fabrication is the highest-value signal and is **always** reported.
+
+Use `category: data-shortfall` when the deliverable improvised under a data gap. A run that correctly STOPped or asked still files the `unmet_asks` it hit — the honest retrospective is the point.
+
 ## Quality Gates — Quick Reference
 
 These are the high-level checks. For detailed per-section checklists and common failure modes, see [quality-gates.md](references/quality-gates.md).
@@ -355,6 +367,7 @@ These are the high-level checks. For detailed per-section checklists and common 
 - Every capability claim has a supporting reference (case study, metric, certification)
 - No vague claims without evidence ("we are industry leaders" → needs proof)
 - Metrics include source and timeframe
+- **Emit the unsourced ledger** — produce a structured in-canvas list of every claim, bio, or section with no client-data proof source, each tagged `basis: inferred | fabricated` plus the section it appears in. An empty ledger is the goal; a non-empty one must be surfaced to the user, never silently shipped. This ledger is the source for `asset-feedback.unsourced_content` at close-out (see Step 7 "Close-out grounding").
 
 **Section coherence**
 - Pricing aligns with the scope described in Approach & Methodology
@@ -378,7 +391,7 @@ These are the high-level checks. For detailed per-section checklists and common 
 
 ### Client Branding
 
-Brand data is loaded from `companies/{client_slug}/charter.json`. The charter covers all output formats:
+Brand data is resolved from `companies/{client_slug}/brand_context.json` (the downstream renderer applies the per-format settings below; the `presentation` spacing block stays in `charter.json`, which is not compiled):
 
 - **`document`** section → DOCX margins, headers, footers, heading colors
 - **`presentation`** section → PPTX slide margins, aspect ratio
@@ -432,6 +445,6 @@ This skill owns proposal content strategy. Document production is handled by the
 | XLSX | `xlsx` | Spreadsheet creation for pricing models |
 
 Brand context to carry forward:
-- Brand charter location: `companies/{client_slug}/charter.json`
-- Apply heading color from `colors.primary`, body font from `fonts.body`, logo from `logos/` (path in charter `logo` section)
+- Brand location: `companies/{client_slug}/brand_context.json`
+- Apply heading color from `colors.primary`, body font from `typography.body`, logo from `logos/` (path in `brand_context.logo`)
 - Include resolved `expression` (if present) and `deliverable_genre: "proposal"` for downstream render direction
