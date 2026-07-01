@@ -57,6 +57,16 @@
       "mime": "image/png"
     },
     {
+      "name": "divider-line-white.svg",
+      "sha256": "716dc6c7560082ff364a716103da8487a7bbb62dfb5e9707d77c35db02782349",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "divider-line.svg",
+      "sha256": "4993cddddb569a01a406d165cda2b273ffa99e712132f3f46dc2a28e356610c1",
+      "mime": "image/svg+xml"
+    },
+    {
       "name": "favicon-16.png",
       "sha256": "f06b32e2e2dc63eb5dacbb6ac397c957e42e913b07b6d0c87b89cdb777ca45b3",
       "mime": "image/png"
@@ -132,6 +142,16 @@
       "mime": "image/png"
     },
     {
+      "name": "motif-three-steps.svg",
+      "sha256": "87b7f6005b1d8b6abd734539d051703c61efb26f94675c181ecddd4a37a58bf6",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "pattern-tile.svg",
+      "sha256": "7cd12f22ebc001d5bec6baa4781848018ae3b5e2b9b58e7c7cd5a3852737482e",
+      "mime": "image/svg+xml"
+    },
+    {
       "name": "symbol.png",
       "sha256": "8c7b30fd39d5507578c5d72b0148c542c834b216b8e55325cce03a31eb74b6b5",
       "mime": "image/png"
@@ -154,6 +174,11 @@
   ],
   "images": [
     {
+      "name": "corner-three-steps.png",
+      "sha256": "450a26a50f32824c39d33783d0d37f18f00d2c88232910132fce952dd1d72a3a",
+      "mime": "image/png"
+    },
+    {
       "name": "i1-01-16x9.jpg",
       "sha256": "d4adea71edf29fb97df34f3ccceba2337c531fcb07e67646918ccd3aea92314f",
       "mime": "image/jpeg"
@@ -170,6 +195,21 @@
     },
     {
       "name": "i1-01-branded.jpg",
+      "sha256": "8e22201ec00c5717367011a84a07b8b8b83a9e99b3057228c32da22b078fdf2d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-01-bw-amber.jpg",
+      "sha256": "65dda1dc75d2dcd407190419d4b92eedeef96e7e49a879347d1f08ae831b4f15",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-01-navy35.jpg",
+      "sha256": "f2541a555f72f7341c84dd424619491e13e7413ab50769a504b3937075baf101",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-01-navy55.jpg",
       "sha256": "8e22201ec00c5717367011a84a07b8b8b83a9e99b3057228c32da22b078fdf2d",
       "mime": "image/jpeg"
     },
@@ -204,6 +244,21 @@
       "mime": "image/jpeg"
     },
     {
+      "name": "i1-02-bw-amber.jpg",
+      "sha256": "23041333a043d226a79a10e428c9a5b46815348ed6a42d91caf4c3d508b43084",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-02-navy35.jpg",
+      "sha256": "03d196476ab08f3d90e23d0ecddafd216bf811417a54fd610c611f3f704233ee",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-02-navy55.jpg",
+      "sha256": "70fc9c8a56b0acdf03c1750ee047a30a541168a6fc1cd31b85af11d8011bd61f",
+      "mime": "image/jpeg"
+    },
+    {
       "name": "i1-02-text-safe.jpg",
       "sha256": "064640e05fc6e1ddf7ffcedb53aa3a1ff4d3d05a97bb9806537816b593bc30ae",
       "mime": "image/jpeg"
@@ -230,6 +285,16 @@
     },
     {
       "name": "i1-03-branded.jpg",
+      "sha256": "40781e1fcaf58e3211763d020b55091162506487f502ccbd83588790d65b11aa",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-03-navy35.jpg",
+      "sha256": "9e66958fa9f09e49f94ed768df11899ddd8a2ee2fadf3dca0942f7685bdda63c",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-03-navy55.jpg",
       "sha256": "40781e1fcaf58e3211763d020b55091162506487f502ccbd83588790d65b11aa",
       "mime": "image/jpeg"
     },
@@ -264,6 +329,21 @@
       "mime": "image/jpeg"
     },
     {
+      "name": "i1-04-bw-amber.jpg",
+      "sha256": "9463d666f5c1c329eadb3b13b592810d195373ca79e1f7f2bf7399d6fb771781",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-04-navy35.jpg",
+      "sha256": "8b4aef8c62fe408072886a7409154d53a67bd072346507114780596c06e88d52",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i1-04-navy55.jpg",
+      "sha256": "ccd0b984319abeb8387c3d85a0d213d753032778e8871070b731099f035678e3",
+      "mime": "image/jpeg"
+    },
+    {
       "name": "i1-04-text-safe.jpg",
       "sha256": "379146efcdf6dd87443e81d802663013d24d7888fa3db6166bec1d9840004616",
       "mime": "image/jpeg"
@@ -290,6 +370,16 @@
     },
     {
       "name": "i2-01-branded.jpg",
+      "sha256": "ddaa196cb4966d3591a9b2d7ccc1659997e878dd9dddc487db2e9897379311fc",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-01-navy35.jpg",
+      "sha256": "64e1dc338a51742f8faf9969a9789db745c2ae726b7b79c5afd5cfc0bbb1b08d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-01-navy55.jpg",
       "sha256": "ddaa196cb4966d3591a9b2d7ccc1659997e878dd9dddc487db2e9897379311fc",
       "mime": "image/jpeg"
     },
@@ -324,6 +414,16 @@
       "mime": "image/jpeg"
     },
     {
+      "name": "i2-02-navy35.jpg",
+      "sha256": "b0eae08a99d24df7a57f9c0f96a7cbbce3eb21d642d36ee1af078211185c53ca",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-02-navy55.jpg",
+      "sha256": "b344ed307286663cf053d0b7786214353f14d81661f735307661ab40a82396f3",
+      "mime": "image/jpeg"
+    },
+    {
       "name": "i2-02-text-safe.jpg",
       "sha256": "01793ac91217315ab421c26ecc3e95aa7a70211327f17441a1bdde439acb9acc",
       "mime": "image/jpeg"
@@ -350,6 +450,16 @@
     },
     {
       "name": "i2-03-branded.jpg",
+      "sha256": "d2643acf8e2031798cda8b749ee11b39b7e6b47d910158958f0a7376de1f3c73",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-03-navy35.jpg",
+      "sha256": "822a575fc1dfc5587b1d712e7cc7ab061792a65f64507e66a58233fb12e3fcda",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-03-navy55.jpg",
       "sha256": "d2643acf8e2031798cda8b749ee11b39b7e6b47d910158958f0a7376de1f3c73",
       "mime": "image/jpeg"
     },
@@ -384,6 +494,16 @@
       "mime": "image/jpeg"
     },
     {
+      "name": "i2-04-navy35.jpg",
+      "sha256": "fa830e5aeaf1237c27d3194d5e15daa5e7baf571ee5439d3794f0aa16a37ebc0",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "i2-04-navy55.jpg",
+      "sha256": "f0e497306910497ecccb922988917c16bca4ec6a3c7915694e94f6627b556058",
+      "mime": "image/jpeg"
+    },
+    {
       "name": "i2-04-text-safe.jpg",
       "sha256": "e9d197f3726c5439d0194b43e8abee621826293607c1a6a675c2d4fbc51901e8",
       "mime": "image/jpeg"
@@ -392,6 +512,36 @@
       "name": "i2-04.jpg",
       "sha256": "95441f13cbe4e99f9e75922a195adf9787446865e8b9f09fe0611f9a597965c4",
       "mime": "image/jpeg"
+    },
+    {
+      "name": "navy-amber-diag.png",
+      "sha256": "855ed5b9db0f0832f5ccd324825ae5670ed3639adf37fd3440505e34b721738d",
+      "mime": "image/png"
+    },
+    {
+      "name": "navy-hero.png",
+      "sha256": "ad5fe216a91f5262577f3c50526cfbd658d492901d0b5a8d79732d1939ad27c5",
+      "mime": "image/png"
+    },
+    {
+      "name": "navy-vignette.png",
+      "sha256": "3e0f63b1e4c0cb0ae7d9292ac8d5343e984b7002996e73e68cb92f9b29c5e54f",
+      "mime": "image/png"
+    },
+    {
+      "name": "paper-soft.png",
+      "sha256": "24b91723cb02fe1748cc745e995a57a18cba6cbfb87f9950e077e6b56e882191",
+      "mime": "image/png"
+    },
+    {
+      "name": "pattern-full-navy.png",
+      "sha256": "4f6b96b25fe3e7a5b83cf0e89a157ca189636612bb6a371a7aee1c90e104e8d4",
+      "mime": "image/png"
+    },
+    {
+      "name": "pattern-full-paper.png",
+      "sha256": "724acc2ea53529cd40b449dc5e313591896ab2ba66e684155cce3c63f3f46c55",
+      "mime": "image/png"
     }
   ]
 }
