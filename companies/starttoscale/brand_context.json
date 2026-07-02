@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "73ed6ba42b147f4195ba4e0526467f47d41dc0377e4287c9314218a9b13d2ce7",
+    "charterSha": "d8d4b26dc06c741e8c3fedeae63c1e2d32494f37b3fdec817bf31786364fb444",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -200,13 +200,172 @@
       "Buzzwords: 'synergy', 'next-level', 'agile', or any phrase that sounds like a brochure.",
       "Pattern tile at full opacity on reading surfaces — restricted to 6–8% opacity on slide/section backgrounds only."
     ],
-    "requiredMotifs": [
-      "Three Steps ascending bars on all deliverable covers (small, left-aligned over section title in decks; as hero accent below the NL tagline on web).",
-      "Navy-90 / amber-10 thin-line divider as section rule on web and documents.",
-      "Warm Paper (#FAF8F3) as the default background surface on all light-mode deliverables.",
-      "White wordmark variant on all navy or image-overlay surfaces.",
-      "55% navy tint overlay on all hero and cover photograph treatments."
-    ]
+    "visual_grammar": {
+      "backgrounds": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed"
+        },
+        "selected": "report-light",
+        "spec": {
+          "canvases": [
+            {
+              "name": "navy",
+              "role": "primary-dark",
+              "css": "#0A1F3D"
+            },
+            {
+              "name": "paper",
+              "role": "primary-light",
+              "css": "#FAF8F3"
+            },
+            {
+              "name": "white",
+              "role": "surface-light",
+              "css": "#FFFFFF"
+            }
+          ],
+          "rhythm": "light-dominant editorial — warm paper is the default surface; navy reserved for the cover, section dividers, and 'key figures' panels",
+          "darkFrequency": 1,
+          "photo": {
+            "treatment": "documentary-muted, full-bleed hero",
+            "overlay": "structural navy #0A1F3D scrim, never gold"
+          }
+        },
+        "tokens": [
+          "--canvas-navy",
+          "--canvas-paper",
+          "--canvas-white"
+        ]
+      },
+      "gradients": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed"
+        },
+        "selected": "flat-structural",
+        "spec": {
+          "policy": "no decorative canvas gradients; depth via the gold hairline rule + navy/paper contrast only",
+          "canvasGradients": "none"
+        }
+      },
+      "grid": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed"
+        },
+        "selected": "ruled-editorial",
+        "spec": {
+          "columns": "12-col symmetric",
+          "gutter": "generous",
+          "rules": "thin navy ledger rules between columns",
+          "dividers": "gold hairline under section heads",
+          "maxWidth": "measured editorial",
+          "margins": "wide",
+          "symmetry": "symmetric"
+        }
+      },
+      "iconography": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed"
+        },
+        "selected": "navy-gold-keyline",
+        "spec": {
+          "style": "stroke-led geometric, rectilinear",
+          "strokeWeight": "1.75px",
+          "caps": "square",
+          "joins": "miter",
+          "fillVsLine": "navy line-dominant + ONE small gold filled checkpoint node per glyph (distinct from Duke's plain hairline)",
+          "extensible": true,
+          "setPolicy": "OPEN set — icons drawn to this STYLE on demand per slide/section need; the sample is representative, not a closed set",
+          "sample": [
+            "roadmap-steps",
+            "gauge",
+            "checkpoint-tick",
+            "handshake",
+            "shield-check",
+            "trend-up"
+          ]
+        }
+      },
+      "elevation": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed"
+        },
+        "selected": "ledger-ruled",
+        "spec": {
+          "shadows": "none/minimal",
+          "borders": "1px navy hairline border + a TOP gold hairline rule on cards (a statement/ledger header)",
+          "radius": "3px (crisp)",
+          "surface": "matte",
+          "depth": "via the top gold rule + hairline, never shadow"
+        }
+      },
+      "motifs": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed"
+        },
+        "selected": "scale-steps",
+        "spec": {
+          "name": "scale-steps",
+          "geometry": "an ascending sequence of ruled bars/steps with a gold checkpoint node at each landing",
+          "meaning": "'start → scale' — the 4-stage method: diagnosis → roadmap → implementation → operation",
+          "marks": [
+            "step-ascent",
+            "checkpoint-node"
+          ]
+        }
+      },
+      "motion": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed"
+        },
+        "selected": "step-reveal",
+        "spec": {
+          "behaviors": [
+            {
+              "name": "step-build",
+              "trigger": "cover/section entrance",
+              "desc": "the ascending steps build one landing at a time; gold checkpoint nodes key last; no bounce"
+            },
+            {
+              "name": "rule-draw",
+              "trigger": "section divider",
+              "desc": "the gold hairline rule draws left→right"
+            }
+          ],
+          "intensity": "subtle",
+          "speed": "calm-measured"
+        }
+      },
+      "patterns": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "no genuine pattern system — the brand's texture is ledger rules + the scale-steps motif, not a repeating pattern"
+        }
+      },
+      "photo": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "redundant with compiled images.manifest / images.overlay (documentary-muted treatment); grammar defers to the image system"
+        }
+      }
+    }
   },
   "surfaceExpression": {
     "presentation": {

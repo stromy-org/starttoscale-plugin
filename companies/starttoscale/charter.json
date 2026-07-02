@@ -11,10 +11,15 @@
     "founderTitle": "Managing Partner",
     "geography": "Netherlands (Amersfoort) — international touchpoints",
     "primaryLanguage": "nl",
-    "supportLanguages": ["en"],
+    "supportLanguages": [
+      "en"
+    ],
     "domain": "starttoscalefinance.com",
     "backers": "Duke Strategies (Ingo Heijnen, Ariën Stuijt — silent partners)",
-    "archetype": { "primary": "Sage", "secondary": "Caregiver" },
+    "archetype": {
+      "primary": "Sage",
+      "secondary": "Caregiver"
+    },
     "protection_class": "available",
     "reviewState": "frozen",
     "frozenDate": "2026-06-01",
@@ -24,7 +29,10 @@
       "palette": "P1 — Midnight Authority (navy + amber)",
       "typography": "T1 — Newsreader + Inter",
       "tagline_en": "TG1 — Finance that scales with you.",
-      "imagery": ["I1 — Architectural Minimalism", "I2 — Data Clarity"]
+      "imagery": [
+        "I1 — Architectural Minimalism",
+        "I2 — Data Clarity"
+      ]
     }
   },
   "brand": {
@@ -32,7 +40,13 @@
     "essence": "Senior CFO leadership that turns gut-feel finance into the structure a scale-up actually needs.",
     "positioning": "Start to Scale Financial Management is the senior finance partner that takes a growing SME from the kladje-on-the-back-of-the-envelope to a fully professional finance function — diagnosis, roadmap, hands-on implementation, and ongoing operation. Wilgert Hart brings nearly 30 years of CFO experience at WPP, EMI and Warner Music Benelux, backed by a network of finance professionals.",
     "audience": "Owners and boards of NL-based start-ups making the scale-up transition (€1M–€20M revenue, growing fast, finance still informal).",
-    "personality": ["Senior", "Calm", "Structured", "Pragmatic", "Trustworthy"],
+    "personality": [
+      "Senior",
+      "Calm",
+      "Structured",
+      "Pragmatic",
+      "Trustworthy"
+    ],
     "toneOfVoice": "Plain Dutch. No jargon, no false urgency. Speaks like a senior CFO at a board table: direct, honest about what's broken, confident about how to fix it."
   },
   "colors": {
@@ -103,39 +117,157 @@
         "id": "I1",
         "name": "Architectural Minimalism",
         "name_nl": "Architecturaal Minimalisme",
-        "keywords": ["stillness", "structure", "light", "authority"],
-        "roles": ["cover", "divider", "closing"],
+        "keywords": [
+          "stillness",
+          "structure",
+          "light",
+          "authority"
+        ],
+        "roles": [
+          "cover",
+          "divider",
+          "closing"
+        ],
         "rationale": "Clean lines, controlled light, sense of order — visual proxy for the structured finance function S2S installs."
       },
       {
         "id": "I2",
         "name": "Data Clarity",
         "name_nl": "Data Helderheid",
-        "keywords": ["precision", "signal", "order", "insight"],
-        "roles": ["divider", "background"],
+        "keywords": [
+          "precision",
+          "signal",
+          "order",
+          "insight"
+        ],
+        "roles": [
+          "divider",
+          "background"
+        ],
         "rationale": "Charts, tables, dashboards rendered as quiet objects — turning raw data into decision-grade insight."
       }
     ],
     "manifest": "images/manifest.json",
     "catalog": [
-      { "id": "i1-01", "theme": "I1", "file": "images/16x9/i1-01-16x9.jpg", "branded": "images/branded/i1-01-branded.jpg", "textSafe": "images/text-safe/i1-01-text-safe.jpg", "description": "Concrete corridor — strong shadow geometry", "roles": ["cover", "divider"] },
-      { "id": "i1-02", "theme": "I1", "file": "images/16x9/i1-02-16x9.jpg", "branded": "images/branded/i1-02-branded.jpg", "textSafe": "images/text-safe/i1-02-text-safe.jpg", "description": "Modernist facade — vertical rhythm", "roles": ["cover", "closing"] },
-      { "id": "i1-03", "theme": "I1", "file": "images/16x9/i1-03-16x9.jpg", "branded": "images/branded/i1-03-branded.jpg", "textSafe": "images/text-safe/i1-03-text-safe.jpg", "description": "Atrium — controlled overhead light", "roles": ["divider"] },
-      { "id": "i1-04", "theme": "I1", "file": "images/16x9/i1-04-16x9.jpg", "branded": "images/branded/i1-04-branded.jpg", "textSafe": "images/text-safe/i1-04-text-safe.jpg", "description": "Quiet interior — diagonal light, single chair", "roles": ["cover", "closing"] },
-      { "id": "i2-01", "theme": "I2", "file": "images/16x9/i2-01-16x9.jpg", "branded": "images/branded/i2-01-branded.jpg", "textSafe": "images/text-safe/i2-01-text-safe.jpg", "description": "Line chart on laptop — restrained editorial", "roles": ["divider", "background"] },
-      { "id": "i2-02", "theme": "I2", "file": "images/16x9/i2-02-16x9.jpg", "branded": "images/branded/i2-02-branded.jpg", "textSafe": "images/text-safe/i2-02-text-safe.jpg", "description": "Printed report — tabular columns close-up", "roles": ["divider", "background"] },
-      { "id": "i2-03", "theme": "I2", "file": "images/16x9/i2-03-16x9.jpg", "branded": "images/branded/i2-03-branded.jpg", "textSafe": "images/text-safe/i2-03-text-safe.jpg", "description": "Dashboard panel — analytical tile grid", "roles": ["divider", "background"] },
-      { "id": "i2-04", "theme": "I2", "file": "images/16x9/i2-04-16x9.jpg", "branded": "images/branded/i2-04-branded.jpg", "textSafe": "images/text-safe/i2-04-text-safe.jpg", "description": "Charts on paper — high-contrast print", "roles": ["divider", "background"] }
+      {
+        "id": "i1-01",
+        "theme": "I1",
+        "file": "images/16x9/i1-01-16x9.jpg",
+        "branded": "images/branded/i1-01-branded.jpg",
+        "textSafe": "images/text-safe/i1-01-text-safe.jpg",
+        "description": "Concrete corridor — strong shadow geometry",
+        "roles": [
+          "cover",
+          "divider"
+        ]
+      },
+      {
+        "id": "i1-02",
+        "theme": "I1",
+        "file": "images/16x9/i1-02-16x9.jpg",
+        "branded": "images/branded/i1-02-branded.jpg",
+        "textSafe": "images/text-safe/i1-02-text-safe.jpg",
+        "description": "Modernist facade — vertical rhythm",
+        "roles": [
+          "cover",
+          "closing"
+        ]
+      },
+      {
+        "id": "i1-03",
+        "theme": "I1",
+        "file": "images/16x9/i1-03-16x9.jpg",
+        "branded": "images/branded/i1-03-branded.jpg",
+        "textSafe": "images/text-safe/i1-03-text-safe.jpg",
+        "description": "Atrium — controlled overhead light",
+        "roles": [
+          "divider"
+        ]
+      },
+      {
+        "id": "i1-04",
+        "theme": "I1",
+        "file": "images/16x9/i1-04-16x9.jpg",
+        "branded": "images/branded/i1-04-branded.jpg",
+        "textSafe": "images/text-safe/i1-04-text-safe.jpg",
+        "description": "Quiet interior — diagonal light, single chair",
+        "roles": [
+          "cover",
+          "closing"
+        ]
+      },
+      {
+        "id": "i2-01",
+        "theme": "I2",
+        "file": "images/16x9/i2-01-16x9.jpg",
+        "branded": "images/branded/i2-01-branded.jpg",
+        "textSafe": "images/text-safe/i2-01-text-safe.jpg",
+        "description": "Line chart on laptop — restrained editorial",
+        "roles": [
+          "divider",
+          "background"
+        ]
+      },
+      {
+        "id": "i2-02",
+        "theme": "I2",
+        "file": "images/16x9/i2-02-16x9.jpg",
+        "branded": "images/branded/i2-02-branded.jpg",
+        "textSafe": "images/text-safe/i2-02-text-safe.jpg",
+        "description": "Printed report — tabular columns close-up",
+        "roles": [
+          "divider",
+          "background"
+        ]
+      },
+      {
+        "id": "i2-03",
+        "theme": "I2",
+        "file": "images/16x9/i2-03-16x9.jpg",
+        "branded": "images/branded/i2-03-branded.jpg",
+        "textSafe": "images/text-safe/i2-03-text-safe.jpg",
+        "description": "Dashboard panel — analytical tile grid",
+        "roles": [
+          "divider",
+          "background"
+        ]
+      },
+      {
+        "id": "i2-04",
+        "theme": "I2",
+        "file": "images/16x9/i2-04-16x9.jpg",
+        "branded": "images/branded/i2-04-branded.jpg",
+        "textSafe": "images/text-safe/i2-04-text-safe.jpg",
+        "description": "Charts on paper — high-contrast print",
+        "roles": [
+          "divider",
+          "background"
+        ]
+      }
     ],
-    "overlay": { "color": "primary", "opacity": 0.55 },
+    "overlay": {
+      "color": "primary",
+      "opacity": 0.55
+    },
     "logoVariantOnImage": "white",
     "_note": "8 sourced photos × 6 variants each (source, 16x9, 2x1, 1x1, text-safe, branded) = 48 files. Full per-file map and credits in images/manifest.json."
   },
   "document": {
     "paperSize": "A4",
-    "margins": { "top": "1in", "bottom": "1in", "left": "1in", "right": "1in" },
-    "header": { "content": "{{company.name}}", "logo": true },
-    "footer": { "content": "Confidential", "pageNumbers": true },
+    "margins": {
+      "top": "1in",
+      "bottom": "1in",
+      "left": "1in",
+      "right": "1in"
+    },
+    "header": {
+      "content": "{{company.name}}",
+      "logo": true
+    },
+    "footer": {
+      "content": "Confidential",
+      "pageNumbers": true
+    },
     "headingColor": "primary",
     "tableHeaderColor": "primary"
   },
@@ -218,24 +350,60 @@
       "home": {
         "enabled": true,
         "sections": [
-          { "type": "hero", "variant": "typographic" },
-          { "type": "positioning", "variant": "centered-statement" },
-          { "type": "services", "variant": "alternating-rows" },
-          { "type": "approach", "variant": "numbered-steps" },
-          { "type": "about", "variant": "founder-bio" },
-          { "type": "cta", "variant": "minimal" }
+          {
+            "type": "hero",
+            "variant": "typographic"
+          },
+          {
+            "type": "positioning",
+            "variant": "centered-statement"
+          },
+          {
+            "type": "services",
+            "variant": "alternating-rows"
+          },
+          {
+            "type": "approach",
+            "variant": "numbered-steps"
+          },
+          {
+            "type": "about",
+            "variant": "founder-bio"
+          },
+          {
+            "type": "cta",
+            "variant": "minimal"
+          }
         ]
       },
-      "diensten": { "enabled": true, "_note": "Services / What we do" },
-      "aanpak": { "enabled": true, "_note": "Approach / Methodology" },
-      "over": { "enabled": true, "_note": "About Wilgert + backers" },
-      "contact": { "enabled": true, "layout": "mailto-or-calendar" }
+      "diensten": {
+        "enabled": true,
+        "_note": "Services / What we do"
+      },
+      "aanpak": {
+        "enabled": true,
+        "_note": "Approach / Methodology"
+      },
+      "over": {
+        "enabled": true,
+        "_note": "About Wilgert + backers"
+      },
+      "contact": {
+        "enabled": true,
+        "layout": "mailto-or-calendar"
+      }
     },
     "i18n": {
       "enabled": true,
       "defaultLocale": "nl",
-      "locales": ["nl", "en"],
-      "labels": { "nl": "Nederlands", "en": "English" },
+      "locales": [
+        "nl",
+        "en"
+      ],
+      "labels": {
+        "nl": "Nederlands",
+        "en": "English"
+      },
       "routing": "prefix-default",
       "fallbackLocale": "nl",
       "localeDetection": true,
@@ -251,23 +419,44 @@
   },
   "formatting": {
     "headingThreshold": 24,
-    "accentCycleColors": ["accent", "primary", "primaryAlt"],
+    "accentCycleColors": [
+      "accent",
+      "primary",
+      "primaryAlt"
+    ],
     "autoContrastText": true
   },
   "plotly": {
-    "categoricalPalette": ["#0A1F3D", "#E8A33D", "#1A3358", "#4A6390", "#788BAF"],
+    "categoricalPalette": [
+      "#0A1F3D",
+      "#E8A33D",
+      "#1A3358",
+      "#4A6390",
+      "#788BAF"
+    ],
     "defaultHeight": 500,
     "titleFontSize": 18,
     "axisFontSize": 12,
     "legendFontSize": 11,
-    "margins": { "top": 80, "bottom": 70, "left": 60, "right": 50 },
+    "margins": {
+      "top": 80,
+      "bottom": 70,
+      "left": 60,
+      "right": 50
+    },
     "gridColor": "#E5E2DA",
     "secondaryTextColor": "#6B7280"
   },
   "excalidraw": {
     "strokeColor": "#0A1F3D",
     "backgroundColor": "#FAF8F3",
-    "fillColors": ["#0A1F3D", "#E8A33D", "#1A3358", "#4A6390", "#788BAF"],
+    "fillColors": [
+      "#0A1F3D",
+      "#E8A33D",
+      "#1A3358",
+      "#4A6390",
+      "#788BAF"
+    ],
     "textColor": "#0A1F3D",
     "fontFamily": 2,
     "fontSize": 16,
@@ -325,7 +514,6 @@
     "_note": "19 overlay variants (navy-55, navy-35 for all 8 photos; bw-amber for cover/closing roles). Full list in pptx-assets/manifest.json."
   },
   "boilerplate": "boilerplate.json",
-
   "identity": {
     "archetype": {
       "primary": "sage",
@@ -335,7 +523,13 @@
     },
     "essence": "Senior CFO leadership that turns gut-feel finance into the structure a scale-up actually needs.",
     "positioning": "Start to Scale Financial Management is the senior finance partner that takes a growing SME from kladje-on-the-back-of-the-envelope to a fully professional finance function — diagnosis, roadmap, hands-on implementation, and ongoing operation. Wilgert Hart brings nearly 30 years of CFO experience at WPP, EMI and Warner Music Benelux, backed by a network of finance professionals.",
-    "personalityTraits": ["Senior", "Calm", "Structured", "Pragmatic", "Trustworthy"],
+    "personalityTraits": [
+      "Senior",
+      "Calm",
+      "Structured",
+      "Pragmatic",
+      "Trustworthy"
+    ],
     "personalityAxes": {
       "warmth_vs_authority": 0.3,
       "expressive_vs_restrained": 0.15,
@@ -344,7 +538,6 @@
       "accessible_vs_exclusive": 0.4
     }
   },
-
   "expression": {
     "source": "co_created",
     "confidence": "approved",
@@ -431,6 +624,379 @@
         "surface": "all",
         "freshness": "current"
       }
-    ]
+    ],
+    "visual_grammar": {
+      "backgrounds": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+        },
+        "selected": "report-light",
+        "candidates": [
+          {
+            "id": "report-light",
+            "label": "Report light",
+            "spec": {
+              "canvases": [
+                {
+                  "name": "navy",
+                  "role": "primary-dark",
+                  "css": "#0A1F3D"
+                },
+                {
+                  "name": "paper",
+                  "role": "primary-light",
+                  "css": "#FAF8F3"
+                },
+                {
+                  "name": "white",
+                  "role": "surface-light",
+                  "css": "#FFFFFF"
+                }
+              ],
+              "rhythm": "light-dominant editorial — warm paper is the default surface; navy reserved for the cover, section dividers, and 'key figures' panels",
+              "darkFrequency": 1,
+              "photo": {
+                "treatment": "documentary-muted, full-bleed hero",
+                "overlay": "structural navy #0A1F3D scrim, never gold"
+              }
+            },
+            "tokens": [
+              "--canvas-navy",
+              "--canvas-paper",
+              "--canvas-white"
+            ],
+            "evidence": {
+              "tier": "proposed"
+            }
+          },
+          {
+            "id": "navy-ledger",
+            "label": "Navy ledger",
+            "spec": {
+              "rhythm": "balanced dark-light indexed ~3:2 (navy heroes/dividers alternate with warm paper)",
+              "darkFrequency": 3
+            }
+          },
+          {
+            "id": "two-paper",
+            "label": "Two-tier paper",
+            "spec": {
+              "rhythm": "warm-paper #FAF8F3 prose + crisp white #FFFFFF tables/cards; navy covers only",
+              "darkFrequency": 1
+            }
+          }
+        ]
+      },
+      "gradients": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+        },
+        "selected": "flat-structural",
+        "candidates": [
+          {
+            "id": "flat-structural",
+            "label": "Flat structural",
+            "spec": {
+              "policy": "no decorative canvas gradients; depth via the gold hairline rule + navy/paper contrast only",
+              "canvasGradients": "none"
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "proposed"
+            }
+          },
+          {
+            "id": "warm-paper-wash",
+            "label": "Warm paper wash",
+            "spec": {
+              "gradients": [
+                {
+                  "name": "paper-wash",
+                  "stops": "linear-gradient(180deg,#FAF8F3 0%,#F3ECE0 100%)",
+                  "usage": "large content fields, subtle warmth"
+                }
+              ]
+            }
+          },
+          {
+            "id": "navy-depth",
+            "label": "Navy depth",
+            "spec": {
+              "gradients": [
+                {
+                  "name": "navy-depth",
+                  "stops": "linear-gradient(180deg,#0A1F3D 0%,#06152A 100%)",
+                  "usage": "hero only; gold rule caps"
+                }
+              ],
+              "geometry": "vertical depth, never bright/directional"
+            }
+          }
+        ]
+      },
+      "grid": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+        },
+        "selected": "ruled-editorial",
+        "candidates": [
+          {
+            "id": "ruled-editorial",
+            "label": "Ruled editorial",
+            "spec": {
+              "columns": "12-col symmetric",
+              "gutter": "generous",
+              "rules": "thin navy ledger rules between columns",
+              "dividers": "gold hairline under section heads",
+              "maxWidth": "measured editorial",
+              "margins": "wide",
+              "symmetry": "symmetric"
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "proposed"
+            }
+          },
+          {
+            "id": "broadsheet-columns",
+            "label": "Broadsheet columns",
+            "spec": {
+              "columns": "2 Newsreader serif text columns with a hairline rule between",
+              "symmetry": "symmetric"
+            }
+          },
+          {
+            "id": "structured-plain",
+            "label": "Structured plain",
+            "spec": {
+              "columns": "12-col symmetric, generous whitespace, minimal rules (gold divider under section heads only)"
+            }
+          }
+        ]
+      },
+      "iconography": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+        },
+        "selected": "navy-gold-keyline",
+        "candidates": [
+          {
+            "id": "navy-gold-keyline",
+            "label": "Navy-gold keyline",
+            "spec": {
+              "style": "stroke-led geometric, rectilinear",
+              "strokeWeight": "1.75px",
+              "caps": "square",
+              "joins": "miter",
+              "fillVsLine": "navy line-dominant + ONE small gold filled checkpoint node per glyph (distinct from Duke's plain hairline)",
+              "extensible": true,
+              "setPolicy": "OPEN set — icons drawn to this STYLE on demand per slide/section need; the sample is representative, not a closed set",
+              "sample": [
+                "roadmap-steps",
+                "gauge",
+                "checkpoint-tick",
+                "handshake",
+                "shield-check",
+                "trend-up"
+              ]
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "proposed"
+            }
+          },
+          {
+            "id": "serif-informed",
+            "label": "Serif-informed",
+            "spec": {
+              "style": "icons with subtle serif-terminal detailing echoing Newsreader",
+              "strokeWeight": "1.5px"
+            }
+          },
+          {
+            "id": "hairline-mono",
+            "label": "Hairline mono",
+            "spec": {
+              "style": "thin navy monoline, no gold",
+              "strokeWeight": "1.1px"
+            }
+          }
+        ]
+      },
+      "elevation": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+        },
+        "selected": "ledger-ruled",
+        "candidates": [
+          {
+            "id": "ledger-ruled",
+            "label": "Ledger ruled",
+            "spec": {
+              "shadows": "none/minimal",
+              "borders": "1px navy hairline border + a TOP gold hairline rule on cards (a statement/ledger header)",
+              "radius": "3px (crisp)",
+              "surface": "matte",
+              "depth": "via the top gold rule + hairline, never shadow"
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "proposed"
+            }
+          },
+          {
+            "id": "soft-statement",
+            "label": "Soft statement",
+            "spec": {
+              "shadows": "subtle 'printed document' soft shadow",
+              "radius": "6px",
+              "surface": "warm"
+            }
+          },
+          {
+            "id": "flat-bordered",
+            "label": "Flat bordered",
+            "spec": {
+              "shadows": "none",
+              "borders": "full navy hairline border, no gold",
+              "radius": "2px"
+            }
+          }
+        ]
+      },
+      "motifs": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+        },
+        "selected": "scale-steps",
+        "candidates": [
+          {
+            "id": "scale-steps",
+            "label": "Scale steps",
+            "spec": {
+              "name": "scale-steps",
+              "geometry": "an ascending sequence of ruled bars/steps with a gold checkpoint node at each landing",
+              "meaning": "'start → scale' — the 4-stage method: diagnosis → roadmap → implementation → operation",
+              "marks": [
+                "step-ascent",
+                "checkpoint-node"
+              ]
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "proposed"
+            }
+          },
+          {
+            "id": "ascent-line",
+            "label": "Ascent line",
+            "spec": {
+              "name": "ascent-line",
+              "geometry": "a single rising ruled line with gold nodes",
+              "meaning": "upward progression, abstract"
+            }
+          },
+          {
+            "id": "ledger-bracket",
+            "label": "Ledger bracket",
+            "spec": {
+              "name": "ledger-bracket",
+              "geometry": "corner ledger-rule bracket framing device"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+        },
+        "selected": "step-reveal",
+        "candidates": [
+          {
+            "id": "step-reveal",
+            "label": "Step reveal",
+            "spec": {
+              "behaviors": [
+                {
+                  "name": "step-build",
+                  "trigger": "cover/section entrance",
+                  "desc": "the ascending steps build one landing at a time; gold checkpoint nodes key last; no bounce"
+                },
+                {
+                  "name": "rule-draw",
+                  "trigger": "section divider",
+                  "desc": "the gold hairline rule draws left→right"
+                }
+              ],
+              "intensity": "subtle",
+              "speed": "calm-measured"
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "proposed"
+            }
+          },
+          {
+            "id": "rule-draw",
+            "label": "Rule draw",
+            "spec": {
+              "behaviors": [
+                {
+                  "name": "rule-draw",
+                  "trigger": "entrance",
+                  "desc": "ruled lines draw left→right"
+                }
+              ],
+              "intensity": "subtle"
+            }
+          },
+          {
+            "id": "deferred-motion",
+            "label": "Deferred",
+            "spec": {
+              "behaviors": [],
+              "note": "reserve, no motion"
+            }
+          }
+        ]
+      },
+      "patterns": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "no genuine pattern system — the brand's texture is ledger rules + the scale-steps motif, not a repeating pattern"
+        }
+      },
+      "photo": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "redundant with compiled images.manifest / images.overlay (documentary-muted treatment); grammar defers to the image system"
+        }
+      }
+    }
   }
 }
