@@ -688,7 +688,12 @@
               "darkFrequency": 1
             }
           }
-        ]
+        ],
+        "cssTokens": {
+          "--canvas-navy": "#0A1F3D",
+          "--canvas-paper": "#FAF8F3",
+          "--canvas-white": "#FFFFFF"
+        }
       },
       "gradients": {
         "status": "approved",
@@ -781,7 +786,14 @@
               "columns": "12-col symmetric, generous whitespace, minimal rules (gold divider under section heads only)"
             }
           }
-        ]
+        ],
+        "cssTokens": {
+          "--grid-max": "72rem",
+          "--grid-gutter": "2rem",
+          "--grid-margin": "6vw",
+          "--rule-column": "1px solid rgba(10,31,61,0.14)",
+          "--rule-divider": "1px solid #E8A33D"
+        }
       },
       "iconography": {
         "status": "approved",
@@ -877,7 +889,12 @@
               "radius": "2px"
             }
           }
-        ]
+        ],
+        "cssTokens": {
+          "--radius-card": "3px",
+          "--border-hairline": "1px solid rgba(10,31,61,0.16)",
+          "--rule-top": "2px solid #E8A33D"
+        }
       },
       "motifs": {
         "status": "approved",
@@ -922,7 +939,10 @@
               "geometry": "corner ledger-rule bracket framing device"
             }
           }
-        ]
+        ],
+        "cssTokens": {
+          "--checkpoint-node": "#E8A33D"
+        }
       },
       "motion": {
         "status": "approved",

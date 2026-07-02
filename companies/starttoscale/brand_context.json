@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "d8d4b26dc06c741e8c3fedeae63c1e2d32494f37b3fdec817bf31786364fb444",
+    "charterSha": "f6cea5efd100d0b185e4f14ec7eacdc787052deb4517861d78d92084ba5bc650",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -208,6 +208,11 @@
           "tier": "proposed"
         },
         "selected": "report-light",
+        "cssTokens": {
+          "--canvas-navy": "#0A1F3D",
+          "--canvas-paper": "#FAF8F3",
+          "--canvas-white": "#FFFFFF"
+        },
         "spec": {
           "canvases": [
             {
@@ -258,6 +263,13 @@
           "tier": "proposed"
         },
         "selected": "ruled-editorial",
+        "cssTokens": {
+          "--grid-max": "72rem",
+          "--grid-gutter": "2rem",
+          "--grid-margin": "6vw",
+          "--rule-column": "1px solid rgba(10,31,61,0.14)",
+          "--rule-divider": "1px solid #E8A33D"
+        },
         "spec": {
           "columns": "12-col symmetric",
           "gutter": "generous",
@@ -300,6 +312,11 @@
           "tier": "proposed"
         },
         "selected": "ledger-ruled",
+        "cssTokens": {
+          "--radius-card": "3px",
+          "--border-hairline": "1px solid rgba(10,31,61,0.16)",
+          "--rule-top": "2px solid #E8A33D"
+        },
         "spec": {
           "shadows": "none/minimal",
           "borders": "1px navy hairline border + a TOP gold hairline rule on cards (a statement/ledger header)",
@@ -315,6 +332,9 @@
           "tier": "proposed"
         },
         "selected": "scale-steps",
+        "cssTokens": {
+          "--checkpoint-node": "#E8A33D"
+        },
         "spec": {
           "name": "scale-steps",
           "geometry": "an ascending sequence of ruled bars/steps with a gold checkpoint node at each landing",
