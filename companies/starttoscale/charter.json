@@ -930,7 +930,7 @@
         "status": "approved",
         "required": false,
         "evidence": {
-          "tier": "approved",
+          "tier": "derived",
           "source": "William froze M1 Step Rail (Amber Ascent refresh) 2026-07-03; realised in _build/reviews/BRAND-Refined-Identity.html"
         },
         "selected": "scale-steps",
@@ -948,7 +948,7 @@
             },
             "tokens": [],
             "evidence": {
-              "tier": "approved"
+              "tier": "derived"
             }
           },
           {

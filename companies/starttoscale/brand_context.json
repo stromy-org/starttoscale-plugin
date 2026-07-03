@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "ab59fa706560bc48ea512ce7a366161f1aabcf5ee4885f95c56dd7fbda0f23f6",
+    "charterSha": "a444590d54715f807d18404df19378eb301144e52db1a2f64219f550ff25e3dc",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -377,7 +377,7 @@
         "status": "approved",
         "required": false,
         "evidence": {
-          "tier": "approved"
+          "tier": "derived"
         },
         "selected": "scale-steps",
         "cssTokens": {
