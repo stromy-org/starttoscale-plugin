@@ -6,16 +6,16 @@
     "slug": "starttoscale",
     "tagline_nl": "Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.",
     "tagline_en": "Finance that scales with you.",
-    "industry": "Financial advisory · fractional CFO",
+    "industry": "Financial advisory \u00b7 fractional CFO",
     "founder": "Wilgert Hart",
     "founderTitle": "Managing Partner",
-    "geography": "Netherlands (Amersfoort) — international touchpoints",
+    "geography": "Netherlands (Amersfoort) \u2014 international touchpoints",
     "primaryLanguage": "nl",
     "supportLanguages": [
       "en"
     ],
     "domain": "starttoscalefinance.com",
-    "backers": "Duke Strategies (Ingo Heijnen, Ariën Stuijt — silent partners)",
+    "backers": "Duke Strategies (Ingo Heijnen, Ari\u00ebn Stuijt \u2014 silent partners)",
     "archetype": {
       "primary": "Sage",
       "secondary": "Caregiver"
@@ -25,21 +25,21 @@
     "frozenDate": "2026-06-01",
     "buildDate": "2026-05-27",
     "decisions": {
-      "logo": "L3 — Three Steps Up (abstract mark, three rising bars)",
-      "palette": "P1 — Midnight Authority (navy + amber)",
-      "typography": "T1 — Newsreader + Inter",
-      "tagline_en": "TG1 — Finance that scales with you.",
+      "logo": "L3 \u2014 Three Steps Up (abstract mark, three rising bars)",
+      "palette": "P1 \u2014 Midnight Authority (navy + amber)",
+      "typography": "T1 \u2014 Newsreader + Inter",
+      "tagline_en": "TG1 \u2014 Finance that scales with you.",
       "imagery": [
-        "I1 — Architectural Minimalism",
-        "I2 — Data Clarity"
+        "I1 \u2014 Architectural Minimalism",
+        "I2 \u2014 Data Clarity"
       ]
     }
   },
   "brand": {
     "archetype": "Sage / Caregiver",
     "essence": "Senior CFO leadership that turns gut-feel finance into the structure a scale-up actually needs.",
-    "positioning": "Start to Scale Financial Management is the senior finance partner that takes a growing SME from the kladje-on-the-back-of-the-envelope to a fully professional finance function — diagnosis, roadmap, hands-on implementation, and ongoing operation. Wilgert Hart brings nearly 30 years of CFO experience at WPP, EMI and Warner Music Benelux, backed by a network of finance professionals.",
-    "audience": "Owners and boards of NL-based start-ups making the scale-up transition (€1M–€20M revenue, growing fast, finance still informal).",
+    "positioning": "Start to Scale Financial Management is the senior finance partner that takes a growing SME from the kladje-on-the-back-of-the-envelope to a fully professional finance function \u2014 diagnosis, roadmap, hands-on implementation, and ongoing operation. Wilgert Hart brings nearly 30 years of CFO experience at WPP, EMI and Warner Music Benelux, backed by a network of finance professionals.",
+    "audience": "Owners and boards of NL-based start-ups making the scale-up transition (\u20ac1M\u2013\u20ac20M revenue, growing fast, finance still informal).",
     "personality": [
       "Senior",
       "Calm",
@@ -68,17 +68,36 @@
     "heading": {
       "family": "Newsreader",
       "fallback": "Georgia, 'Times New Roman', serif",
-      "weight": "500"
+      "weight": "500",
+      "fallbackStack": [
+        "Georgia",
+        "Times New Roman",
+        "serif"
+      ],
+      "webSafe": "Georgia"
     },
     "body": {
       "family": "Inter",
       "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
-      "weight": "400"
+      "weight": "400",
+      "fallbackStack": [
+        "Segoe UI",
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Segoe UI"
     },
     "mono": {
       "family": "JetBrains Mono",
       "fallback": "'SF Mono', Consolas, 'Liberation Mono', monospace",
-      "weight": "400"
+      "weight": "400",
+      "fallbackStack": [
+        "Consolas",
+        "Courier New",
+        "monospace"
+      ],
+      "webSafe": "Consolas"
     },
     "googleFontsImport": "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
   },
@@ -128,7 +147,7 @@
           "divider",
           "closing"
         ],
-        "rationale": "Clean lines, controlled light, sense of order — visual proxy for the structured finance function S2S installs."
+        "rationale": "Clean lines, controlled light, sense of order \u2014 visual proxy for the structured finance function S2S installs."
       },
       {
         "id": "I2",
@@ -144,7 +163,7 @@
           "divider",
           "background"
         ],
-        "rationale": "Charts, tables, dashboards rendered as quiet objects — turning raw data into decision-grade insight."
+        "rationale": "Charts, tables, dashboards rendered as quiet objects \u2014 turning raw data into decision-grade insight."
       }
     ],
     "manifest": "images/manifest.json",
@@ -155,7 +174,7 @@
         "file": "images/16x9/i1-01-16x9.jpg",
         "branded": "images/branded/i1-01-branded.jpg",
         "textSafe": "images/text-safe/i1-01-text-safe.jpg",
-        "description": "Concrete corridor — strong shadow geometry",
+        "description": "Concrete corridor \u2014 strong shadow geometry",
         "roles": [
           "cover",
           "divider"
@@ -167,7 +186,7 @@
         "file": "images/16x9/i1-02-16x9.jpg",
         "branded": "images/branded/i1-02-branded.jpg",
         "textSafe": "images/text-safe/i1-02-text-safe.jpg",
-        "description": "Modernist facade — vertical rhythm",
+        "description": "Modernist facade \u2014 vertical rhythm",
         "roles": [
           "cover",
           "closing"
@@ -179,7 +198,7 @@
         "file": "images/16x9/i1-03-16x9.jpg",
         "branded": "images/branded/i1-03-branded.jpg",
         "textSafe": "images/text-safe/i1-03-text-safe.jpg",
-        "description": "Atrium — controlled overhead light",
+        "description": "Atrium \u2014 controlled overhead light",
         "roles": [
           "divider"
         ]
@@ -190,7 +209,7 @@
         "file": "images/16x9/i1-04-16x9.jpg",
         "branded": "images/branded/i1-04-branded.jpg",
         "textSafe": "images/text-safe/i1-04-text-safe.jpg",
-        "description": "Quiet interior — diagonal light, single chair",
+        "description": "Quiet interior \u2014 diagonal light, single chair",
         "roles": [
           "cover",
           "closing"
@@ -202,7 +221,7 @@
         "file": "images/16x9/i2-01-16x9.jpg",
         "branded": "images/branded/i2-01-branded.jpg",
         "textSafe": "images/text-safe/i2-01-text-safe.jpg",
-        "description": "Line chart on laptop — restrained editorial",
+        "description": "Line chart on laptop \u2014 restrained editorial",
         "roles": [
           "divider",
           "background"
@@ -214,7 +233,7 @@
         "file": "images/16x9/i2-02-16x9.jpg",
         "branded": "images/branded/i2-02-branded.jpg",
         "textSafe": "images/text-safe/i2-02-text-safe.jpg",
-        "description": "Printed report — tabular columns close-up",
+        "description": "Printed report \u2014 tabular columns close-up",
         "roles": [
           "divider",
           "background"
@@ -226,7 +245,7 @@
         "file": "images/16x9/i2-03-16x9.jpg",
         "branded": "images/branded/i2-03-branded.jpg",
         "textSafe": "images/text-safe/i2-03-text-safe.jpg",
-        "description": "Dashboard panel — analytical tile grid",
+        "description": "Dashboard panel \u2014 analytical tile grid",
         "roles": [
           "divider",
           "background"
@@ -238,7 +257,7 @@
         "file": "images/16x9/i2-04-16x9.jpg",
         "branded": "images/branded/i2-04-branded.jpg",
         "textSafe": "images/text-safe/i2-04-text-safe.jpg",
-        "description": "Charts on paper — high-contrast print",
+        "description": "Charts on paper \u2014 high-contrast print",
         "roles": [
           "divider",
           "background"
@@ -250,7 +269,7 @@
       "opacity": 0.55
     },
     "logoVariantOnImage": "white",
-    "_note": "8 sourced photos × 6 variants each (source, 16x9, 2x1, 1x1, text-safe, branded) = 48 files. Full per-file map and credits in images/manifest.json."
+    "_note": "8 sourced photos \u00d7 6 variants each (source, 16x9, 2x1, 1x1, text-safe, branded) = 48 files. Full per-file map and credits in images/manifest.json."
   },
   "document": {
     "paperSize": "A4",
@@ -467,7 +486,7 @@
   },
   "motif": {
     "name": "Three Steps",
-    "rationale": "Three ascending bars encode the brand's core promise: chaos → control → scale-up. Geometric, calm, repeatable at any scale.",
+    "rationale": "Three ascending bars encode the brand's core promise: chaos \u2192 control \u2192 scale-up. Geometric, calm, repeatable at any scale.",
     "files": {
       "primary": "assets/svg/motif-three-steps.svg",
       "divider": "assets/svg/divider-line.svg",
@@ -519,10 +538,10 @@
       "primary": "sage",
       "secondary": "caregiver",
       "status": "approved",
-      "rationale": "Primary Sage: Wilgert Hart's 30-year CFO background is expressed as structured, diagnostic wisdom — turning gut-feel finance into professional rigour. Caregiver is secondary and structural: the brand installs a finance function and stays on to operate it, a hands-on support role grounded in structure rather than emotional warmth. Confirmed by Wilgert 2026-06-01 (charter.json meta.archetype + BUILD_LOG Phase 0 decision)."
+      "rationale": "Primary Sage: Wilgert Hart's 30-year CFO background is expressed as structured, diagnostic wisdom \u2014 turning gut-feel finance into professional rigour. Caregiver is secondary and structural: the brand installs a finance function and stays on to operate it, a hands-on support role grounded in structure rather than emotional warmth. Confirmed by Wilgert 2026-06-01 (charter.json meta.archetype + BUILD_LOG Phase 0 decision)."
     },
     "essence": "Senior CFO leadership that turns gut-feel finance into the structure a scale-up actually needs.",
-    "positioning": "Start to Scale Financial Management is the senior finance partner that takes a growing SME from kladje-on-the-back-of-the-envelope to a fully professional finance function — diagnosis, roadmap, hands-on implementation, and ongoing operation. Wilgert Hart brings nearly 30 years of CFO experience at WPP, EMI and Warner Music Benelux, backed by a network of finance professionals.",
+    "positioning": "Start to Scale Financial Management is the senior finance partner that takes a growing SME from kladje-on-the-back-of-the-envelope to a fully professional finance function \u2014 diagnosis, roadmap, hands-on implementation, and ongoing operation. Wilgert Hart brings nearly 30 years of CFO experience at WPP, EMI and Warner Music Benelux, backed by a network of finance professionals.",
     "personalityTraits": [
       "Senior",
       "Calm",
@@ -543,11 +562,11 @@
     "confidence": "approved",
     "status": "approved",
     "principles": [
-      "Amber is a signal, not decoration — one amber element per surface (logo cap, CTA button, or data accent), never both a button and a link amber on the same page.",
-      "Body text is navy, not black — warmth and authority together; pure black reads cold and impersonal for a finance partner.",
-      "Backgrounds default to warm Paper (#FAF8F3), not pure white — paper reads as a professional partner, white reads as a software product.",
+      "Amber is a signal, not decoration \u2014 one amber element per surface (logo cap, CTA button, or data accent), never both a button and a link amber on the same page.",
+      "Body text is navy, not black \u2014 warmth and authority together; pure black reads cold and impersonal for a finance partner.",
+      "Backgrounds default to warm Paper (#FAF8F3), not pure white \u2014 paper reads as a professional partner, white reads as a software product.",
       "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Three Steps motif.",
-      "The Three Steps motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
+      "The Three Steps motif is a signature, not a pattern \u2014 used once per visible surface, never tiled at full opacity outside the background pattern tile (\u22648% opacity).",
       "Board-table voice: name what is broken, then say what fixes it. No jargon, no false urgency, no brochure register.",
       "Images always carry a 55% navy tint overlay on hero/cover surfaces; the white logo variant is used on all image surfaces."
     ],
@@ -563,26 +582,26 @@
       "ornament": "restrained"
     },
     "signatureElements": [
-      "Three ascending bars (ratio 1:1.8:2.6, bar width 12, gap 6) with a single amber cap on the tallest bar — the only place amber appears in the mark.",
-      "Warm Paper background (#FAF8F3) as default surface, not pure white — distinguishes the advisory register from a software product.",
-      "Navy-90 / amber-10 horizontal divider (thin 1.5px line with amber terminal at right) — encodes the 'ascend' direction, structural punctuation between sections.",
-      "NL three-line tagline staircase as typographic hero — structurally echoes the ascending bar motif and is never translated literally to English.",
-      "Newsreader Medium (contemporary literary serif, -0.02em tracking) for all display and heading — carries the considered, sage register without classical stiffness.",
-      "Inter overline caps at 0.18em tracking, 11px — labels sections, wordmark subtitle 'FINANCIAL MANAGEMENT', badges; same tracking as the logo caption.",
-      "JetBrains Mono reserved exclusively for numbers, tables, and data-adjacent contexts — signals that figures are decision-grade, not decoration.",
-      "Dual image themes of equal weight: Architectural Minimalism (structural still-life) and Data Clarity (charts/dashboards as quiet artefacts) — no people, no handshakes, no mountains."
+      "Three ascending bars (ratio 1:1.8:2.6, bar width 12, gap 6) with a single amber cap on the tallest bar \u2014 the only place amber appears in the mark.",
+      "Warm Paper background (#FAF8F3) as default surface, not pure white \u2014 distinguishes the advisory register from a software product.",
+      "Navy-90 / amber-10 horizontal divider (thin 1.5px line with amber terminal at right) \u2014 encodes the 'ascend' direction, structural punctuation between sections.",
+      "NL three-line tagline staircase as typographic hero \u2014 structurally echoes the ascending bar motif and is never translated literally to English.",
+      "Newsreader Medium (contemporary literary serif, -0.02em tracking) for all display and heading \u2014 carries the considered, sage register without classical stiffness.",
+      "Inter overline caps at 0.18em tracking, 11px \u2014 labels sections, wordmark subtitle 'FINANCIAL MANAGEMENT', badges; same tracking as the logo caption.",
+      "JetBrains Mono reserved exclusively for numbers, tables, and data-adjacent contexts \u2014 signals that figures are decision-grade, not decoration.",
+      "Dual image themes of equal weight: Architectural Minimalism (structural still-life) and Data Clarity (charts/dashboards as quiet artefacts) \u2014 no people, no handshakes, no mountains."
     ],
     "antiPatterns": [
       "Multiple amber elements on a single surface (amber is a single-use signal per page).",
-      "Pure black (#000000) or pure white (#FFFFFF) as primary background or body text — both break the warm advisory register.",
+      "Pure black (#000000) or pure white (#FFFFFF) as primary background or body text \u2014 both break the warm advisory register.",
       "Gradients on body sections (gradientDirection is 'none' by design; gradient only appears in nav-amber-diag pptx asset).",
-      "Tilted, rotated, or recoloured Three Steps motif — must be upright navy bars with amber cap, no exceptions.",
-      "Fourth bar or dropped bar in the motif — the 1:1.8:2.6 progression is load-bearing meaning.",
+      "Tilted, rotated, or recoloured Three Steps motif \u2014 must be upright navy bars with amber cap, no exceptions.",
+      "Fourth bar or dropped bar in the motif \u2014 the 1:1.8:2.6 progression is load-bearing meaning.",
       "Mountains, Alpine, Dolomite, or Dutch-landscape stock photography (explicitly flagged by Wilgert Hart).",
-      "Handshake or suits-in-meeting stock photography — contra the architectural and data-clarity direction.",
+      "Handshake or suits-in-meeting stock photography \u2014 contra the architectural and data-clarity direction.",
       "Mixed NL+EN within the same sentence in copy.",
       "Buzzwords: 'synergy', 'next-level', 'agile', or any phrase that sounds like a brochure.",
-      "Pattern tile at full opacity on reading surfaces — restricted to 6–8% opacity on slide/section backgrounds only."
+      "Pattern tile at full opacity on reading surfaces \u2014 restricted to 6\u20138% opacity on slide/section backgrounds only."
     ],
     "requiredMotifs": [
       "Three Steps ascending bars on all deliverable covers (small, left-aligned over section title in decks; as hero accent below the NL tagline on web).",
@@ -631,7 +650,7 @@
         "required": false,
         "evidence": {
           "tier": "proposed",
-          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+          "source": "seeded from identity.personalityAxes (Senior\u00b7Calm\u00b7Structured\u00b7Pragmatic\u00b7Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
         },
         "selected": "report-light",
         "candidates": [
@@ -656,7 +675,7 @@
                   "css": "#FFFFFF"
                 }
               ],
-              "rhythm": "light-dominant editorial — warm paper is the default surface; navy reserved for the cover, section dividers, and 'key figures' panels",
+              "rhythm": "light-dominant editorial \u2014 warm paper is the default surface; navy reserved for the cover, section dividers, and 'key figures' panels",
               "darkFrequency": 1,
               "photo": {
                 "treatment": "documentary-muted, full-bleed hero",
@@ -700,7 +719,7 @@
         "required": false,
         "evidence": {
           "tier": "proposed",
-          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+          "source": "seeded from identity.personalityAxes (Senior\u00b7Calm\u00b7Structured\u00b7Pragmatic\u00b7Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
         },
         "selected": "flat-structural",
         "candidates": [
@@ -750,7 +769,7 @@
         "required": false,
         "evidence": {
           "tier": "proposed",
-          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+          "source": "seeded from identity.personalityAxes (Senior\u00b7Calm\u00b7Structured\u00b7Pragmatic\u00b7Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
         },
         "selected": "ruled-editorial",
         "candidates": [
@@ -800,7 +819,7 @@
         "required": false,
         "evidence": {
           "tier": "proposed",
-          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+          "source": "seeded from identity.personalityAxes (Senior\u00b7Calm\u00b7Structured\u00b7Pragmatic\u00b7Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
         },
         "selected": "navy-gold-keyline",
         "candidates": [
@@ -814,7 +833,7 @@
               "joins": "miter",
               "fillVsLine": "navy line-dominant + ONE small gold filled checkpoint node per glyph (distinct from Duke's plain hairline)",
               "extensible": true,
-              "setPolicy": "OPEN set — icons drawn to this STYLE on demand per slide/section need; the sample is representative, not a closed set",
+              "setPolicy": "OPEN set \u2014 icons drawn to this STYLE on demand per slide/section need; the sample is representative, not a closed set",
               "sample": [
                 "roadmap-steps",
                 "gauge",
@@ -852,7 +871,7 @@
         "required": false,
         "evidence": {
           "tier": "proposed",
-          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+          "source": "seeded from identity.personalityAxes (Senior\u00b7Calm\u00b7Structured\u00b7Pragmatic\u00b7Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
         },
         "selected": "ledger-ruled",
         "candidates": [
@@ -901,7 +920,7 @@
         "required": false,
         "evidence": {
           "tier": "proposed",
-          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+          "source": "seeded from identity.personalityAxes (Senior\u00b7Calm\u00b7Structured\u00b7Pragmatic\u00b7Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
         },
         "selected": "scale-steps",
         "candidates": [
@@ -911,7 +930,7 @@
             "spec": {
               "name": "scale-steps",
               "geometry": "an ascending sequence of ruled bars/steps with a gold checkpoint node at each landing",
-              "meaning": "'start → scale' — the 4-stage method: diagnosis → roadmap → implementation → operation",
+              "meaning": "'start \u2192 scale' \u2014 the 4-stage method: diagnosis \u2192 roadmap \u2192 implementation \u2192 operation",
               "marks": [
                 "step-ascent",
                 "checkpoint-node"
@@ -949,7 +968,7 @@
         "required": false,
         "evidence": {
           "tier": "proposed",
-          "source": "seeded from identity.personalityAxes (Senior·Calm·Structured·Pragmatic·Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
+          "source": "seeded from identity.personalityAxes (Senior\u00b7Calm\u00b7Structured\u00b7Pragmatic\u00b7Trustworthy) + expression.visualAxes + palette (navy #0A1F3D, gold #E8A33D, warm paper #FAF8F3, Newsreader serif); GATE A 2026-07-01 (William)"
         },
         "selected": "step-reveal",
         "candidates": [
@@ -966,7 +985,7 @@
                 {
                   "name": "rule-draw",
                   "trigger": "section divider",
-                  "desc": "the gold hairline rule draws left→right"
+                  "desc": "the gold hairline rule draws left\u2192right"
                 }
               ],
               "intensity": "subtle",
@@ -985,7 +1004,7 @@
                 {
                   "name": "rule-draw",
                   "trigger": "entrance",
-                  "desc": "ruled lines draw left→right"
+                  "desc": "ruled lines draw left\u2192right"
                 }
               ],
               "intensity": "subtle"
@@ -1006,7 +1025,7 @@
         "required": false,
         "evidence": {
           "tier": "proposed",
-          "source": "no genuine pattern system — the brand's texture is ledger rules + the scale-steps motif, not a repeating pattern"
+          "source": "no genuine pattern system \u2014 the brand's texture is ledger rules + the scale-steps motif, not a repeating pattern"
         }
       },
       "photo": {
