@@ -37,7 +37,7 @@
   "logos": [
     {
       "name": "apple-touch-icon-180.png",
-      "sha256": "ef253f73d9dc7fc63b1472ebafe087a0cbc008ed243b64c55a5d842146a87f8e",
+      "sha256": "a5e9dea865ecf4702e24314a85bc314be2a3ddf958c79c4dfc48c5dcd0216839",
       "mime": "image/png"
     },
     {
@@ -52,22 +52,22 @@
     },
     {
       "name": "favicon-16.png",
-      "sha256": "f06b32e2e2dc63eb5dacbb6ac397c957e42e913b07b6d0c87b89cdb777ca45b3",
+      "sha256": "a683504024c9045707201b70be390f441051436e0a906e8c6ec25c8ba649764a",
       "mime": "image/png"
     },
     {
       "name": "favicon-192.png",
-      "sha256": "ca3f7d85b04d21b4d18ae5a87d839e18adad84f7da220e34dccfa4b511212298",
+      "sha256": "2345bb8779ccc033f568924d1cd6c0b5778b468302ca32b29c68de49810e340d",
       "mime": "image/png"
     },
     {
       "name": "favicon-32.png",
-      "sha256": "c1aba9832656d058a9b059e8f86d55004df41b2fb60b9d9f09e1bebcc015b206",
+      "sha256": "85e95ef653bcf1ac33f95836a9d98655f6db44e4b916b5f7141947a8344b1b3a",
       "mime": "image/png"
     },
     {
       "name": "favicon-512.png",
-      "sha256": "62ed330b8824f1b8ce3eb31f0ba07fbf733c2dcc7fd267f2366f4bdb69d4d484",
+      "sha256": "70a9056f34e45a6a53a151aeb068b53029fb566ed0b7edd1b2859bec1e1bfffd",
       "mime": "image/png"
     },
     {
@@ -77,7 +77,7 @@
     },
     {
       "name": "icon_dark.png",
-      "sha256": "849b927fa474b393d74d8a2cbe155db936ed5925b2ecaa8282b3ad1b27e4fae5",
+      "sha256": "b115f5ffc6e3da320cf22c61f3e55cd9eecc8cc879e41aef3539f65b715dfb4c",
       "mime": "image/png"
     },
     {
@@ -87,22 +87,22 @@
     },
     {
       "name": "logo.png",
-      "sha256": "05a0d03b59da09ce314264ee0c1e24562b6c8752db8ed326a03e8b7e76d7b27d",
+      "sha256": "5266d68535c3bd5d540eaf8b4fd960c61befcd44b5b90dd1df12d1c7c179a98d",
       "mime": "image/png"
     },
     {
       "name": "logo.svg",
-      "sha256": "0662f5bd53ed7b2819ff16c64c3c60321d37cc3bb30a87741bd564e21f0eb75f",
+      "sha256": "e80af8601b06863eb45869420421e0bad1c5f2851d9da4088170c9662021aaf6",
       "mime": "image/svg+xml"
     },
     {
       "name": "logo@2x.png",
-      "sha256": "43d95a2a9ace9b415177b1f8c0fd0d8f090aa8736cef8b23b8e0ec55650f585e",
+      "sha256": "7bd8a02efb085f08ffcde05f3adb42f835f45cc951410c011c8381824957cf88",
       "mime": "image/png"
     },
     {
       "name": "logo@3x.png",
-      "sha256": "3898c1126eecc157ed372ffc79d4226fb44bc3e954045ea31a4c7a388c4afe32",
+      "sha256": "eeac3f709847eb2e80b7396ebd8b1ccc2f08f33b1439c78831658ba171bf5e99",
       "mime": "image/png"
     },
     {
@@ -117,7 +117,7 @@
     },
     {
       "name": "logo_white.png",
-      "sha256": "3cba87dd6ee3119df5c328c705f1f484986849d47bc6e91c923b740b2e9e0749",
+      "sha256": "76bf2e391e96df789d7545e3efffbc36bd4cfe2a6579621335c498b6f426d4c8",
       "mime": "image/png"
     },
     {
@@ -127,7 +127,7 @@
     },
     {
       "name": "logo_white@2x.png",
-      "sha256": "44c07ab5f59f42c6aab3fed06ab6c0f90490993257ded200b76e840211144501",
+      "sha256": "f3a79cc5274690c9dacd47d1d0336357e54437f26709a4c9cc80fe8f489fb64c",
       "mime": "image/png"
     },
     {
@@ -142,7 +142,7 @@
     },
     {
       "name": "symbol.png",
-      "sha256": "8c7b30fd39d5507578c5d72b0148c542c834b216b8e55325cce03a31eb74b6b5",
+      "sha256": "b896c222831279d251a13184ef6aa4f35b13ee5cfb4c750ee823879de4c4baac",
       "mime": "image/png"
     },
     {
@@ -152,7 +152,7 @@
     },
     {
       "name": "symbol_white.png",
-      "sha256": "dbe85b08215cc3e012906072b2a64422fa8fffce1645470a9302d1610abf579b",
+      "sha256": "bdcf8df77c166e1de7b0bc9367f693a68c26a3b38c23079d54ac3f50f043fb1a",
       "mime": "image/png"
     },
     {
