@@ -95,9 +95,10 @@
   --info-light:          #E5EAF1;
 
   /* -- Typography --------------------------------------------- */
-  --font-display:        'Newsreader', Georgia, 'Times New Roman', serif;
-  --font-heading:        'Newsreader', Georgia, 'Times New Roman', serif;
-  --font-body:           'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-display:        'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-heading:        'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:           'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-label:          'Archivo', 'Helvetica Neue', Arial, sans-serif;   /* small-title / eyebrow (Component L) */
   --font-mono:           'JetBrains Mono', 'SF Mono', Consolas, 'Liberation Mono', monospace;
 
   /* -- Type Scale --------------------------------------------- */
@@ -133,13 +134,15 @@
   --tracking-wide:       0.04em;
   --tracking-wider:      0.08em;
   --tracking-widest:     0.18em;       /* Overlines, FINANCIAL MANAGEMENT caption */
+  --tracking-label:      0.20em;       /* Step Rail eyebrow / small-title (Archivo caps) */
 
   /* -- Font Weights ------------------------------------------- */
   --weight-light:        300;
   --weight-regular:      400;
-  --weight-medium:       500;          /* Newsreader display default */
+  --weight-medium:       500;          /* Archivo medium */
   --weight-semibold:     600;
   --weight-bold:         700;
+  --weight-extrabold:    800;          /* Archivo hero / display (D6) */
 
   /* -- Spacing Scale (4px base) ------------------------------- */
   --space-1:   0.25rem;
@@ -177,16 +180,19 @@
   --duration-normal: 240ms;
   --duration-slow:   480ms;
 
-  /* -- Brand Motif (Three Steps) ------------------------------ */
+  /* -- Brand Motif (Step Rail — 4 bars, +18% geometric ascent) - */
   --motif-line-color:       var(--brand-primary);
   --motif-line-color-light: var(--navy-300);
   --motif-accent-color:     var(--brand-accent);
-  --motif-line-weight:      1.5px;
-  --motif-bar-width:        12px;
+  --motif-bar-radius:       1px;
+  --motif-bar-width:        16px;
   --motif-bar-gap:          6px;
-  --motif-step-ratio-1:     1;
-  --motif-step-ratio-2:     1.8;
-  --motif-step-ratio-3:     2.6;
+  --motif-bars:             4;
+  --motif-step-ratio:       1.18;      /* each bar +18% taller than the last */
+  --motif-step-h-1:         0.40;      /* relative heights of the 4 bars */
+  --motif-step-h-2:         0.59;
+  --motif-step-h-3:         0.79;
+  --motif-step-h-4:         1.00;
 
   /* -- Layout ------------------------------------------------- */
   --content-width:    720px;
@@ -198,9 +204,10 @@
    UTILITY CLASSES
    ============================================================ */
 
-.font-display { font-family: var(--font-display); font-weight: var(--weight-medium); letter-spacing: var(--tracking-tight); }
+.font-display { font-family: var(--font-display); font-weight: var(--weight-extrabold); letter-spacing: var(--tracking-tight); }
 .font-body    { font-family: var(--font-body);    font-weight: var(--weight-regular); }
 .font-mono    { font-family: var(--font-mono);    font-weight: var(--weight-regular); }
+.font-label   { font-family: var(--font-label);   font-weight: var(--weight-semibold); letter-spacing: var(--tracking-label); text-transform: uppercase; }
 
 .text-primary   { color: var(--brand-primary); }
 .text-accent    { color: var(--brand-accent); }
@@ -210,10 +217,10 @@
 .bg-surface-alt { background: var(--brand-background-alt); }
 
 .overline {
-  font-family: var(--font-body);
+  font-family: var(--font-label);
   font-size: var(--text-overline);
-  font-weight: var(--weight-medium);
-  letter-spacing: var(--tracking-widest);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-label);
   text-transform: uppercase;
   color: var(--brand-text-light);
 }

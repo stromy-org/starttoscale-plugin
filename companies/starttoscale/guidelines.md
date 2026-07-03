@@ -86,23 +86,23 @@ Senior · Calm · Structured · Pragmatic · Trustworthy
 | `logos/icon_dark.svg` | 96×96 navy-rounded-square icon (app icon, large favicon). |
 | `logos/favicon.svg` | 64×64 navy-rounded-square favicon. |
 
-**Construction:**
-- Three bars, navy, ascending in the ratio 1 : 1.8 : 2.6.
-- Bar width 12 units, gap between bars 6 units.
-- The tallest bar carries a 12-unit amber cap at the top — this is the only place amber appears in the mark.
-- The wordmark is set in Newsreader Medium with a 13px Inter caption beneath, tracked 0.18em, reading `FINANCIAL MANAGEMENT`.
+**Construction (Step Rail):**
+- Four bars in a fixed geometric ascent — each bar is +18% taller than the one before.
+- Bar width 16 units, gap between bars 6 units, 1px corner radius.
+- The mark is **single-colour**: amber on navy (hero), navy on paper (marks). No two-tone cap — the ascent itself is the signature.
+- The wordmark is set in **Archivo Bold** with an Archivo caption beneath, tracked 0.20em, reading `FINANCIAL MANAGEMENT`.
 
 **Clear space:** Minimum clear space around the wordmark = height of the tallest bar. Don't crowd it.
 
-**Minimum size:** Wordmark 120px wide. Symbol 16px (favicon) is the smallest deployment.
+**Minimum size:** Wordmark 120px wide. Symbol 16px (favicon) is the smallest deployment — all four bars must remain visible.
 
 **Don't:**
-- Don't recolour the bars. Navy + amber cap, always.
-- Don't drop the amber cap from the standalone symbol — that cap is the brand signature.
-- Don't add a tagline lockup until tagline-locked variants are produced.
-- Don't outline-stroke the bars. They are solid rectangles.
+- Don't recolour the bars mid-mark. The rail is one colour at a time.
+- Don't drop a bar or add a fifth. Four bars, +18% ascent — that progression is the meaning.
+- Don't round the bars into a "bar-chart" look; the 1px radius is the maximum.
+- Don't tilt or rotate. The rail is upright, always.
 
-> ⚠️ The wordmark SVGs use `<text>` referencing the Newsreader webfont. Before deploying to print/PDF or contexts where Newsreader may not be available, convert the wordmark text to outlined paths (Illustrator, fontTools, or Inkscape "Object to Path").
+> ⚠️ The wordmark SVGs use `<text>` referencing the Archivo webfont. Before deploying to print/PDF or contexts where Archivo may not be available, convert the wordmark text to outlined paths (Illustrator, fontTools, or Inkscape "Object to Path"). The Step Rail symbol/motif SVGs are pure geometry and need no conversion.
 
 ---
 
@@ -144,11 +144,12 @@ Each semantic has a `-light` variant for background fills.
 
 | Role | Family | Weight | Source |
 |---|---|---|---|
-| Display / Headings | Newsreader | 500 (Medium) | Google Fonts |
-| Body | Inter | 400 (Regular) | Google Fonts |
+| Display / Headings | Archivo | 700–800 (Bold) | Google Fonts (OFL) |
+| Body | Archivo | 400 (Regular) | Google Fonts (OFL) |
+| Label / Eyebrow (Component L) | Archivo | 600, UPPER, tracked 0.20em | Google Fonts (OFL) |
 | Mono / Data | JetBrains Mono | 400 | Google Fonts |
 
-**Pairing logic:** Newsreader is a contemporary serif with a literary, considered tone — it carries the Sage archetype. Inter is the workhorse — invisible, legible, neutral. JetBrains Mono is reserved for numbers, tables, and code-adjacent surfaces.
+**Pairing logic:** Archivo is a confident, engineered grotesque with a wide weight range — it carries the Sage archetype as *diagnostic clarity* rather than literary warmth, and reads as modern and precise for a senior finance buyer. Hierarchy comes from weight + case + tracking within one family (Bold display → Regular body → 600-caps eyebrow), not a second typeface. JetBrains Mono is reserved for numbers, tables, and code-adjacent surfaces so columns align. The **eyebrow / small-title** is Archivo caps at 0.20em tracking — a deliberate brand signal, never the shared mono default.
 
 **Type scale** (defined in `tokens.css`):
 
@@ -166,37 +167,38 @@ Each semantic has a `-light` variant for background fills.
 | `--text-overline` | 11px | Overlines (tracked 0.18em uppercase) |
 
 **Rules:**
-- Headings in Newsreader Medium with `--tracking-tight` (-0.02em).
-- Body in Inter Regular with `--leading-body` (1.7).
-- Overlines and the wordmark caption are tracked `--tracking-widest` (0.18em), uppercase, Inter Medium.
+- Headings in Archivo Bold (700, or 800 for display) with `--tracking-tight` (-0.02em).
+- Body in Archivo Regular with `--leading-body` (1.7).
+- Overlines / eyebrows and the wordmark caption are tracked `--tracking-label` (0.20em), uppercase, Archivo Semibold (`.font-label` / `.overline`).
 - Numbers in data contexts use JetBrains Mono so columns align.
 
 ---
 
-## 7. Motif — Three Steps
+## 7. Motif — Step Rail
 
-**Construction:** Three rectangles, ascending in ratio 1 : 1.8 : 2.6, bar width 12, gap 6, accented by a 12-unit amber cap on the tallest bar.
+**Construction:** Four rectangles in a fixed +18% geometric ascent (relative heights ≈ 0.40 / 0.59 / 0.79 / 1.00), bar width 16, gap 6, 1px corner radius. Single-colour: amber on navy, navy on paper. It doubles as the standalone symbol, the divider, and a data-bar language.
 
 **Files:**
 
 | File | Use |
 |---|---|
-| `assets/svg/motif-three-steps.svg` | Primary motif — section openers, slide divider corners, hero accents |
-| `assets/svg/divider-line.svg` | Section rule — 90% navy, 10% amber on the right |
+| `assets/svg/motif-step-rail.svg` | Primary motif — section openers, slide divider corners, hero accents |
+| `assets/svg/divider-line.svg` | Section rule — short ascending rail at the left + navy rule |
 | `assets/svg/divider-line-white.svg` | Same rule, white on dark |
-| `assets/svg/pattern-tile.svg` | Background tile at 6–8% opacity — for slide backgrounds, never main reading surfaces |
+| `assets/svg/pattern-tile.svg` | Background tile at 8–10% opacity — for slide backgrounds, never main reading surfaces |
 
 **Where the motif lives:**
 - Section openers in presentations (small, left-aligned over the section title)
-- Top-right corner of business-card backs
+- Top-right corner of business-card backs and PDF/slide covers
 - Cover marks on PDF reports
-- The right-end of horizontal dividers (the amber 10% encodes the "ascend" direction)
-- As a hero accent below the NL three-line tagline
+- The left of horizontal dividers (the ascent encodes the "start → scale" direction)
+- As a hero accent beside the NL three-line tagline
+- Micro-scale: KPI-row bullets and data annotations (the rail reads as a mini bar-language)
 
 **Don't:**
-- Don't use the motif more than once per visible surface (it is a signature, not a pattern).
-- Don't add a fourth bar. Don't drop a bar. The ratio is part of the meaning.
-- Don't tilt or rotate. The motif is upright, always.
+- Don't use the motif more than once as a *signature* per visible surface (its data-bar use is separate).
+- Don't drop a bar or add a fifth. Four bars, +18% ascent, is the meaning.
+- Don't round the bars beyond 1px or tilt/rotate the rail. It is upright, always.
 
 ---
 
@@ -235,7 +237,7 @@ Tokenised utility classes ship in `tokens.css`:
 - `.card` — white card on paper with thin neutral border.
 - `.badge-success / -warning / -error / -info` — small semantic badges.
 - `.divider` — horizontal rule with the navy-90 / amber-10 split.
-- `.overline` — 11px Inter Medium uppercase, tracked 0.18em.
+- `.overline` / `.font-label` — 11px Archivo Semibold uppercase, tracked 0.20em (Step Rail eyebrow).
 
 ---
 
@@ -254,7 +256,7 @@ Tokenised utility classes ship in `tokens.css`:
 - `templates/docx/letterhead.docx` — fixed-layout letterhead with continuation page
 - `pptx-assets/` — branded gradient + photo overlay + motif tile PNGs for the `pptx-hd` skill
 - `templates/pptx/` — HTML page shells (cover, section-divider, content, closing, footer-bar)
-- `brand/fonts/` — TTF/OTF for Newsreader, Inter, JetBrains Mono (optional embed for offline DOCX/PPTX)
+- `fonts/` — TTF/OTF for Archivo, JetBrains Mono (embedded for DOCX/PPTX/PDF)
 - `logos/*.png` — pre-rendered PNG variants of every logo SVG (favicon-16/32/180/192, logo + logo_white at 1x/2x/3x)
 
 These are tracked in `BUILD_LOG.md § Phase 5` and require a Node + Sharp + docx-js rendering pass to materialise.
