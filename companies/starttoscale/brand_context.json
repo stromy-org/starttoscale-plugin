@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "a444590d54715f807d18404df19378eb301144e52db1a2f64219f550ff25e3dc",
+    "charterSha": "15346546f12a36409e53469784be83f53a913be85feb8ef43145e1e158f8bfc0",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -210,8 +210,8 @@
       "Amber is a signal, not decoration — one amber element per surface (logo cap, CTA button, or data accent), never both a button and a link amber on the same page.",
       "Body text is navy, not black — warmth and authority together; pure black reads cold and impersonal for a finance partner.",
       "Backgrounds default to warm Paper (#FAF8F3), not pure white — paper reads as a professional partner, white reads as a software product.",
-      "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Three Steps motif.",
-      "The Three Steps motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
+      "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Step Rail ascent.",
+      "The Step Rail motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
       "Board-table voice: name what is broken, then say what fixes it. No jargon, no false urgency, no brochure register.",
       "Images always carry a 55% navy tint overlay on hero/cover surfaces; the white logo variant is used on all image surfaces."
     ],
@@ -227,12 +227,12 @@
       "ornament": "restrained"
     },
     "signatureElements": [
-      "Three ascending bars (ratio 1:1.8:2.6, bar width 12, gap 6) with a single amber cap on the tallest bar — the only place amber appears in the mark.",
+      "Step Rail — four bars in a fixed +18% geometric ascent (relative heights ≈ 0.40 / 0.59 / 0.79 / 1.00, bar width 16, gap 6, 1px radius), single-colour (amber on navy, navy on paper); the ascent itself is the signature — no two-tone cap.",
       "Warm Paper background (#FAF8F3) as default surface, not pure white — distinguishes the advisory register from a software product.",
       "Navy-90 / amber-10 horizontal divider (thin 1.5px line with amber terminal at right) — encodes the 'ascend' direction, structural punctuation between sections.",
-      "NL three-line tagline staircase as typographic hero — structurally echoes the ascending bar motif and is never translated literally to English.",
-      "Newsreader Medium (contemporary literary serif, -0.02em tracking) for all display and heading — carries the considered, sage register without classical stiffness.",
-      "Inter overline caps at 0.18em tracking, 11px — labels sections, wordmark subtitle 'FINANCIAL MANAGEMENT', badges; same tracking as the logo caption.",
+      "NL three-line tagline staircase as typographic hero — structurally echoes the Step Rail ascent and is never translated literally to English.",
+      "Archivo Bold (700, or 800 for display) with -0.02em tracking for all display and heading — an engineered grotesque that carries the Sage register as diagnostic clarity rather than literary warmth.",
+      "Archivo Semibold (600) overline caps at 0.20em tracking, 11px — labels sections, wordmark caption 'FINANCIAL MANAGEMENT', badges; hierarchy comes from weight + case + tracking within one family, not a second typeface.",
       "JetBrains Mono reserved exclusively for numbers, tables, and data-adjacent contexts — signals that figures are decision-grade, not decoration.",
       "Dual image themes of equal weight: Architectural Minimalism (structural still-life) and Data Clarity (charts/dashboards as quiet artefacts) — no people, no handshakes, no mountains."
     ],
@@ -240,8 +240,8 @@
       "Multiple amber elements on a single surface (amber is a single-use signal per page).",
       "Pure black (#000000) or pure white (#FFFFFF) as primary background or body text — both break the warm advisory register.",
       "Gradients on body sections (gradientDirection is 'none' by design; gradient only appears in nav-amber-diag pptx asset).",
-      "Tilted, rotated, or recoloured Three Steps motif — must be upright navy bars with amber cap, no exceptions.",
-      "Fourth bar or dropped bar in the motif — the 1:1.8:2.6 progression is load-bearing meaning.",
+      "Tilted, rotated, or two-tone Step Rail motif — must be upright, single-colour bars (amber on navy, navy on paper), no exceptions.",
+      "Dropping a bar or adding a fifth — four bars in a +18% ascent is load-bearing meaning.",
       "Mountains, Alpine, Dolomite, or Dutch-landscape stock photography (explicitly flagged by Wilgert Hart).",
       "Handshake or suits-in-meeting stock photography — contra the architectural and data-clarity direction.",
       "Mixed NL+EN within the same sentence in copy.",
@@ -451,8 +451,8 @@
         "Amber is a signal, not decoration — one amber element per surface (logo cap, CTA button, or data accent), never both a button and a link amber on the same page.",
         "Body text is navy, not black — warmth and authority together; pure black reads cold and impersonal for a finance partner.",
         "Backgrounds default to warm Paper (#FAF8F3), not pure white — paper reads as a professional partner, white reads as a software product.",
-        "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Three Steps motif.",
-        "The Three Steps motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
+        "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Step Rail ascent.",
+        "The Step Rail motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
         "Board-table voice: name what is broken, then say what fixes it. No jargon, no false urgency, no brochure register.",
         "Images always carry a 55% navy tint overlay on hero/cover surfaces; the white logo variant is used on all image surfaces."
       ]
@@ -473,8 +473,8 @@
         "Amber is a signal, not decoration — one amber element per surface (logo cap, CTA button, or data accent), never both a button and a link amber on the same page.",
         "Body text is navy, not black — warmth and authority together; pure black reads cold and impersonal for a finance partner.",
         "Backgrounds default to warm Paper (#FAF8F3), not pure white — paper reads as a professional partner, white reads as a software product.",
-        "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Three Steps motif.",
-        "The Three Steps motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
+        "The NL three-line hero tagline ('Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.') is the primary headline on every deliverable cover; its staircase rhythm mirrors the Step Rail ascent.",
+        "The Step Rail motif is a signature, not a pattern — used once per visible surface, never tiled at full opacity outside the background pattern tile (≤8% opacity).",
         "Board-table voice: name what is broken, then say what fixes it. No jargon, no false urgency, no brochure register.",
         "Images always carry a 55% navy tint overlay on hero/cover surfaces; the white logo variant is used on all image surfaces."
       ]
@@ -1513,7 +1513,7 @@
     "maxWidth": "180pt",
     "maxHeight": "60pt",
     "sizing": "contain",
-    "_note": "Wordmark PNGs render via rsvg-convert with system font fallback (Georgia for Newsreader, system-ui for Inter). Convert wordmark SVG text to outlined paths via fontTools before final production print/PDF for exact Newsreader fidelity.",
+    "_note": "Wordmark PNGs render via rsvg-convert with system-font fallback (Arial/Helvetica for Archivo). Convert wordmark SVG text to outlined paths via fontTools before final production print/PDF for exact Archivo fidelity.",
     "short": "logos/logo_short.svg",
     "shortWhite": "logos/logo_short_white.svg"
   },

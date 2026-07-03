@@ -2,20 +2,20 @@
   "version": "1.0",
   "fonts": [
     {
-      "family": "Inter",
-      "weight": 400,
+      "family": "Archivo",
+      "weight": 600,
       "style": "italic",
-      "sha256": "acd98e64795781b2058f07b18475e0ecee2a0fe2b42a49e2f9e37d0d6bf66ce6",
+      "sha256": "305d13b4eb80e62f7d517f78d7c045250d977552a420f2dbed906f314e761305",
       "mime": "font/ttf",
-      "name": "Inter-Italic[opsz,wght].ttf"
+      "name": "Archivo-Italic[wdth,wght].ttf"
     },
     {
-      "family": "Inter",
-      "weight": 400,
+      "family": "Archivo",
+      "weight": 600,
       "style": "normal",
-      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
       "mime": "font/ttf",
-      "name": "Inter[opsz,wght].ttf"
+      "name": "Archivo[wdth,wght].ttf"
     },
     {
       "family": "JetBrains Mono",
@@ -32,22 +32,6 @@
       "sha256": "b6b1ff4ddefe36d7f2a6174e1d001cab374e594519ee9049af028d577b64c5f5",
       "mime": "font/ttf",
       "name": "JetBrainsMono-Regular.ttf"
-    },
-    {
-      "family": "Newsreader",
-      "weight": 400,
-      "style": "italic",
-      "sha256": "796668611f80b64d5adf182fde3b6f29ed83b4e7cbec7b96937e84ac01364792",
-      "mime": "font/ttf",
-      "name": "Newsreader-Italic[opsz,wght].ttf"
-    },
-    {
-      "family": "Newsreader",
-      "weight": 400,
-      "style": "normal",
-      "sha256": "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1",
-      "mime": "font/ttf",
-      "name": "Newsreader[opsz,wght].ttf"
     }
   ],
   "logos": [
