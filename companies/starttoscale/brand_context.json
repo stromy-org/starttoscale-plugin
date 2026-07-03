@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "15346546f12a36409e53469784be83f53a913be85feb8ef43145e1e158f8bfc0",
+    "charterSha": "1f1c3a3d29f786ea1c177772e08f3d8d853c7b3a630346ed01621929db018700",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -404,7 +404,7 @@
             {
               "name": "step-build",
               "trigger": "cover/section entrance",
-              "desc": "the ascending steps build one landing at a time; gold checkpoint nodes key last; no bounce"
+              "desc": "the four Step Rail bars build one at a time in ascent order (shortest → tallest); single-colour, no nodes, no bounce"
             },
             {
               "name": "rule-draw",
@@ -417,12 +417,21 @@
         }
       },
       "patterns": {
-        "status": "n-a",
+        "status": "approved",
         "required": false,
         "evidence": {
-          "tier": "proposed",
-          "source": "no genuine pattern system — the brand's texture is ledger rules + the scale-steps motif, not a repeating pattern"
-        }
+          "tier": "derived"
+        },
+        "selected": "step-rail-tile",
+        "spec": {
+          "motif": "step-rail",
+          "layout": "the four-bar Step Rail repeated on a staggered 120px grid",
+          "opacity": "6–8%, single-colour (navy on paper, or paper on navy)",
+          "usage": "slide and section backgrounds only — never reading or prose surfaces"
+        },
+        "assets": [
+          "assets/svg/pattern-tile.svg"
+        ]
       },
       "photo": {
         "status": "n-a",
@@ -430,6 +439,64 @@
         "evidence": {
           "tier": "derived",
           "source": "redundant with compiled images.manifest / images.overlay (documentary-muted treatment); grammar defers to the image system"
+        }
+      }
+    },
+    "treatments": {
+      "default": "paper-mono",
+      "note": "Named brand 'house looks' applied to photography DOWNSTREAM (format-MCP render + website CSS) — never pre-baked into the shipped library. Restrained, palette-derived; one clean base image x the treatment = flexible reuse. The 55% navy overlay (images.overlay) is a separate text-safety layer, not a treatment. ORG-PLAN-045.",
+      "looks": {
+        "paper-mono": {
+          "label": "Paper Mono",
+          "usage": "Editorial black-and-white + fine grain — the restrained default for dividers, content backgrounds, and dense sections. The diagnostic-clarity register.",
+          "css_filter": "grayscale(1) contrast(1.08)",
+          "grain": {
+            "opacity": 0.08,
+            "blend": "overlay"
+          }
+        },
+        "navy-duotone": {
+          "label": "Navy Duotone",
+          "usage": "Signature deep-navy wash for covers + hero moments — navy shadows through slate mids to warm-paper highlights, applied transparently so the photo breathes. The structured-authority signature.",
+          "css_filter": "grayscale(1) contrast(1.05)",
+          "duotone": {
+            "shadows": "#06152A",
+            "mid": "#1A3358",
+            "highlights": "#FAF8F3",
+            "strength": 0.42
+          },
+          "grain": {
+            "opacity": 0.07,
+            "blend": "overlay"
+          }
+        },
+        "amber-graded": {
+          "label": "Amber Graded",
+          "usage": "Restrained cinematic grade for section imagery — mostly neutral, a whisper of Signal Amber in the shadows and warm paper in the highlights. Kept subtle — the single amber accent per surface.",
+          "css_filter": "saturate(0.4) contrast(1.05)",
+          "duotone": {
+            "shadows": "#2A1E10",
+            "mid": "#585349",
+            "highlights": "#FBF3E2",
+            "strength": 0.3
+          },
+          "grain": {
+            "opacity": 0.08,
+            "blend": "overlay"
+          }
+        },
+        "spotlight-navy": {
+          "label": "Spotlight Navy",
+          "usage": "Dramatic monochrome + a soft radial vignette for a single hero moment — draws the eye to the subject. Use sparingly.",
+          "css_filter": "grayscale(1) contrast(1.10)",
+          "vignette": {
+            "strength": 0.5,
+            "shape": "radial"
+          },
+          "grain": {
+            "opacity": 0.1,
+            "blend": "overlay"
+          }
         }
       }
     }

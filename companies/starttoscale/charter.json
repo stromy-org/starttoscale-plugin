@@ -584,6 +584,64 @@
       "colorRhythm": "dark-light-indexed",
       "ornament": "restrained"
     },
+    "treatments": {
+      "default": "paper-mono",
+      "note": "Named brand 'house looks' applied to photography DOWNSTREAM (format-MCP render + website CSS) — never pre-baked into the shipped library. Restrained, palette-derived; one clean base image x the treatment = flexible reuse. The 55% navy overlay (images.overlay) is a separate text-safety layer, not a treatment. ORG-PLAN-045.",
+      "looks": {
+        "paper-mono": {
+          "label": "Paper Mono",
+          "usage": "Editorial black-and-white + fine grain — the restrained default for dividers, content backgrounds, and dense sections. The diagnostic-clarity register.",
+          "css_filter": "grayscale(1) contrast(1.08)",
+          "grain": {
+            "opacity": 0.08,
+            "blend": "overlay"
+          }
+        },
+        "navy-duotone": {
+          "label": "Navy Duotone",
+          "usage": "Signature deep-navy wash for covers + hero moments — navy shadows through slate mids to warm-paper highlights, applied transparently so the photo breathes. The structured-authority signature.",
+          "css_filter": "grayscale(1) contrast(1.05)",
+          "duotone": {
+            "shadows": "#06152A",
+            "mid": "#1A3358",
+            "highlights": "#FAF8F3",
+            "strength": 0.42
+          },
+          "grain": {
+            "opacity": 0.07,
+            "blend": "overlay"
+          }
+        },
+        "amber-graded": {
+          "label": "Amber Graded",
+          "usage": "Restrained cinematic grade for section imagery — mostly neutral, a whisper of Signal Amber in the shadows and warm paper in the highlights. Kept subtle — the single amber accent per surface.",
+          "css_filter": "saturate(0.4) contrast(1.05)",
+          "duotone": {
+            "shadows": "#2A1E10",
+            "mid": "#585349",
+            "highlights": "#FBF3E2",
+            "strength": 0.3
+          },
+          "grain": {
+            "opacity": 0.08,
+            "blend": "overlay"
+          }
+        },
+        "spotlight-navy": {
+          "label": "Spotlight Navy",
+          "usage": "Dramatic monochrome + a soft radial vignette for a single hero moment — draws the eye to the subject. Use sparingly.",
+          "css_filter": "grayscale(1) contrast(1.10)",
+          "vignette": {
+            "strength": 0.5,
+            "shape": "radial"
+          },
+          "grain": {
+            "opacity": 0.1,
+            "blend": "overlay"
+          }
+        }
+      }
+    },
     "signatureElements": [
       "Step Rail — four bars in a fixed +18% geometric ascent (relative heights ≈ 0.40 / 0.59 / 0.79 / 1.00, bar width 16, gap 6, 1px radius), single-colour (amber on navy, navy on paper); the ascent itself is the signature — no two-tone cap.",
       "Warm Paper background (#FAF8F3) as default surface, not pure white — distinguishes the advisory register from a software product.",
@@ -991,7 +1049,7 @@
                 {
                   "name": "step-build",
                   "trigger": "cover/section entrance",
-                  "desc": "the ascending steps build one landing at a time; gold checkpoint nodes key last; no bounce"
+                  "desc": "the four Step Rail bars build one at a time in ascent order (shortest → tallest); single-colour, no nodes, no bounce"
                 },
                 {
                   "name": "rule-draw",
@@ -1032,12 +1090,31 @@
         ]
       },
       "patterns": {
-        "status": "n-a",
+        "status": "approved",
         "required": false,
         "evidence": {
-          "tier": "proposed",
-          "source": "no genuine pattern system — the brand's texture is ledger rules + the scale-steps motif, not a repeating pattern"
-        }
+          "tier": "derived",
+          "source": "assets/svg/pattern-tile.svg — the four-bar Step Rail tiled at ~10% navy, referenced by expression.principles + requiredMotifs as the ≤8% background pattern tile"
+        },
+        "selected": "step-rail-tile",
+        "candidates": [
+          {
+            "id": "step-rail-tile",
+            "label": "Step Rail tile",
+            "spec": {
+              "motif": "step-rail",
+              "layout": "the four-bar Step Rail repeated on a staggered 120px grid",
+              "opacity": "6–8%, single-colour (navy on paper, or paper on navy)",
+              "usage": "slide and section backgrounds only — never reading or prose surfaces"
+            },
+            "assets": [
+              "assets/svg/pattern-tile.svg"
+            ],
+            "evidence": {
+              "tier": "derived"
+            }
+          }
+        ]
       },
       "photo": {
         "status": "n-a",
