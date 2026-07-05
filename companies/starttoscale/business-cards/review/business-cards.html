@@ -1,230 +1,53 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Start to Scale — Business Cards</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&family=Inter:wght@400;500;600&display=swap">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start to Scale — Business Cards (Amber Ascent)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap">
 <style>
-  :root {
-    --navy: #0A1F3D;
-    --amber: #E8A33D;
-    --paper: #FAF8F3;
-    --muted: #6B7280;
-    --rule:  #E5E2DA;
-  }
+  :root { --navy: #0A1F3D; --paper: #FAF8F3; --amber: #E8A33D; --muted: #6B7280; }
+  * { box-sizing: border-box; }
   body {
-    background: #DDD7CA;
-    margin: 0;
-    padding: 48px 24px;
-    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0; padding: 48px;
+    background: #ECECEC;
+    font-family: 'Archivo', system-ui, sans-serif;
     color: var(--navy);
   }
-  .page {
-    max-width: 920px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  h1 {
-    font-family: 'Newsreader', Georgia, serif;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    font-size: 26px;
-    margin: 0 0 4px;
-  }
-  .sub {
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 0 0 32px;
-  }
-  .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-    justify-items: center;
-  }
-
-  /* Standard EU business card: 85 × 55 mm.
-     We render at 3.4× scale for readability: 289 × 187 px. */
+  h1 { font-weight: 800; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 32px; font-size: 14px; letter-spacing: 0.02em; }
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(260px, 420px)); gap: 32px; }
   .card {
-    width: 340px;
-    height: 200px;
-    border-radius: 4px;
-    box-shadow: 0 6px 20px rgba(10,31,61,0.10);
-    overflow: hidden;
-    position: relative;
+    /* The source SVGs ARE the master — embed them so this preview never drifts. */
+    display: block; width: 100%; aspect-ratio: 91 / 61;
+    border-radius: 6px; overflow: hidden;
+    box-shadow: 0 18px 48px -22px rgba(10, 31, 61, 0.45);
+    background: #fff;
   }
-
-  /* -------- FRONT (light, paper background) -------- */
-  .front {
-    background: var(--paper);
-    color: var(--navy);
-    padding: 22px 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .front .mark {
-    display: flex;
-    align-items: flex-end;
-    gap: 5px;
-  }
-  .front .bar { background: var(--navy); border-radius: 1px; }
-  .front .b1 { width: 8px;  height: 14px; }
-  .front .b2 { width: 8px;  height: 25px; }
-  .front .b3 { width: 8px;  height: 36px; position: relative; }
-  .front .b3::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 8px; height: 8px;
-    background: var(--amber);
-    border-radius: 1px;
-  }
-  .front .name {
-    font-family: 'Newsreader', Georgia, serif;
-    font-weight: 500;
-    font-size: 22px;
-    letter-spacing: -0.01em;
-    line-height: 1.15;
-    margin: 0;
-  }
-  .front .role {
-    font-size: 11px;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 4px 0 0;
-  }
-  .front .meta {
-    font-size: 11px;
-    line-height: 1.5;
-    color: var(--navy);
-  }
-  .front .meta div { margin: 0; }
-  .front .meta a { color: inherit; text-decoration: none; }
-
-  /* -------- BACK (navy, mark + tagline) -------- */
-  .back {
-    background: var(--navy);
-    color: var(--paper);
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .back .lockup {
-    font-family: 'Newsreader', Georgia, serif;
-    font-weight: 500;
-    font-size: 22px;
-    letter-spacing: -0.01em;
-    line-height: 1.2;
-    margin: 0;
-  }
-  .back .lockup-caption {
-    font-size: 10px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: #D7DEEA;
-    margin: 6px 0 0;
-  }
-  .back .tagline {
-    font-family: 'Newsreader', Georgia, serif;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 14px;
-    line-height: 1.4;
-    margin: 0;
-    color: var(--paper);
-  }
-  .back .tagline span { color: var(--amber); }
-
-  .back .corner-motif {
-    position: absolute;
-    top: 18px;
-    right: 22px;
-    display: flex;
-    align-items: flex-end;
-    gap: 3px;
-  }
-  .back .corner-motif .bar { background: var(--paper); border-radius: 1px; }
-  .back .corner-motif .c1 { width: 4px; height: 8px; }
-  .back .corner-motif .c2 { width: 4px; height: 14px; }
-  .back .corner-motif .c3 {
-    width: 4px; height: 20px;
-    border-top: 4px solid var(--amber);
-    box-sizing: border-box;
-    background: var(--paper);
-  }
-
+  .card img { display: block; width: 100%; height: 100%; }
   .label {
-    font-size: 11px;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-top: 12px;
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--muted); margin-top: 12px; font-weight: 600;
   }
-
   @media print {
-    body { background: white; padding: 0; }
-    .page > h1, .page > .sub, .label { display: none; }
-    .cards { grid-template-columns: 1fr 1fr; gap: 0; }
+    body { background: #fff; padding: 0; }
+    h1, .sub, .label { display: none; }
+    .cards { gap: 0; }
     .card { box-shadow: none; border-radius: 0; }
   }
 </style>
 </head>
 <body>
-  <div class="page">
-    <h1>Start to Scale — Business Cards</h1>
-    <p class="sub">85 × 55 MM · double-sided · navy back, paper front</p>
-
-    <div class="cards">
-      <!-- FRONT -->
-      <div>
-        <div class="card front">
-          <div>
-            <div class="mark" aria-label="Three Steps">
-              <span class="bar b1"></span>
-              <span class="bar b2"></span>
-              <span class="bar b3"></span>
-            </div>
-          </div>
-          <div>
-            <p class="name">Wilgert Hart</p>
-            <p class="role">Managing Partner</p>
-          </div>
-          <div class="meta">
-            <div>+31 (0) — — —</div>
-            <div><a href="mailto:wilgert@starttoscale.nl">wilgert@starttoscale.nl</a></div>
-            <div>starttoscale.nl</div>
-          </div>
-        </div>
-        <div class="label">FRONT</div>
-      </div>
-
-      <!-- BACK -->
-      <div>
-        <div class="card back">
-          <div class="corner-motif" aria-hidden="true">
-            <span class="bar c1"></span>
-            <span class="bar c2"></span>
-            <span class="bar c3"></span>
-          </div>
-          <div>
-            <p class="lockup">Start to Scale</p>
-            <p class="lockup-caption">FINANCIAL MANAGEMENT</p>
-          </div>
-          <p class="tagline">
-            Van chaos naar controle.<br>
-            Van onderbuik naar inzicht.<br>
-            Van start-up naar <span>serieuze scale-up.</span>
-          </p>
-        </div>
-        <div class="label">BACK</div>
-      </div>
+  <h1>Start to Scale — Business Cards</h1>
+  <p class="sub">Amber Ascent · 85 × 55 mm · double-sided · Step Rail + Archivo · paper front, navy back</p>
+  <div class="cards">
+    <div>
+      <div class="card"><img src="../source/c01-eu-front.svg" alt="Business card front"></div>
+      <div class="label">Front</div>
+    </div>
+    <div>
+      <div class="card"><img src="../source/c01-eu-back.svg" alt="Business card back"></div>
+      <div class="label">Back</div>
     </div>
   </div>
 </body>
