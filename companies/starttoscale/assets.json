@@ -403,133 +403,43 @@
       "mime": "image/jpeg"
     },
     {
-      "name": "corner-three-steps.png",
-      "sha256": "450a26a50f32824c39d33783d0d37f18f00d2c88232910132fce952dd1d72a3a",
-      "mime": "image/png"
-    },
-    {
-      "name": "i1-01-bw-amber.jpg",
-      "sha256": "65dda1dc75d2dcd407190419d4b92eedeef96e7e49a879347d1f08ae831b4f15",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i1-01-navy35.jpg",
-      "sha256": "f2541a555f72f7341c84dd424619491e13e7413ab50769a504b3937075baf101",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i1-01-navy55.jpg",
-      "sha256": "8e22201ec00c5717367011a84a07b8b8b83a9e99b3057228c32da22b078fdf2d",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i1-02-bw-amber.jpg",
-      "sha256": "23041333a043d226a79a10e428c9a5b46815348ed6a42d91caf4c3d508b43084",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i1-02-navy35.jpg",
-      "sha256": "03d196476ab08f3d90e23d0ecddafd216bf811417a54fd610c611f3f704233ee",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i1-02-navy55.jpg",
-      "sha256": "70fc9c8a56b0acdf03c1750ee047a30a541168a6fc1cd31b85af11d8011bd61f",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i1-03-navy35.jpg",
-      "sha256": "9e66958fa9f09e49f94ed768df11899ddd8a2ee2fadf3dca0942f7685bdda63c",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i1-03-navy55.jpg",
-      "sha256": "40781e1fcaf58e3211763d020b55091162506487f502ccbd83588790d65b11aa",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i1-04-bw-amber.jpg",
-      "sha256": "9463d666f5c1c329eadb3b13b592810d195373ca79e1f7f2bf7399d6fb771781",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i1-04-navy35.jpg",
-      "sha256": "8b4aef8c62fe408072886a7409154d53a67bd072346507114780596c06e88d52",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i1-04-navy55.jpg",
-      "sha256": "ccd0b984319abeb8387c3d85a0d213d753032778e8871070b731099f035678e3",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i2-01-navy35.jpg",
-      "sha256": "64e1dc338a51742f8faf9969a9789db745c2ae726b7b79c5afd5cfc0bbb1b08d",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i2-01-navy55.jpg",
-      "sha256": "ddaa196cb4966d3591a9b2d7ccc1659997e878dd9dddc487db2e9897379311fc",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i2-02-navy35.jpg",
-      "sha256": "b0eae08a99d24df7a57f9c0f96a7cbbce3eb21d642d36ee1af078211185c53ca",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i2-02-navy55.jpg",
-      "sha256": "b344ed307286663cf053d0b7786214353f14d81661f735307661ab40a82396f3",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i2-03-navy35.jpg",
-      "sha256": "822a575fc1dfc5587b1d712e7cc7ab061792a65f64507e66a58233fb12e3fcda",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i2-03-navy55.jpg",
-      "sha256": "d2643acf8e2031798cda8b749ee11b39b7e6b47d910158958f0a7376de1f3c73",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i2-04-navy35.jpg",
-      "sha256": "fa830e5aeaf1237c27d3194d5e15daa5e7baf571ee5439d3794f0aa16a37ebc0",
-      "mime": "image/jpeg"
-    },
-    {
-      "name": "i2-04-navy55.jpg",
-      "sha256": "f0e497306910497ecccb922988917c16bca4ec6a3c7915694e94f6627b556058",
-      "mime": "image/jpeg"
-    },
-    {
       "name": "navy-amber-diag.png",
-      "sha256": "855ed5b9db0f0832f5ccd324825ae5670ed3639adf37fd3440505e34b721738d",
+      "sha256": "961e147c99fe5a9964f3327d5b9a7e7a4851a68a7bd4fd2c0be528b60c3e1f93",
       "mime": "image/png"
     },
     {
       "name": "navy-hero.png",
-      "sha256": "ad5fe216a91f5262577f3c50526cfbd658d492901d0b5a8d79732d1939ad27c5",
+      "sha256": "1cd4302bf25d490e82560c1e8b65118c5674343549ab312771751d7cce80805d",
       "mime": "image/png"
     },
     {
       "name": "navy-vignette.png",
-      "sha256": "3e0f63b1e4c0cb0ae7d9292ac8d5343e984b7002996e73e68cb92f9b29c5e54f",
+      "sha256": "2fa58fd7ca9d6042f780300573c45e8da8651c3f81abda362c1effedbdef9ddb",
       "mime": "image/png"
     },
     {
       "name": "paper-soft.png",
-      "sha256": "24b91723cb02fe1748cc745e995a57a18cba6cbfb87f9950e077e6b56e882191",
+      "sha256": "14fd3b0ea0085730cef34a82f9382d0aa00b484304a524eaff84bc03578c589c",
       "mime": "image/png"
     },
     {
       "name": "pattern-full-navy.png",
-      "sha256": "4f6b96b25fe3e7a5b83cf0e89a157ca189636612bb6a371a7aee1c90e104e8d4",
+      "sha256": "14c28b9fd916c7506c491c88931d2239d222670919d3ad0fe84bf7739a699046",
       "mime": "image/png"
     },
     {
       "name": "pattern-full-paper.png",
-      "sha256": "724acc2ea53529cd40b449dc5e313591896ab2ba66e684155cce3c63f3f46c55",
+      "sha256": "06e64bfa5c573d005496fa9c5db94b2fad87716672810e2fb824b99fb0a2813c",
+      "mime": "image/png"
+    },
+    {
+      "name": "step-rail-on-dark.png",
+      "sha256": "d5083ae089f7e52e42333da2f730c63c17ad31fcf8c45c2895cf497dd37d1abd",
+      "mime": "image/png"
+    },
+    {
+      "name": "step-rail-on-light.png",
+      "sha256": "792322a205f4d0f7d3832d53ae2f0d63616b50bb2a7736207b569d0fecfbf9ed",
       "mime": "image/png"
     }
   ]

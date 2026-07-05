@@ -528,12 +528,13 @@
       "pptx-assets/gradients/navy-vignette.png"
     ],
     "motifs": [
-      "pptx-assets/motifs/pattern-full-paper.png",
+      "pptx-assets/motifs/step-rail-on-dark.png",
+      "pptx-assets/motifs/step-rail-on-light.png",
       "pptx-assets/motifs/pattern-full-navy.png",
-      "pptx-assets/motifs/corner-three-steps.png"
+      "pptx-assets/motifs/pattern-full-paper.png"
     ],
-    "overlays": "pptx-assets/overlays/",
-    "_note": "19 overlay variants (navy-55, navy-35 for all 8 photos; bw-amber for cover/closing roles). Full list in pptx-assets/manifest.json."
+    "overlays": [],
+    "_note": "Regenerated 2026-07-04 off Amber Ascent (Step Rail + Archivo). Per-image navy-tint overlays are no longer pre-baked — image styling is downstream via expression.treatments + render-MCP runtime compositing (images.overlay = primary @55%), per ORG-PLAN-045. Full list in pptx-assets/manifest.json."
   },
   "boilerplate": "boilerplate.json",
   "identity": {

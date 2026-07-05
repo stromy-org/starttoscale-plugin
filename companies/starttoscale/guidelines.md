@@ -81,7 +81,7 @@ Senior · Calm · Structured · Pragmatic · Trustworthy
 | `logos/logo.svg` | Primary wordmark on light/paper backgrounds. Default. |
 | `logos/logo_white.svg` | Wordmark on navy or photo backgrounds. |
 | `logos/logo_mono.svg` | Single-colour use (emboss, foil, single-colour print). Uses `currentColor`. |
-| `logos/symbol.svg` | Standalone Three-Steps mark. Use when the wordmark is already established (favicons at 32px+, social avatars, watermarks, app icons). |
+| `logos/symbol.svg` | Standalone Step Rail mark. Use when the wordmark is already established (favicons at 32px+, social avatars, watermarks, app icons). |
 | `logos/symbol_white.svg` | Standalone mark on dark backgrounds. |
 | `logos/icon_dark.svg` | 96×96 navy-rounded-square icon (app icon, large favicon). |
 | `logos/favicon.svg` | 64×64 navy-rounded-square favicon. |
