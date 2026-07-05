@@ -248,6 +248,9 @@
       "Buzzwords: 'synergy', 'next-level', 'agile', or any phrase that sounds like a brochure.",
       "Pattern tile at full opacity on reading surfaces — restricted to 6–8% opacity on slide/section backgrounds only."
     ],
+    "requiredMotifs": [
+      "step-ascent"
+    ],
     "visual_grammar": {
       "backgrounds": {
         "status": "approved",
