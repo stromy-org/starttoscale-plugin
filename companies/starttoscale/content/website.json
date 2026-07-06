@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "brand": "starttoscale",
   "generated": "2026-06-02",
-  "revised": "2026-07-05",
+  "revised": "2026-07-06",
   "_comment": "Bilingual website copy. NL is Wilgert's frozen proposition (working_docs/Propositie Start to Scale Financial Management finale version.docx) kept VERBATIM as the spine; only light connective microcopy + headings were added. EN is a faithful supporting translation, flagged for Wilgert's review before go-live. Default locale nl. Consumed by the starttoscale-website build (src/data) and reusable for other deliverables.",
   "_loyalty_note": "Do not rewrite the NL body paragraphs or the hero/closing pay-off — they are approved. Enrichment is limited to section labels, eyebrows, CTA lines, and the EN layer. REVISED per Wilgert's review email of 2026-06-28: intuïtie replaces onderbuik brand-wide; full company name always; brackets over em-dashes in NL; track record one-liner (no firm list); three title-only pillars; simplified 3-step howWeStart; Aanpak section deleted; Strategic Projects dropped from ongoing.",
   "hero": {
@@ -112,8 +112,8 @@
       "en": "About Start to Scale Financial Management"
     },
     "body": {
-      "nl": "Wilgert Hart is oprichter en managing partner van Start to Scale Financial Management. Hij is een senior Finance Professional met bijna 30 jaar ervaring als CFO en andere financial control functies bij Hill & Knowlton (het wereldwijde communicatiebureau van WPP), met eerdere financiële functies bij EMI Music Netherlands en Warner Music Benelux. Hij zorgt voor een solide en professionele implementatie en uitvoering van financiële en administratieve processen en adviseert en helpt mee om de financiële organisatie naar de scale-up fase te brengen. Wilgert wordt ondersteund door een netwerk van finance professionals die op projectbasis kunnen worden ingezet.",
-      "en": "Wilgert Hart is founder and managing partner of Start to Scale Financial Management. He is a senior finance professional with nearly 30 years of experience as a CFO and in other financial control roles at Hill & Knowlton (WPP's global communications firm), with earlier finance roles at EMI Music Netherlands and Warner Music Benelux. He ensures a solid, professional implementation and operation of financial and administrative processes, and advises and helps bring the finance organisation into its scale-up phase. Wilgert is supported by a network of finance professionals who can be deployed on a project basis.",
+      "nl": "Wilgert Hart is oprichter en managing partner van Start to Scale Financial Management. Hij is een senior Finance Professional met meer dan 30 jaar ervaring als CFO en andere financial control functies bij Hill & Knowlton (het wereldwijde communicatiebureau van WPP), met eerdere financiële functies bij EMI Music Netherlands en Warner Music Benelux. Hij zorgt voor een solide en professionele implementatie en uitvoering van financiële en administratieve processen en adviseert en helpt mee om de financiële organisatie naar de scale-up fase te brengen. Wilgert wordt ondersteund door een netwerk van finance professionals die op projectbasis kunnen worden ingezet.",
+      "en": "Wilgert Hart is founder and managing partner of Start to Scale Financial Management. He is a senior finance professional with more than 30 years of experience as a CFO and in other financial control roles at Hill & Knowlton (WPP's global communications firm), with earlier finance roles at EMI Music Netherlands and Warner Music Benelux. He ensures a solid, professional implementation and operation of financial and administrative processes, and advises and helps bring the finance organisation into its scale-up phase. Wilgert is supported by a network of finance professionals who can be deployed on a project basis.",
       "_enrichment_note": "Spine VERBATIM from the proposition; the experience clause was sharpened on 2026-06-02 from Wilgert's LinkedIn (CFO at Hill & Knowlton — WPP's professional-services/PR firm — rather than the generic 'WPP plc, EMI Group plc, Warner Music Benelux') to foreground the professional-services credential most relevant to the target client. Pending Wilgert's confirmation. The Duke Strategies silent-partner backing (Ingo Heijnen, Ariën Stuijt) is held in profile.json and may be added to the About page on Wilgert's confirmation — not asserted here without sign-off."
     }
   },
@@ -172,8 +172,8 @@
           "en": "Fractional CFO"
         },
         "summary": {
-          "nl": "Doorlopend CFO-niveau leiderschap, 1–3 dagen per week. Board-voorbereiding, kapitaalbeslissingen, investor communicatie en het coachen van het finance team.",
-          "en": "Ongoing CFO-level leadership at 1–3 days per week. Board prep, capital decisions, investor communication and mentoring of the finance team."
+          "nl": "Doorlopend leiderschap op Finance Professional-niveau, 1–3 dagen per week. Board-voorbereiding, kapitaalbeslissingen, investor communicatie en het coachen van het finance team.",
+          "en": "Ongoing Finance Professional-level leadership at 1–3 days per week. Board prep, capital decisions, investor communication and mentoring of the finance team."
         },
         "duration": {
           "nl": "Doorlopend",
@@ -261,7 +261,7 @@
       "en": "Track record"
     },
     "intro": {
-      "nl": "Meer dan 30 jaar financiële (leiderschaps)functies bij zowel grote als kleine Nederlandse en internationale bedrijven.",
+      "nl": "Meer dan 30 jaar financiële (leiderschap) functies bij zowel grote en kleine Nederlandse en Internationale bedrijven.",
       "en": "More than 30 years in finance (leadership) roles at both large and small Dutch and international companies."
     },
     "firms": []
