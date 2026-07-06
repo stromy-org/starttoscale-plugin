@@ -44,7 +44,7 @@ Senior · Calm · Structured · Pragmatic · Trustworthy
 **Hero (NL, three-line, primary surface):**
 
 > Van chaos naar controle.
-> Van onderbuik naar inzicht.
+> Van intuïtie naar inzicht.
 > Van start-up naar serieuze scale-up.
 
 **Supporting (EN, single line, secondary / international surface):**

@@ -2,16 +2,17 @@
   "schema_version": "1.0",
   "brand": "starttoscale",
   "generated": "2026-06-02",
+  "revised": "2026-07-05",
   "_comment": "Bilingual website copy. NL is Wilgert's frozen proposition (working_docs/Propositie Start to Scale Financial Management finale version.docx) kept VERBATIM as the spine; only light connective microcopy + headings were added. EN is a faithful supporting translation, flagged for Wilgert's review before go-live. Default locale nl. Consumed by the starttoscale-website build (src/data) and reusable for other deliverables.",
-  "_loyalty_note": "Do not rewrite the NL body paragraphs or the hero/closing pay-off — they are approved. Enrichment is limited to section labels, eyebrows, CTA lines, and the EN layer.",
+  "_loyalty_note": "Do not rewrite the NL body paragraphs or the hero/closing pay-off — they are approved. Enrichment is limited to section labels, eyebrows, CTA lines, and the EN layer. REVISED per Wilgert's review email of 2026-06-28: intuïtie replaces onderbuik brand-wide; full company name always; brackets over em-dashes in NL; track record one-liner (no firm list); three title-only pillars; simplified 3-step howWeStart; Aanpak section deleted; Strategic Projects dropped from ongoing.",
   "hero": {
     "eyebrow": {
       "nl": "Finance voor scale-ups",
       "en": "Finance for scale-ups"
     },
     "title": {
-      "nl": "Van chaos naar controle.\nVan onderbuik naar inzicht.\nVan start-up naar serieuze scale-up.",
-      "en": "From chaos to control.\nFrom gut feel to insight.\nFrom start-up to serious scale-up."
+      "nl": "Van chaos naar controle.\nVan intuïtie naar inzicht.\nVan start-up naar serieuze scale-up.",
+      "en": "From chaos to control.\nFrom intuition to insight.\nFrom start-up to serious scale-up."
     },
     "tagline": {
       "nl": "Finance die met je meegroeit.",
@@ -30,12 +31,12 @@
     "paragraphs": {
       "nl": [
         "Organisaties die de stap van startup naar scaleup zetten, groeien sneller en duurzamer met een financiële functie die staat als een huis. In deze fase is professionalisering geen luxe maar een keiharde voorwaarde. Scherpe analyses, volwassen processen, passende systemen en heldere managementinformatie geven ondernemers scherpe inzichten en maken finance tot een strategische partner voor de business.",
-        "Maar al te vaak gebeurt dit echter te laat. Je bedrijf groeit en je bent toegewijd met de business bezig. Finance op de achterkant van een kladje, beslissingen op basis van onderbuikgevoel, ze passen niet meer bij een bedrijf dat groeit. De verantwoordelijkheden voor medewerkers, voor klanten en voor leveranciers worden groter, omdat de risico's ook groter worden.",
+        "Maar al te vaak gebeurt dit echter te laat. Je bedrijf groeit en je bent toegewijd met de business bezig. Finance op de achterkant van een kladje, beslissingen op basis van intuïtie, ze passen niet meer bij een bedrijf dat groeit. De verantwoordelijkheden voor medewerkers, voor klanten en voor leveranciers worden groter, omdat de risico's ook groter worden.",
         "Met volwassen financiële systemen introduceer je structuur, rollen en duidelijke procedures voor je teams en mitigeer je financiële risico's. Hierdoor lekt geld niet meer weg en worden geen onnodige financiële risico's genomen omdat iedereen maar wat doet. Medewerkers zullen beter gaan begrijpen waarom financiële spelregels bestaan waardoor ze bewuster handelen; de (financiële) organisatie beweegt zo van terugkijken en rapporterend naar strategisch en vooruit kijken. Het resultaat is rust, overzicht en financiële grip - precies wat nodig is om gecontroleerd en duurzaam door te groeien."
       ],
       "en": [
         "Organisations making the step from start-up to scale-up grow faster and more durably with a finance function that is built to last. At this stage, professionalisation is not a luxury but a hard requirement. Sharp analysis, mature processes, fitting systems and clear management information give founders real insight — and turn finance into a strategic partner for the business.",
-        "Yet all too often this happens too late. Your company is growing and you are fully committed to the business. Finance on the back of an envelope, decisions made on gut feel — they no longer fit a company that is scaling. Your responsibilities toward employees, customers and suppliers grow, because the risks grow with them.",
+        "Yet all too often this happens too late. Your company is growing and you are fully committed to the business. Finance on the back of an envelope, decisions made on intuition — they no longer fit a company that is scaling. Your responsibilities toward employees, customers and suppliers grow, because the risks grow with them.",
         "With mature financial systems you introduce structure, roles and clear procedures for your teams, and you mitigate financial risk. Money stops leaking away and unnecessary risks are no longer taken because everyone is improvising. People start to understand why the financial rules exist and act more deliberately; the finance organisation moves from looking back and reporting to looking forward and thinking strategically. The result is calm, oversight and financial grip — exactly what you need to keep growing in a controlled, durable way."
       ]
     }
@@ -47,56 +48,36 @@
     },
     "pillars": [
       {
-        "id": "diagnose-richting",
+        "id": "finance-functie-inrichten",
         "title": {
-          "nl": "Diagnose en richting van de finance functie te formuleren",
-          "en": "Diagnose and set the direction of the finance function"
+          "nl": "De finance functie in te richten",
+          "en": "Set up the finance function"
         },
         "bullets": {
-          "nl": [
-            "Haarscherp inzicht in waar geld, tijd en kansen weglekken",
-            "Het ontwikkelen van een toepasbare roadmap naar een volwassen finance organisatie"
-          ],
-          "en": [
-            "Razor-sharp insight into where money, time and opportunity leak away",
-            "Development of an actionable roadmap to a mature finance organisation"
-          ]
+          "nl": [],
+          "en": []
         }
       },
       {
-        "id": "structuur-processen",
+        "id": "processen-implementeren",
         "title": {
-          "nl": "Structuur en processen aan te brengen",
-          "en": "Put structure and processes in place"
+          "nl": "Processen te implementeren die foutloos draaien en meegroeien",
+          "en": "Implement processes that run flawlessly and scale with you"
         },
         "bullets": {
-          "nl": [
-            "Schaalbare processen die foutloos draaien",
-            "Heldere rollen, verantwoordelijkheden en controls die risico's elimineren en rust brengen"
-          ],
-          "en": [
-            "Scalable processes that run flawlessly",
-            "Clear roles, responsibilities and controls that eliminate risk and bring calm"
-          ]
+          "nl": [],
+          "en": []
         }
       },
       {
-        "id": "systemen-automatisering",
+        "id": "realtime-sturing",
         "title": {
-          "nl": "Keuzes te maken in (ERP) systemen en automatisering",
-          "en": "Make the right choices in (ERP) systems and automation"
+          "nl": "Real time sturing te geven aan prestaties; van terugkijken naar vooruitkijken",
+          "en": "Steer performance in real time; from looking back to looking forward"
         },
         "bullets": {
-          "nl": [
-            "Systemen die zich richten op groei en kunnen meegroeien",
-            "Dashboards en KPI's die realtime sturen op performance; van boekhouding naar managementtool",
-            "Een foutloze en snelle maandafsluiting"
-          ],
-          "en": [
-            "Systems built for growth that scale with you",
-            "Dashboards and KPIs that steer on performance in real time — from bookkeeping to management tool",
-            "A fast, flawless monthly close"
-          ]
+          "nl": [],
+          "en": []
         }
       }
     ]
@@ -107,23 +88,21 @@
       "en": "And once the finance function stands"
     },
     "intro": {
-      "nl": "Zodra de (nieuwe) financiële functie staat kan Start to Scale Financial Management de nieuwe organisatie naar behoefte helpen met o.a.:",
-      "en": "Once the (new) finance function is in place, Start to Scale Financial Management can support the organisation as needed with, among other things:"
+      "nl": "Zodra alles in kaart is gebracht kan Start to Scale Financial Management helpen met o.a.:",
+      "en": "Once everything is mapped out, Start to Scale Financial Management can help with, among other things:"
     },
     "items": {
       "nl": [
         "Het runnen van de Finance Operations (volledige boekhouding, payroll, facturatie etc.)",
         "Financial Reporting (maand / kwartaal / jaar)",
         "Financial Planning & Analysis",
-        "Cash Management & Control",
-        "Strategic Projects"
+        "Cash Management & Control"
       ],
       "en": [
         "Running Finance Operations (full bookkeeping, payroll, invoicing, etc.)",
         "Financial Reporting (monthly / quarterly / annual)",
         "Financial Planning & Analysis",
-        "Cash Management & Control",
-        "Strategic Projects"
+        "Cash Management & Control"
       ]
     }
   },
@@ -144,7 +123,7 @@
       "en": "Services"
     },
     "intro": {
-      "nl": "Van eenmalige diagnose tot het volledig runnen van je finance functie — naar behoefte.",
+      "nl": "Van eenmalige diagnose tot het volledig runnen van je finance functie, naar behoefte.",
       "en": "From a one-off diagnosis to fully running your finance function — as needed."
     },
     "items": [
@@ -226,66 +205,11 @@
       }
     ]
   },
-  "approach": {
-    "label": {
-      "nl": "Aanpak",
-      "en": "Approach"
-    },
-    "intro": {
-      "nl": "Vier stappen van chaos naar een finance functie die met je meegroeit.",
-      "en": "Four steps from chaos to a finance function that scales with you."
-    },
-    "steps": [
-      {
-        "step": 1,
-        "name": {
-          "nl": "Diagnose",
-          "en": "Diagnose"
-        },
-        "summary": {
-          "nl": "Lees de boeken, de board pack, de cap table en de gesprekken. Benoem in gewoon Nederlands wat er werkelijk niet werkt.",
-          "en": "Read the books, the board pack, the cap table and the conversations. Name what's actually broken — in plain language."
-        }
-      },
-      {
-        "step": 2,
-        "name": {
-          "nl": "Roadmap",
-          "en": "Roadmap"
-        },
-        "summary": {
-          "nl": "Een gefaseerd 12-maandenplan van huidige situatie naar een professionele finance functie. Gecost, gedateerd, met een eigenaar per werkstroom.",
-          "en": "A sequenced 12-month plan from current state to a professional finance function. Costed, dated, with an owner per workstream."
-        }
-      },
-      {
-        "step": 3,
-        "name": {
-          "nl": "Bouwen",
-          "en": "Build"
-        },
-        "summary": {
-          "nl": "Installeer de structuur: maandafsluiting, cash forecast, KPI-dashboard, board-ritme. Train het team dat het daarna zelf draagt.",
-          "en": "Install the structure: monthly close, cash forecast, KPI dashboard, board cadence. Train the team that owns it afterwards."
-        }
-      },
-      {
-        "step": 4,
-        "name": {
-          "nl": "Operatie",
-          "en": "Operate"
-        },
-        "summary": {
-          "nl": "Draai als fractionele of interim CFO terwijl de structuur inbedt. Draag over aan een vaste CFO zodra de schaal daarom vraagt.",
-          "en": "Run as fractional or interim CFO while the structure beds in. Hand over to a permanent CFO when scale demands it."
-        }
-      }
-    ]
-  },
+  "_approach_removed": "Aanpak section + standalone page deleted on Wilgert's review (email 2026-06-28, item 5). The simplified 'howWeStart' three-step block is the only process presentation.",
   "closing": {
     "payoff": {
-      "nl": "Van chaos naar controle.\nVan onderbuik naar inzicht.\nVan start-up naar serieuze scale-up.",
-      "en": "From chaos to control.\nFrom gut feel to insight.\nFrom start-up to serious scale-up."
+      "nl": "Van chaos naar controle.\nVan intuïtie naar inzicht.\nVan start-up naar serieuze scale-up.",
+      "en": "From chaos to control.\nFrom intuition to insight.\nFrom start-up to serious scale-up."
     },
     "cta": {
       "label": {
@@ -309,26 +233,26 @@
       "en": "Does this sound familiar?"
     },
     "intro": {
-      "nl": "Start to Scale is er voor groeiende ondernemingen — doorgaans €1 tot €20 miljoen omzet — waar finance nog meebeweegt op onderbuikgevoel in plaats van op de cijfers.",
-      "en": "Start to Scale is for growing companies — typically €1M to €20M in revenue — where finance still runs on gut feel instead of on the numbers."
+      "nl": "Start to Scale Financial Management is er voor groeiende ondernemingen (doorgaans €1 tot €20 miljoen omzet) waar finance nog meebeweegt op intuïtie in plaats van inzicht in de cijfers.",
+      "en": "Start to Scale Financial Management is for growing companies (typically €1M to €20M in revenue) where finance still runs on intuition instead of insight into the numbers."
     },
     "signals": {
       "nl": [
         "Finance is organisch meegegroeid: geen structuur, geen ritme, geen forecast.",
         "Rapportages kijken terug en zijn niet scherp genoeg om op te sturen.",
         "Kapitaal- en cashbeslissingen worden op gevoel genomen.",
-        "Je hebt CFO-niveau nodig, maar een vaste hire is nog niet te verantwoorden."
+        "Je hebt een Finance Professional nodig, maar een vaste hire is nog niet te verantwoorden."
       ],
       "en": [
         "Finance grew organically: no structure, no rhythm, no forecast.",
         "Reporting looks backward and isn't sharp enough to steer on.",
         "Capital and cash decisions are made on gut feel.",
-        "You need CFO-level leadership, but a full-time hire isn't justified yet."
+        "You need a finance professional, but a full-time hire isn't justified yet."
       ]
     },
     "reassure": {
-      "nl": "Eén of meer herkenbaar? Dan is dit precies het moment om finance te professionaliseren — vóórdat groei een risico wordt.",
-      "en": "Recognise one or more? Then this is exactly the moment to professionalise finance — before growth becomes a risk."
+      "nl": "Eén of meer punten herkenbaar? Dan is dit precies het moment om uw financieel management te professionaliseren, voordat groei een risico wordt.",
+      "en": "Recognise one or more of these? Then this is exactly the moment to professionalise your financial management, before growth becomes a risk."
     }
   },
   "experience": {
@@ -337,32 +261,10 @@
       "en": "Track record"
     },
     "intro": {
-      "nl": "Bijna 30 jaar CFO- en financieel leiderschap, opgebouwd bij:",
-      "en": "Nearly 30 years of CFO and finance leadership, built at:"
+      "nl": "Meer dan 30 jaar financiële (leiderschaps)functies bij zowel grote als kleine Nederlandse en internationale bedrijven.",
+      "en": "More than 30 years in finance (leadership) roles at both large and small Dutch and international companies."
     },
-    "firms": [
-      {
-        "name": "Hill & Knowlton",
-        "note": {
-          "nl": "CFO · het wereldwijde communicatiebureau van WPP",
-          "en": "CFO · WPP's global communications firm"
-        }
-      },
-      {
-        "name": "EMI Music",
-        "note": {
-          "nl": "Finance Manager",
-          "en": "Finance Manager"
-        }
-      },
-      {
-        "name": "Warner Music Benelux",
-        "note": {
-          "nl": "Assistant Controller",
-          "en": "Assistant Controller"
-        }
-      }
-    ]
+    "firms": []
   },
   "sectors": {
     "label": {
@@ -404,8 +306,8 @@
       "en": "Start with a diagnosis"
     },
     "intro": {
-      "nl": "Geen lang traject als eerste stap. We beginnen klein, concreet en zonder verplichting — met een scherpe diagnose van waar je finance functie nu staat.",
-      "en": "No long commitment as a first step. We start small, concrete and obligation-free — with a sharp diagnosis of where your finance function stands today."
+      "nl": "Geen lang traject als eerste stap. We beginnen klein en concreet, met een scherpe diagnose van waar je finance functie nu staat.",
+      "en": "No long commitment as a first step. We start small and concrete, with a sharp diagnosis of where your finance function stands today."
     },
     "steps": [
       {
@@ -415,30 +317,30 @@
           "en": "Introduction"
         },
         "summary": {
-          "nl": "Een vrijblijvend gesprek van een half uur. Wat speelt er, wat is de ambitie, en past het?",
-          "en": "A no-obligation half-hour call. What's going on, what's the ambition, and is it a fit?"
+          "nl": "",
+          "en": ""
         }
       },
       {
         "step": 2,
         "name": {
-          "nl": "Finance Diagnose",
-          "en": "Finance Diagnosis"
+          "nl": "Diagnose van de finance functie",
+          "en": "Diagnosis of the finance function"
         },
         "summary": {
-          "nl": "Twee weken doorlichten. Je krijgt een gekwantificeerd gap-rapport en een roadmap naar een professionele finance functie.",
-          "en": "A two-week read. You get a quantified gap report and a roadmap to a professional finance function."
+          "nl": "",
+          "en": ""
         }
       },
       {
         "step": 3,
         "name": {
-          "nl": "Roadmap & keuze",
-          "en": "Roadmap & decision"
+          "nl": "Stappenplan",
+          "en": "Step-by-step plan"
         },
         "summary": {
-          "nl": "Je houdt een concreet plan over. Daarna beslis jij of en hoe we verder bouwen — implementatie, fractioneel of interim.",
-          "en": "You're left with a concrete plan. Then you decide whether and how we build on — implementation, fractional or interim."
+          "nl": "",
+          "en": ""
         }
       }
     ],
@@ -483,7 +385,7 @@
           "en": "What does it cost?"
         },
         "a": {
-          "nl": "De diagnose is een afgebakend traject met een vooraf afgesproken prijs. Fractioneel en interim werk gaat op dag- of maandbasis. Altijd transparant en vooraf vastgelegd — geen verrassingen achteraf.",
+          "nl": "De diagnose is een afgebakend traject met een vooraf afgesproken prijs. Fractioneel en interim werk gaat op dag- of maandbasis. Altijd transparant en vooraf vastgelegd, zonder verrassingen achteraf.",
           "en": "The diagnosis is a defined engagement at a price agreed up front. Fractional and interim work is billed by the day or month. Always transparent and agreed in advance — no surprises afterwards."
         }
       },
@@ -503,8 +405,8 @@
           "en": "Do you work alone?"
         },
         "a": {
-          "nl": "Nee. Achter Start to Scale staat een netwerk van finance professionals dat op projectbasis kan worden ingezet, plus de strategische ruggensteun van Duke Strategies.",
-          "en": "No. Behind Start to Scale stands a network of finance professionals who can be deployed per project, plus the strategic backing of Duke Strategies."
+          "nl": "Nee. Achter Start to Scale Financial Management staat een netwerk van finance professionals dat op projectbasis kan worden ingezet, plus de strategische ruggensteun van Duke Strategies.",
+          "en": "No. Behind Start to Scale Financial Management stands a network of finance professionals who can be deployed per project, plus the strategic backing of Duke Strategies."
         }
       },
       {

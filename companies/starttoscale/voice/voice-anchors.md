@@ -6,7 +6,7 @@ does not sound like the same writer as these anchors, simplify until it does.
 
 ## Anchor — tagline (NL, verbatim)
 
-> Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar
+> Van chaos naar controle. Van intuïtie naar inzicht. Van start-up naar
 > serieuze scale-up.
 
 ## Anchor — proposition opening (NL, verbatim from proposition)

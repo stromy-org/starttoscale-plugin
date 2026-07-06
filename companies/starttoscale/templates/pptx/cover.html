@@ -42,15 +42,12 @@
   .mark {
     display: flex; align-items: flex-end; gap: 8px;
   }
+  /* Step Rail mark — four ruled bars, +18% geometric ascent, single-colour */
   .mark .bar { background: var(--paper); border-radius: 2px; }
-  .mark .b1 { width: 16px; height: 24px; }
-  .mark .b2 { width: 16px; height: 44px; }
-  .mark .b3 { width: 16px; height: 64px; position: relative; }
-  .mark .b3::before {
-    content: ""; position: absolute; top: 0; left: 0;
-    width: 16px; height: 16px;
-    background: var(--amber); border-radius: 2px;
-  }
+  .mark .b1 { width: 14px; height: 26px; }
+  .mark .b2 { width: 14px; height: 38px; }
+  .mark .b3 { width: 14px; height: 51px; }
+  .mark .b4 { width: 14px; height: 64px; }
   .overline {
     font-size: 18px;
     letter-spacing: 0.28em;
@@ -107,6 +104,7 @@
         <span class="bar b1"></span>
         <span class="bar b2"></span>
         <span class="bar b3"></span>
+        <span class="bar b4"></span>
       </div>
       <div class="overline">{{deck.kicker | 'COVER'}}</div>
     </div>

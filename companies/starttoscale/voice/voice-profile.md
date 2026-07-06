@@ -22,7 +22,7 @@ concrete language in both, in plain Dutch, never finance jargon for its own sake
   financiële grip").
 - Be concrete about the mechanism: monthly close, cash forecast, KPI dashboard,
   board cadence, chart of accounts.
-- Move the reader from feeling to fact ("van onderbuik naar inzicht").
+- Move the reader from feeling to fact ("van intuïtie naar inzicht").
 - Respect the founder; never talk down. Senior, steady, reassuring.
 - Show the operator, not just the adviser: Start to Scale builds and runs the
   finance function, then hands over.

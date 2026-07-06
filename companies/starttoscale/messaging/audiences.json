@@ -19,7 +19,7 @@
       "Credible handover plan so they are not dependent forever"
     ],
     "vocabulary": {
-      "use": ["rust", "overzicht", "financiële grip", "maandafsluiting", "kasstroomprognose", "KPI-dashboard", "boardrapportage", "van onderbuik naar inzicht"],
+      "use": ["rust", "overzicht", "financiële grip", "maandafsluiting", "kasstroomprognose", "KPI-dashboard", "boardrapportage", "van intuïtie naar inzicht"],
       "avoid": ["synergy", "value creation", "leverage", "best-in-class", "strategic fit", "ecosystem"]
     },
     "skepticism": "Has heard vague CFO-advisory pitches before. Wants to see a clear process, a concrete deliverable at each step, and a founder who has actually run finance inside a real business under pressure.",

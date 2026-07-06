@@ -14,7 +14,7 @@
     "lastUpdated": "2026-06-20"
   },
   "tagline": {
-    "primary": "Van chaos naar controle. Van onderbuik naar inzicht. Van start-up naar serieuze scale-up.",
+    "primary": "Van chaos naar controle. Van intuïtie naar inzicht. Van start-up naar serieuze scale-up.",
     "alternatives": [
       "Finance that scales with you.",
       "Rust, overzicht en financiële grip."
@@ -28,7 +28,7 @@
   },
   "voice": {
     "attributes": ["calm", "direct", "operator-grade", "plain-Dutch", "senior"],
-    "use": ["rust", "overzicht", "financiële grip", "van onderbuik naar inzicht", "maandafsluiting", "kasstroomprognose", "KPI-dashboard", "boardcadans", "professionele financiële functie"],
+    "use": ["rust", "overzicht", "financiële grip", "van intuïtie naar inzicht", "maandafsluiting", "kasstroomprognose", "KPI-dashboard", "boardcadans", "professionele financiële functie"],
     "avoid": ["transformation", "value creation", "synergy", "best-in-class", "leveraging", "holistic", "ecosystem", "exclamation marks"],
     "tone": "Warm, steady senior-finance register. Practical and people-oriented. Plain Dutch over jargon. Confidence comes from having done the work, not from big words. Dutch-first; English on request."
   },

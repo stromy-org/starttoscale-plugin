@@ -26,15 +26,12 @@
   }
   .top { display: flex; justify-content: space-between; align-items: center; }
   .mark { display: flex; align-items: flex-end; gap: 8px; }
+  /* Step Rail mark — four ruled bars, +18% geometric ascent, single-colour */
   .mark .bar { background: var(--paper); border-radius: 2px; }
-  .mark .b1 { width: 16px; height: 24px; }
-  .mark .b2 { width: 16px; height: 44px; }
-  .mark .b3 { width: 16px; height: 64px; position: relative; }
-  .mark .b3::before {
-    content: ""; position: absolute; top: 0; left: 0;
-    width: 16px; height: 16px;
-    background: var(--amber); border-radius: 2px;
-  }
+  .mark .b1 { width: 14px; height: 26px; }
+  .mark .b2 { width: 14px; height: 38px; }
+  .mark .b3 { width: 14px; height: 51px; }
+  .mark .b4 { width: 14px; height: 64px; }
   .overline {
     font-size: 18px;
     letter-spacing: 0.28em;
@@ -67,19 +64,19 @@
 <body>
   <div class="slide">
     <div class="top">
-      <div class="mark"><span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span></div>
+      <div class="mark"><span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span></div>
       <div class="overline">{{deck.closingKicker | 'CLOSING'}}</div>
     </div>
     <div>
       <p class="tagline">
         Van chaos naar controle.<br>
-        Van onderbuik naar inzicht.<br>
+        Van intuïtie naar inzicht.<br>
         Van start-up naar <span class="amber">serieuze scale-up.</span>
       </p>
     </div>
     <div class="footer">
       <div>{{contact.name | 'Wilgert Hart'}} · {{contact.title | 'Managing Partner'}}</div>
-      <div><a href="mailto:{{contact.email | 'wilgert@starttoscale.nl'}}">{{contact.email | 'wilgert@starttoscale.nl'}}</a> · starttoscale.nl</div>
+      <div><a href="mailto:{{contact.email | 'wilgert@starttoscalefinance.nl'}}">{{contact.email | 'wilgert@starttoscalefinance.nl'}}</a> · starttoscalefinance.nl</div>
     </div>
   </div>
 </body>
