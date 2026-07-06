@@ -660,7 +660,8 @@
         "credit": {
           "provider": "unsplash",
           "url": "https://images.unsplash.com/photo-1525381846010-6463f02f61ac"
-        }
+        },
+        "hero": true
       },
       {
         "id": "AS-02",
@@ -865,7 +866,8 @@
         "credit": {
           "provider": "unsplash",
           "url": "https://images.unsplash.com/photo-1586448317606-cb1ec00298fc"
-        }
+        },
+        "hero": true
       },
       {
         "id": "DC-08",
@@ -958,7 +960,8 @@
         "credit": {
           "provider": "unsplash",
           "url": "https://images.unsplash.com/photo-1635372722656-389f87a941b7"
-        }
+        },
+        "hero": true
       },
       {
         "id": "MF-05",
@@ -1104,7 +1107,8 @@
         "credit": {
           "provider": "unsplash",
           "url": "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c"
-        }
+        },
+        "hero": true
       },
       {
         "id": "SA-02",
