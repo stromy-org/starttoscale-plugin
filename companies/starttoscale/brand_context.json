@@ -1591,6 +1591,12 @@
     "short": "logos/logo_short.svg",
     "shortWhite": "logos/logo_short_white.svg"
   },
+  "templates": {
+    "docx": {
+      "styles": "templates/docx/styles.docx",
+      "letterhead": "templates/docx/letterhead.docx"
+    }
+  },
   "video": {
     "resolution": "1920x1080",
     "fps": 30
