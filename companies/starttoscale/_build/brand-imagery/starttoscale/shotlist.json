@@ -1,0 +1,71 @@
+{
+  "slug": "starttoscale",
+  "concept": "Amber Ascent — senior fractional-CFO finance brand; structure, growth and diagnostic clarity. Deep-navy grounds, one warm-amber accent light, warm-paper highs. Step Rail motif = four bars in a +18% ascent. NO text, NO logos, NO charts-with-labels, NO AI-futurism, NO people, NO handshakes, NO mountains.",
+  "palette_hex": ["#E8A33D", "#0A1F3D", "#FAF8F3", "#06152B"],
+  "accent_names": {
+    "#E8A33D": "warm amber",
+    "#0A1F3D": "deep navy",
+    "#FAF8F3": "warm paper cream",
+    "#06152B": "near-black navy"
+  },
+  "style_families": {
+    "editorial-data": {
+      "label": "Editorial data macro",
+      "style_suffix": "moody editorial macro photography of surfaces, light and numbers; deep matte navy ground with a single warm-amber glow as the only accent light; high contrast, shallow depth of field, premium and quiet; no text labels, no readable numerals, no logos, no AI-futurism, no charts UI",
+      "sourcing": ["gen"]
+    },
+    "architectural": {
+      "label": "Fine-art architecture",
+      "style_suffix": "fine-art architectural photography; strong geometry and repetition; deep navy tonality with one warm-amber directional light; clean, minimal, generous negative space; no people, no text, editorial not stock-glossy",
+      "sourcing": ["gen"]
+    },
+    "precision-macro": {
+      "label": "Precision macro",
+      "style_suffix": "precision macro photography of a single crafted object; matte deep-navy background, one warm-amber highlight, shallow depth of field; quiet, exact, premium; no text, no logos",
+      "sourcing": ["gen"]
+    },
+    "still-minimal": {
+      "label": "Minimal still / interior",
+      "style_suffix": "minimalist still-life and interior photography; calm ordered composition, generous negative space, matte surfaces; deep navy and warm-paper tonality with a single amber light accent; premium, quiet, no text, no people",
+      "sourcing": ["gen"]
+    }
+  },
+  "shots": [
+    {"id": "BG-01", "family": "editorial-data", "roles": ["hero","cover"], "aspect": "16:9", "dominant_accent": "#E8A33D", "palette_mode": "full",
+     "subject": "a single luminous amber line curving smoothly upward across a dark matte navy wall, a rising arc traced in warm light",
+     "composition": "wide, the line rising from lower-left to upper-right, deep shadow, one soft highlight, generous empty smooth space, absolutely no text no numbers no labels"},
+    {"id": "BG-02", "family": "editorial-data", "roles": ["background","divider"], "aspect": "16:9", "dominant_accent": "#E8A33D", "palette_mode": "duotone",
+     "subject": "an out-of-focus dark navy control surface with a few small glowing amber indicator dots and thin bar rows",
+     "composition": "macro, very shallow depth of field, one dot in sharp focus, the rest soft, deep negative space"},
+    {"id": "BG-03", "family": "architectural", "roles": ["cover","background"], "aspect": "16:9", "dominant_accent": "#E8A33D", "palette_mode": "full",
+     "subject": "a row of four solid rectangular blocks of increasing height, matte warm-amber stone, standing in order on a dark navy surface",
+     "composition": "front-on, strong directional side light casting long shadows, generous empty space above the blocks"},
+    {"id": "BG-04", "family": "editorial-data", "roles": ["background"], "aspect": "4:3", "dominant_accent": "#FAF8F3", "palette_mode": "duotone",
+     "subject": "an ordered grid of thin embossed rules and faint numeral shapes pressed into a deep navy matte surface, one band catching warm light",
+     "composition": "top-down, orderly rows, mostly shadow, a single warm-lit column, restrained"},
+    {"id": "BG-05", "family": "architectural", "roles": ["hero","cover"], "aspect": "16:9", "dominant_accent": "#E8A33D", "palette_mode": "full",
+     "subject": "four tall monolithic pillars of increasing height in warm amber stone, ascending in a line across a dark navy concrete plaza",
+     "composition": "low angle, dramatic side light, deep shadows between the pillars, large sky-dark negative space above"},
+    {"id": "BG-06", "family": "architectural", "roles": ["background","divider"], "aspect": "3:4", "dominant_accent": "#E8A33D", "palette_mode": "full",
+     "subject": "a deep navy building facade of repeating square recessed panels, one horizontal row rim-lit in warm amber",
+     "composition": "flat-on, tight repetition filling the frame, subtle depth, single warm-lit band"},
+    {"id": "BG-07", "family": "architectural", "roles": ["cover","hero"], "aspect": "4:3", "dominant_accent": "#E8A33D", "palette_mode": "full",
+     "subject": "a minimalist concrete staircase of clean rectangular steps ascending into shadow, warm amber light spilling from the top of the stairs",
+     "composition": "side view, strong ascending diagonal, deep navy shadow, negative space, warm glow at the summit"},
+    {"id": "BG-08", "family": "precision-macro", "roles": ["background","accent"], "aspect": "1:1", "dominant_accent": "#E8A33D", "palette_mode": "duotone",
+     "subject": "extreme macro of interlocking brass and dark-steel gears meshing precisely, one tooth catching warm light",
+     "composition": "extreme close-up, shallow depth of field, deep navy shadow, single amber highlight on the meshing teeth"},
+    {"id": "BG-09", "family": "precision-macro", "roles": ["accent","background"], "aspect": "4:3", "dominant_accent": "#FAF8F3", "palette_mode": "full",
+     "subject": "a single precision machinist's dial gauge resting on a matte deep-navy surface",
+     "composition": "close, centred, quiet, one warm amber reflection on the metal rim, generous negative space"},
+    {"id": "BG-10", "family": "still-minimal", "roles": ["cover","background"], "aspect": "16:9", "dominant_accent": "#E8A33D", "palette_mode": "full",
+     "subject": "a calm minimalist dark-navy interior corner with a single warm amber pendant lamp glowing",
+     "composition": "wide, quiet, deep shadow, one pool of warm light, large negative space for a headline"},
+    {"id": "BG-11", "family": "still-minimal", "roles": ["background"], "aspect": "1:1", "dominant_accent": "#E8A33D", "palette_mode": "full",
+     "subject": "a quiet still-life of a few matte deep-navy geometric blocks and one warm-amber sphere arranged in order on warm-paper cream",
+     "composition": "top-down, ordered spacing, soft even light, restrained"},
+    {"id": "BG-12", "family": "still-minimal", "roles": ["background","texture"], "aspect": "16:9", "dominant_accent": "#E8A33D", "palette_mode": "full",
+     "subject": "a soft matte gradient wall transitioning from deep navy to warm-paper cream, with a single thin warm-amber light sliver crossing it",
+     "composition": "minimal, mostly empty smooth surface, one accent line of light, premium and quiet"}
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "BG-01",
+    "ok": true,
+    "family": "editorial-data",
+    "roles": [
+      "hero",
+      "cover"
+    ],
+    "aspect": "16:9",
+    "seed": 2000,
+    "bytes": 603916,
+    "prompt": "a single luminous amber line curving smoothly upward across a dark matte navy wall, a rising arc traced in warm light. wide, the line rising from lower-left to upper-right, deep shadow, one soft highlight, generous empty smooth space, absolutely no text no numbers no labels. moody editorial macro photography of surfaces, light and numbers; deep matte navy ground with a single warm-amber glow as the only accent light; high contrast, shallow depth of field, premium and quiet; no text labels, no readable numerals, no logos, no AI-futurism, no charts UI. warm amber as the single accent colour, used sparingly. purely visual \u2014 NO text, words, letters, numbers, captions, labels or colour codes; no logos, no sheet music or musical notation; a real photographic or illustrated subject, not a 3D render, infographic, diagram or AI-futurism.",
+    "file": "raw/BG-01.png",
+    "cached": false
+  },
+  {
+    "id": "BG-01_v2",
+    "ok": true,
+    "family": "editorial-data",
+    "roles": [
+      "hero",
+      "cover"
+    ],
+    "aspect": "16:9",
+    "seed": 2001,
+    "bytes": 1768669,
+    "prompt": "a single luminous amber line curving smoothly upward across a dark matte navy wall, a rising arc traced in warm light. wide, the line rising from lower-left to upper-right, deep shadow, one soft highlight, generous empty smooth space, absolutely no text no numbers no labels. moody editorial macro photography of surfaces, light and numbers; deep matte navy ground with a single warm-amber glow as the only accent light; high contrast, shallow depth of field, premium and quiet; no text labels, no readable numerals, no logos, no AI-futurism, no charts UI. warm amber as the single accent colour, used sparingly. purely visual \u2014 NO text, words, letters, numbers, captions, labels or colour codes; no logos, no sheet music or musical notation; a real photographic or illustrated subject, not a 3D render, infographic, diagram or AI-futurism.",
+    "file": "raw/BG-01_v2.png",
+    "cached": false
+  },
+  {
+    "id": "BG-01_v3",
+    "ok": true,
+    "family": "editorial-data",
+    "roles": [
+      "hero",
+      "cover"
+    ],
+    "aspect": "16:9",
+    "seed": 2002,
+    "bytes": 497065,
+    "prompt": "a single luminous amber line curving smoothly upward across a dark matte navy wall, a rising arc traced in warm light. wide, the line rising from lower-left to upper-right, deep shadow, one soft highlight, generous empty smooth space, absolutely no text no numbers no labels. moody editorial macro photography of surfaces, light and numbers; deep matte navy ground with a single warm-amber glow as the only accent light; high contrast, shallow depth of field, premium and quiet; no text labels, no readable numerals, no logos, no AI-futurism, no charts UI. warm amber as the single accent colour, used sparingly. purely visual \u2014 NO text, words, letters, numbers, captions, labels or colour codes; no logos, no sheet music or musical notation; a real photographic or illustrated subject, not a 3D render, infographic, diagram or AI-futurism.",
+    "file": "raw/BG-01_v3.png",
+    "cached": false
+  }
+]

@@ -1,0 +1,79 @@
+<meta charset="utf-8"><title>Start to Scale — Image Selection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+ :root{--navy:#0A1F3D;--amber:#E8A33D;--bronze:#B08A3E;--paper:#FAF8F3;--ink:#0A1F3D;--muted:#6B7280;--line:#E3DED3}
+ *{box-sizing:border-box}html,body{width:100%;margin:0}
+ body{background:var(--paper);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;font-size:15px;-webkit-font-smoothing:antialiased}
+ .wrap{max-width:1300px;margin:0 auto;padding:0 26px}
+ .label{font-weight:600;text-transform:uppercase;letter-spacing:.2em;font-size:11px}
+ nav{position:sticky;top:0;z-index:40;background:rgba(10,31,61,.97);backdrop-filter:blur(8px)}
+ nav .wrap{display:flex;align-items:center;gap:16px;height:52px}
+ nav b{color:#fff;font-weight:800;font-size:14px;white-space:nowrap}
+ nav .lk{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap}
+ nav a{color:#B9C4D6;font-size:12px;text-decoration:none;font-weight:600;border-bottom:2px solid transparent;padding:3px 0}
+ nav a:hover,nav a.active{color:#fff;border-color:var(--amber)}
+ header{background:radial-gradient(900px 420px at 82% -12%,rgba(232,163,61,.16),transparent 60%),linear-gradient(180deg,#0A1F3D,#0C233F);color:#fff;padding:48px 0 40px}
+ header .label{color:var(--amber)}header h1{font-weight:800;font-size:clamp(28px,4vw,44px);margin:12px 0 0}
+ header p{color:#C4CEDE;max-width:70ch;margin:14px 0 0}
+ section{padding:40px 0 10px;border-top:1px solid var(--line)}
+ .sh{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}.sh .n{font-family:'JetBrains Mono';color:var(--amber);font-size:13px}.sh h2{font-weight:700;font-size:23px}
+ .sub{color:var(--muted);font-size:14px;margin:4px 0 2px}.trait{color:var(--bronze);font-size:12.5px;font-weight:600;margin:0 0 18px}
+ .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+ .card{position:relative;border-radius:11px;overflow:hidden;cursor:pointer;border:2px solid transparent;background:#e9e5db;aspect-ratio:4/3;transition:.14s}
+ .card img{width:100%;height:100%;object-fit:cover;display:block}
+ .card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(10,31,61,.14)}
+ .card.sel{border-color:var(--amber);box-shadow:0 0 0 3px rgba(232,163,61,.3)}
+ .card .id{position:absolute;left:8px;bottom:8px;font-family:'JetBrains Mono';font-size:10px;background:rgba(10,31,61,.8);color:#fff;padding:2px 7px;border-radius:5px}
+ .card .tick{position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:50%;background:var(--amber);color:#0A1F3D;display:none;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+ .card.sel .tick{display:flex}
+ .bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(10,31,61,.98);color:#fff;border-top:2px solid var(--amber)}
+ .bar .wrap{display:flex;align-items:center;gap:16px;height:58px}
+ .bar .st{font-family:'JetBrains Mono';font-size:13px;color:#C4CEDE}.bar .st b{color:var(--amber)}
+ .bar .tgt{color:#8ea0bd;font-size:12px}
+ .bar button{background:var(--amber);color:#0A1F3D;border:0;font-weight:700;font-size:13px;padding:10px 18px;border-radius:8px;cursor:pointer;font-family:'Archivo'}
+ .bar .clr{background:transparent;color:#B9C4D6;margin-left:auto}
+ .pad{padding-bottom:76px}
+ .note{background:#FFF7E8;border:1px solid #F0DDB0;border-left:4px solid var(--amber);border-radius:10px;padding:13px 16px;font-size:13.5px;color:#5a4a28;margin:16px 0 0}
+</style>
+<nav><div class="wrap"><b>Start to Scale · Image Selection</b><div class="lk" id="nav"></div></div></nav>
+<header><div class="wrap"><span class="label">Phase 4 · Imagery — Unsplash pool</span>
+<h1>Pick the images that feel like Start to Scale.</h1>
+<p>84 free Unsplash candidates across 6 themes. <b style="color:#fff">Tap any image to select it</b> (tap again to deselect). Aim for a strong shortlist — roughly <b style="color:#fff">40–50</b> across the themes; we'll brand-treat the winners and generate bespoke images to fill any gaps. Then hit <b style="color:#fff">Copy selection</b> and paste back to me. Reject freely — better to over-source than settle.</p>
+<div class="note">These are unbranded originals. Once you pick, I apply the Amber Ascent treatment (navy duotone / text-safe overlays) so they read as one family. Judge composition &amp; subject here, not colour.</div>
+</div></header>
+<div class="pad"><div class="wrap" id="sections"></div></div>
+<div class="bar"><div class="wrap"><span class="st">Selected <b id="cnt">0</b> <span class="tgt">/ target ~40–50</span></span><span class="st" id="perTheme"></span><button class="clr" id="clr">Clear</button><button id="copy">Copy selection</button></div></div>
+<script>
+const THEMES=[{"name": "Data & Charts", "prefix": "DC", "desc": "The literal financial-data world \u2014 dashboards, graphs, market screens, numbers.", "trait": "Serves diagnostic clarity: 'van boekhouding naar managementtool'.", "imgs": [{"id": "DC-01", "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71"}, {"id": "DC-02", "url": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74"}, {"id": "DC-03", "url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43"}, {"id": "DC-04", "url": "https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0"}, {"id": "DC-05", "url": "https://images.unsplash.com/photo-1584291527908-033f4d6542c8"}, {"id": "DC-06", "url": "https://images.unsplash.com/photo-1763718528755-4bca23f82ac3"}, {"id": "DC-07", "url": "https://images.unsplash.com/photo-1586448317606-cb1ec00298fc"}, {"id": "DC-08", "url": "https://images.unsplash.com/photo-1591696205602-2f950c417cb9"}, {"id": "DC-09", "url": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f"}, {"id": "DC-10", "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3"}, {"id": "DC-11", "url": "https://images.unsplash.com/photo-1560221328-12fe60f83ab8"}, {"id": "DC-12", "url": "https://images.unsplash.com/photo-1745509267699-1b1db256601e"}, {"id": "DC-13", "url": "https://images.unsplash.com/photo-1651341050677-24dba59ce0fd"}, {"id": "DC-14", "url": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0"}]}, {"name": "Mathematical Forms", "prefix": "MF", "desc": "Functions, curves, grids, abstract geometry \u2014 the logic beneath the numbers.", "trait": "Serves rigour + the growth curve.", "imgs": [{"id": "MF-01", "url": "https://images.unsplash.com/photo-1635372722656-389f87a941b7"}, {"id": "MF-02", "url": "https://images.unsplash.com/photo-1453733190371-0a9bedd82893"}, {"id": "MF-03", "url": "https://images.unsplash.com/photo-1509869175650-a1d97972541a"}, {"id": "MF-04", "url": "https://images.unsplash.com/photo-1758685734312-5134968399a8"}, {"id": "MF-05", "url": "https://images.unsplash.com/photo-1585875350095-933e478b7e8e"}, {"id": "MF-06", "url": "https://images.unsplash.com/photo-1770719269462-d3c1ed7e184f"}, {"id": "MF-07", "url": "https://images.unsplash.com/photo-1532456745301-b2c645d8b80d"}, {"id": "MF-08", "url": "https://images.unsplash.com/photo-1483959651481-dc75b89291f1"}, {"id": "MF-09", "url": "https://images.unsplash.com/photo-1524351543168-8e38787614e9"}, {"id": "MF-10", "url": "https://images.unsplash.com/photo-1600540984005-c7f3a641fbe5"}, {"id": "MF-11", "url": "https://images.unsplash.com/photo-1744057137174-72a54712fd83"}, {"id": "MF-12", "url": "https://images.unsplash.com/photo-1581089778245-3ce67677f718"}, {"id": "MF-13", "url": "https://images.unsplash.com/photo-1754304342329-3c5aff22a39c"}, {"id": "MF-14", "url": "https://images.unsplash.com/photo-1636306950045-4dbb10b7e0f4"}]}, {"name": "Structure & Architecture", "prefix": "SA", "desc": "Clean modern buildings, bridges, facades, scaffolding.", "trait": "Serves 'finance als een functie die staat als een huis'.", "imgs": [{"id": "SA-01", "url": "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c"}, {"id": "SA-02", "url": "https://images.unsplash.com/photo-1531591022136-eb8b0da1e6d0"}, {"id": "SA-03", "url": "https://images.unsplash.com/photo-1496865534669-25ec2a3a0fd3"}, {"id": "SA-04", "url": "https://images.unsplash.com/photo-1614595737476-42487331b8a1"}, {"id": "SA-05", "url": "https://images.unsplash.com/photo-1602128110234-2d11c0aaadfe"}, {"id": "SA-06", "url": "https://images.unsplash.com/photo-1522404419647-18cb51cc5c7a"}, {"id": "SA-07", "url": "https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3"}, {"id": "SA-08", "url": "https://images.unsplash.com/photo-1512187849-463fdb898f21"}, {"id": "SA-09", "url": "https://images.unsplash.com/photo-1542013353840-da51a081405b"}, {"id": "SA-10", "url": "https://images.unsplash.com/photo-1512188066-4f19f566a388"}, {"id": "SA-11", "url": "https://images.unsplash.com/photo-1496236436299-cde70e3587cf"}, {"id": "SA-12", "url": "https://images.unsplash.com/photo-1635074155443-6cbf74711dd2"}, {"id": "SA-13", "url": "https://images.unsplash.com/photo-1601883683106-42e49ae6eda0"}, {"id": "SA-14", "url": "https://images.unsplash.com/photo-1620902740358-c07fe4916812"}]}, {"name": "Ascent & Scale", "prefix": "AS", "desc": "Stairs, upward lines, elevation, horizons.", "trait": "Serves the start \u2192 scale journey (and the Step Rail motif).", "imgs": [{"id": "AS-01", "url": "https://images.unsplash.com/photo-1525381846010-6463f02f61ac"}, {"id": "AS-02", "url": "https://images.unsplash.com/photo-1615400014497-55726234cccb"}, {"id": "AS-03", "url": "https://images.unsplash.com/photo-1506749841726-3df2e72b9564"}, {"id": "AS-04", "url": "https://images.unsplash.com/photo-1495321308589-43affb814eee"}, {"id": "AS-05", "url": "https://images.unsplash.com/photo-1526573059328-179b147e1b42"}, {"id": "AS-06", "url": "https://images.unsplash.com/photo-1433832597046-4f10e10ac764"}, {"id": "AS-07", "url": "https://images.unsplash.com/photo-1721737850310-32e0d8f16cac"}, {"id": "AS-08", "url": "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace"}, {"id": "AS-09", "url": "https://images.unsplash.com/photo-1626581672447-c5ed9709db79"}, {"id": "AS-10", "url": "https://images.unsplash.com/photo-1601629736795-3da639aa9f23"}, {"id": "AS-11", "url": "https://images.unsplash.com/photo-1618210488447-1b534df1706e"}, {"id": "AS-12", "url": "https://images.unsplash.com/photo-1572558651886-d44748e0e3dd"}, {"id": "AS-13", "url": "https://images.unsplash.com/photo-1617597835919-3fdbf6efe48d"}, {"id": "AS-14", "url": "https://images.unsplash.com/photo-1598884234036-6adb303b8247"}]}, {"name": "Craft & Precision", "prefix": "CP", "desc": "Hands, close detail, materials, the workshop.", "trait": "Serves the human, diagnostic, precise register.", "imgs": [{"id": "CP-01", "url": "https://images.unsplash.com/photo-1667844518283-c113ebee95b8"}, {"id": "CP-02", "url": "https://images.unsplash.com/photo-1589051079002-b140a970f568"}, {"id": "CP-03", "url": "https://images.unsplash.com/photo-1661745805760-a27e3405b47b"}, {"id": "CP-04", "url": "https://images.unsplash.com/photo-1527433527815-36e771349b76"}, {"id": "CP-05", "url": "https://images.unsplash.com/photo-1775134061522-c41e0bf5512f"}, {"id": "CP-06", "url": "https://images.unsplash.com/photo-1585366958113-e28e8e580d3a"}, {"id": "CP-07", "url": "https://images.unsplash.com/photo-1694106722203-38363d0015d3"}, {"id": "CP-08", "url": "https://images.unsplash.com/photo-1706881051139-46f22b403b90"}, {"id": "CP-09", "url": "https://images.unsplash.com/photo-1543420629-736d6bc8e85a"}, {"id": "CP-10", "url": "https://images.unsplash.com/photo-1569917029921-cfd2651be402"}, {"id": "CP-11", "url": "https://images.unsplash.com/photo-1656524699077-c32689e12ee4"}, {"id": "CP-12", "url": "https://images.unsplash.com/photo-1551868561-de29bc57af4f"}, {"id": "CP-13", "url": "https://images.unsplash.com/photo-1633504110842-7618144066fd"}, {"id": "CP-14", "url": "https://images.unsplash.com/photo-1778339517444-8deebfc0bf00"}]}, {"name": "Light & Order", "prefix": "LO", "desc": "Calm ordered interiors, negative space, still life.", "trait": "Serves the end-state: rust, overzicht, grip.", "imgs": [{"id": "LO-01", "url": "https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea"}, {"id": "LO-02", "url": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15"}, {"id": "LO-03", "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85"}, {"id": "LO-04", "url": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4"}, {"id": "LO-05", "url": "https://images.unsplash.com/photo-1638303322580-5e6aacd59c0d"}, {"id": "LO-06", "url": "https://images.unsplash.com/photo-1669051759318-e3f68b839d1d"}, {"id": "LO-07", "url": "https://images.unsplash.com/photo-1560088032-d21fe602f4bc"}, {"id": "LO-08", "url": "https://images.unsplash.com/photo-1700427879331-100e53766cdf"}, {"id": "LO-09", "url": "https://images.unsplash.com/photo-1449247709967-d4461a6a6103"}, {"id": "LO-10", "url": "https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2"}, {"id": "LO-11", "url": "https://images.unsplash.com/photo-1639413665566-2f75adf7b7ca"}, {"id": "LO-12", "url": "https://images.unsplash.com/photo-1548123325-525b8e0cde7c"}, {"id": "LO-13", "url": "https://images.unsplash.com/photo-1570993492881-25240ce854f4"}, {"id": "LO-14", "url": "https://images.unsplash.com/photo-1592549585866-486f41343aaf"}]}];
+const nav=document.getElementById('nav'), sec=document.getElementById('sections');
+THEMES.forEach((t,i)=>{
+  const a=document.createElement('a');a.href='#'+t.prefix;a.textContent=t.name;a.className='nl';nav.appendChild(a);
+  const s=document.createElement('section');s.id=t.prefix;
+  s.innerHTML=`<div class="sh"><span class="n">${String(i+1).padStart(2,'0')}</span><h2>${t.name}</h2><span class="st" style="color:#6B7280;font-family:JetBrains Mono;font-size:12px">${t.imgs.length} candidates</span></div>
+    <p class="sub">${t.desc}</p><p class="trait">${t.trait}</p>
+    <div class="grid">${t.imgs.map(im=>`<div class="card" data-id="${im.id}"><img loading="lazy" src="${im.url}?w=520&h=390&fit=crop&q=72" alt="${im.id}"><span class="id">${im.id}</span><span class="tick">✓</span></div>`).join('')}</div>`;
+  sec.appendChild(s);
+});
+const sel=new Set();
+document.querySelectorAll('.card').forEach(c=>c.addEventListener('click',()=>{
+  const id=c.dataset.id;
+  if(sel.has(id)){sel.delete(id);c.classList.remove('sel');}else{sel.add(id);c.classList.add('sel');}
+  refresh();
+}));
+function refresh(){
+  document.getElementById('cnt').textContent=sel.size;
+  const per={};THEMES.forEach(t=>{per[t.prefix]=t.imgs.filter(i=>sel.has(i.id)).length;});
+  document.getElementById('perTheme').textContent=THEMES.map(t=>`${t.prefix} ${per[t.prefix]}`).join('  ·  ');
+}
+document.getElementById('clr').addEventListener('click',()=>{sel.clear();document.querySelectorAll('.sel').forEach(e=>e.classList.remove('sel'));refresh();});
+document.getElementById('copy').addEventListener('click',()=>{
+  if(!sel.size){alert('Tap some images first.');return;}
+  const ids=[...sel].sort();
+  const txt='Start to Scale — image selection ('+ids.length+'):\n'+ids.join(', ')+'\n\nNOTES: ';
+  navigator.clipboard.writeText(txt).then(()=>{const b=document.getElementById('copy');b.textContent='Copied ✓';setTimeout(()=>b.textContent='Copy selection',1600);});
+});
+const links=[...document.querySelectorAll('nav a.nl')],m={};links.forEach(a=>m[a.getAttribute('href').slice(1)]=a);
+THEMES.forEach(t=>{const el=document.getElementById(t.prefix);new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));m[t.prefix]?.classList.add('active');}}),{rootMargin:'-45% 0px -50% 0px'}).observe(el);});
+</script>

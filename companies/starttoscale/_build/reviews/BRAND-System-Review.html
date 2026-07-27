@@ -1,0 +1,266 @@
+<meta charset="utf-8">
+<title>Start to Scale — Brand System Review (Amber Ascent)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0A1F3D;--navy2:#1A3358;--amber:#E8A33D;--bronze:#B08A3E;--paper:#FAF8F3;--white:#fff;--ink:#0A1F3D;--muted:#6B7280;--line:#E3DED3}
+  *{box-sizing:border-box}html,body{width:100%;margin:0}
+  body{background:var(--paper);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 30px}
+  .label{font-weight:600;text-transform:uppercase;letter-spacing:.2em;font-size:11px}
+  .mono{font-family:'JetBrains Mono',monospace}
+  nav{position:sticky;top:0;z-index:40;background:rgba(10,31,61,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:54px}
+  nav b{color:#fff;font-weight:800;font-size:15px;white-space:nowrap}
+  nav .lk{margin-left:auto;display:flex;gap:18px;flex-wrap:wrap}
+  nav a{color:#B9C4D6;font-size:12.5px;text-decoration:none;font-weight:500;border-bottom:2px solid transparent;padding:3px 0}
+  nav a.active,nav a:hover{color:#fff;border-color:var(--amber)}
+  header{background:radial-gradient(1000px 460px at 82% -12%,rgba(232,163,61,.16),transparent 60%),linear-gradient(180deg,#0A1F3D,#0C233F 60%,#0A1F3D);color:#fff;padding:56px 0 48px}
+  header .label{color:var(--amber)}header h1{font-weight:800;font-size:clamp(30px,4.4vw,48px);margin:14px 0 0}
+  header p{color:#C4CEDE;max-width:66ch;margin:16px 0 0}
+  section{padding:50px 0;border-top:1px solid var(--line)}
+  .sh{display:flex;align-items:baseline;gap:14px;margin-bottom:22px}.sh .n{font-family:'JetBrains Mono',monospace;color:var(--amber);font-size:13px}.sh h2{font-weight:700;font-size:25px}
+  .grid{display:grid;gap:18px}
+  .cell{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff}
+  .frame{padding:34px;display:flex;align-items:center;justify-content:center;min-height:150px}
+  .on-navy{background:var(--navy)}.on-paper{background:var(--paper)}.on-white{background:#fff}
+  .cap{padding:11px 14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .cap .mono{font-size:11px;color:var(--muted)}
+  /* approvable */
+  .appr{position:relative;cursor:pointer;transition:.15s}
+  .appr:hover{border-color:#C9BFA6}
+  .appr.ok{border-color:#4A7A5A;box-shadow:0 0 0 2px rgba(74,122,90,.25)}
+  .appr.no{border-color:#B85648;box-shadow:0 0 0 2px rgba(184,86,72,.22);opacity:.72}
+  .badge{position:absolute;top:10px;right:10px;font-size:11px;font-weight:700;padding:4px 9px;border-radius:20px;display:none}
+  .appr.ok .badge.ok{display:block;background:#4A7A5A;color:#fff}
+  .appr.no .badge.no{display:block;background:#B85648;color:#fff}
+  .toolbar{display:flex;gap:8px}
+  .toolbar button{font-family:'Archivo';font-size:11px;font-weight:600;border:1px solid var(--line);background:#fff;border-radius:7px;padding:5px 10px;cursor:pointer}
+  .toolbar .y:hover{background:#E7F0EA;border-color:#4A7A5A}.toolbar .x:hover{background:#FBEAE7;border-color:#B85648}
+  .lockup{display:flex;align-items:center;gap:16px}
+  .wm{font-weight:800;font-size:30px;letter-spacing:-.02em;line-height:1}
+  .sub{font-weight:600;font-size:10px;letter-spacing:.26em;text-transform:uppercase;margin-top:5px}
+  /* colours */
+  .sw{border-radius:11px;overflow:hidden;border:1px solid var(--line);width:150px}.sw .c{height:70px}.sw .m{padding:8px 11px;font-size:12px}.sw .m b{display:block}.sw .m .h{font-family:'JetBrains Mono';color:var(--muted);font-size:11px}
+  .scale{display:flex;border-radius:9px;overflow:hidden;border:1px solid var(--line)}.scale div{flex:1;height:42px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px}.scale span{font-family:'JetBrains Mono';font-size:9px}
+  /* type */
+  .tp{border-radius:13px;overflow:hidden;border:1px solid var(--line)}
+  table.ts{width:100%;border-collapse:collapse}table.ts td{padding:9px 0;border-bottom:1px solid var(--line);vertical-align:baseline}table.ts td.k{width:200px;font-family:'JetBrains Mono';font-size:11px;color:var(--muted)}
+  /* decisions */
+  .dec{border:1px solid var(--line);border-radius:13px;padding:20px 22px;background:#fff;margin-bottom:16px}
+  .dec h3{font-size:16px;font-weight:700}.dec p{color:var(--muted);font-size:13.5px;margin:4px 0 12px}
+  .opts{display:flex;gap:10px;flex-wrap:wrap}
+  .opt{border:1.5px solid var(--line);border-radius:9px;padding:9px 14px;cursor:pointer;font-size:13px;font-weight:500;transition:.14s;display:flex;align-items:center;gap:8px}
+  .opt:hover{border-color:#C9BFA6}.opt.sel{border-color:var(--amber);background:#FFF7E8;box-shadow:0 0 0 2px rgba(232,163,61,.2)}
+  .opt .rec{font-size:10px;font-weight:700;color:#4A7A5A;text-transform:uppercase;letter-spacing:.05em}
+  .bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(10,31,61,.98);color:#fff;border-top:2px solid var(--amber)}
+  .bar .wrap{display:flex;align-items:center;gap:18px;height:58px}.bar .st{font-family:'JetBrains Mono';font-size:12.5px;color:#C4CEDE}.bar .st b{color:var(--amber)}
+  .bar button{margin-left:auto;background:var(--amber);color:#0A1F3D;border:0;font-weight:700;font-size:13px;padding:10px 18px;border-radius:8px;cursor:pointer;font-family:'Archivo'}
+  .pad{padding-bottom:78px}
+  .mock{border-radius:13px;overflow:hidden;border:1px solid var(--line)}
+  .cover{background:linear-gradient(160deg,#0A1F3D,#14304F);color:#fff;padding:34px 32px 40px;position:relative;min-height:220px;overflow:hidden}
+  .cover .eb{color:var(--amber)}.cover h3{font-weight:800;font-size:30px;line-height:1.05;margin-top:12px}.cover .tl{color:#C4CEDE;margin-top:12px}
+  .cover .ft{position:absolute;left:32px;bottom:16px;font-family:'JetBrains Mono';font-size:10px;color:#8ea0bd}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:820px){.two{grid-template-columns:1fr}}
+  .note{background:#FFF7E8;border:1px solid #F0DDB0;border-left:4px solid var(--amber);border-radius:10px;padding:14px 17px;font-size:13.5px;color:#5a4a28;margin-top:16px}
+</style>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <g id="rail"><rect x="2" y="60" width="16" height="38" rx="1"/><rect x="24" y="42" width="16" height="56" rx="1"/><rect x="46" y="24" width="16" height="74" rx="1"/><rect x="68" y="4" width="16" height="94" rx="1"/></g>
+  <g id="railnode"><rect x="2" y="60" width="16" height="38" rx="1"/><rect x="24" y="42" width="16" height="56" rx="1"/><rect x="46" y="24" width="16" height="74" rx="1"/><rect x="68" y="4" width="16" height="94" rx="1"/><circle cx="76" cy="4" r="9" fill="#E8A33D"/></g>
+</defs></svg>
+
+<nav><div class="wrap"><b>Amber Ascent · System Review</b><div class="lk">
+  <a href="#logo" class="nl">Logos</a><a href="#symbol" class="nl">Symbols</a><a href="#favicon" class="nl">Favicons</a><a href="#motif" class="nl">Motif</a><a href="#colour" class="nl">Colour</a><a href="#type" class="nl">Type</a><a href="#mock" class="nl">Mockups</a><a href="#decisions" class="nl">Decisions</a>
+</div></div></nav>
+
+<header><div class="wrap">
+  <span class="label">Start to Scale · Where we stand</span>
+  <h1>Brand System Review.</h1>
+  <p>The full promoted Amber Ascent system — every logo, symbol, favicon and motif use. <b style="color:#fff">Approve (✓) or reject (✗)</b> each asset, then work through the <b style="color:#fff">Decisions</b> section at the bottom where I've flagged the calls that are genuinely yours (with my recommended default on each). Copy it all back to me at the end and I'll lock it, then we move to imagery.</p>
+</div></header>
+
+<div class="pad">
+
+<!-- LOGOS -->
+<section id="logo"><div class="wrap">
+  <div class="sh"><span class="n">01</span><h2>Logo lockups</h2></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(340px,1fr))">
+    <div class="cell appr" data-a="logo.svg"><div class="badge ok">✓ keep</div><div class="badge no">✗</div>
+      <div class="frame on-paper"><div class="lockup"><svg width="46" height="52" viewBox="0 0 90 100"><use href="#rail" fill="#0A1F3D"/></svg><div><div class="wm" style="color:#0A1F3D">Start to Scale</div><div class="sub" style="color:#B08A3E">Financial Management</div></div></div></div>
+      <div class="cap"><span>Primary · on paper</span><span class="mono">logo.svg</span></div></div>
+    <div class="cell appr" data-a="logo_white.svg"><div class="badge ok">✓ keep</div><div class="badge no">✗</div>
+      <div class="frame on-navy"><div class="lockup"><svg width="46" height="52" viewBox="0 0 90 100"><use href="#rail" fill="#E8A33D"/></svg><div><div class="wm" style="color:#fff">Start to Scale</div><div class="sub" style="color:#E8A33D">Financial Management</div></div></div></div>
+      <div class="cap"><span>Reversed · on navy</span><span class="mono">logo_white.svg</span></div></div>
+    <div class="cell appr" data-a="logo_mono.svg"><div class="badge ok">✓ keep</div><div class="badge no">✗</div>
+      <div class="frame on-white"><div class="lockup"><svg width="46" height="52" viewBox="0 0 90 100"><use href="#rail" fill="#0A1F3D"/></svg><div><div class="wm" style="color:#0A1F3D">Start to Scale</div><div class="sub" style="color:#0A1F3D">Financial Management</div></div></div></div>
+      <div class="cap"><span>Mono · single-colour</span><span class="mono">logo_mono.svg</span></div></div>
+  </div>
+</div></section>
+
+<!-- SYMBOLS -->
+<section id="symbol"><div class="wrap">
+  <div class="sh"><span class="n">02</span><h2>Standalone symbol — at size</h2></div>
+  <div class="cell" style="padding:26px"><div style="display:flex;align-items:flex-end;gap:34px;flex-wrap:wrap">
+    <div style="text-align:center"><svg width="70" height="78" viewBox="0 0 90 100"><use href="#rail" fill="#0A1F3D"/></svg><div class="mono" style="font-size:10px;color:var(--muted);margin-top:6px">70 navy</div></div>
+    <div style="text-align:center"><svg width="44" height="49" viewBox="0 0 90 100"><use href="#rail" fill="#0A1F3D"/></svg><div class="mono" style="font-size:10px;color:var(--muted);margin-top:6px">44</div></div>
+    <div style="text-align:center"><svg width="24" height="27" viewBox="0 0 90 100"><use href="#rail" fill="#0A1F3D"/></svg><div class="mono" style="font-size:10px;color:var(--muted);margin-top:6px">24</div></div>
+    <div style="text-align:center"><svg width="16" height="18" viewBox="0 0 90 100"><use href="#rail" fill="#0A1F3D"/></svg><div class="mono" style="font-size:10px;color:var(--muted);margin-top:6px">16 px</div></div>
+    <div style="text-align:center;padding-left:20px;border-left:1px solid var(--line)"><span style="display:inline-flex;background:#0A1F3D;padding:14px;border-radius:12px"><svg width="40" height="44" viewBox="0 0 90 100"><use href="#rail" fill="#E8A33D"/></svg></span><div class="mono" style="font-size:10px;color:var(--muted);margin-top:6px">amber on navy</div></div>
+  </div><div class="note" style="margin-top:18px">The four bars stay legible down to 16px. <b>Decision D2</b> (below): which colour is the <i>default</i> standalone symbol — navy or amber?</div></div>
+</div></section>
+
+<!-- FAVICONS -->
+<section id="favicon"><div class="wrap">
+  <div class="sh"><span class="n">03</span><h2>Favicon / app icon — pick one (Decision D1)</h2></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr))">
+    <div class="cell appr" data-a="favicon-F1"><div class="badge ok">✓</div><div class="badge no">✗</div>
+      <div class="frame on-white"><span style="display:inline-flex;background:#0A1F3D;border-radius:20px;padding:14px"><svg width="48" height="53" viewBox="0 0 90 100"><use href="#rail" fill="#E8A33D"/></svg></span></div>
+      <div class="cap"><span>F1 · navy tile + amber <span class="mono" style="color:#4A7A5A">rec</span></span></div></div>
+    <div class="cell appr" data-a="favicon-F2"><div class="badge ok">✓</div><div class="badge no">✗</div>
+      <div class="frame on-white"><svg width="56" height="62" viewBox="0 0 90 100"><use href="#rail" fill="#E8A33D"/></svg></div>
+      <div class="cap"><span>F2 · bare amber bars</span></div></div>
+    <div class="cell appr" data-a="favicon-F3"><div class="badge ok">✓</div><div class="badge no">✗</div>
+      <div class="frame on-white"><span style="display:inline-flex;background:#E8A33D;border-radius:20px;padding:14px"><svg width="48" height="53" viewBox="0 0 90 100"><use href="#rail" fill="#0A1F3D"/></svg></span></div>
+      <div class="cap"><span>F3 · amber tile + navy</span></div></div>
+    <div class="cell appr" data-a="favicon-F4"><div class="badge ok">✓</div><div class="badge no">✗</div>
+      <div class="frame on-navy"><span style="display:inline-flex;background:#fff;border-radius:20px;padding:14px"><svg width="48" height="53" viewBox="0 0 90 100"><use href="#rail" fill="#0A1F3D"/></svg></span></div>
+      <div class="cap"><span>F4 · white tile + navy</span></div></div>
+  </div>
+</div></section>
+
+<!-- MOTIF -->
+<section id="motif"><div class="wrap">
+  <div class="sh"><span class="n">04</span><h2>Step Rail motif — plain vs checkpoint node (Decision D3)</h2></div>
+  <div class="two">
+    <div class="cell appr" data-a="motif-plain"><div class="badge ok">✓</div><div class="badge no">✗</div>
+      <div class="frame on-navy"><svg width="200" height="120" viewBox="0 0 90 100" preserveAspectRatio="xMidYMid meet"><use href="#rail" fill="#E8A33D"/></svg></div>
+      <div class="cap"><span>Plain rail <span class="mono" style="color:#4A7A5A">rec — cleaner</span></span></div></div>
+    <div class="cell appr" data-a="motif-node"><div class="badge ok">✓</div><div class="badge no">✗</div>
+      <div class="frame on-navy"><svg width="200" height="120" viewBox="0 0 95 100" preserveAspectRatio="xMidYMid meet"><use href="#railnode" fill="#E8A33D"/></svg></div>
+      <div class="cap"><span>+ amber checkpoint node <span class="mono">('landing' story)</span></span></div></div>
+  </div>
+  <div class="cell" style="margin-top:18px"><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)">
+    <div style="background:#fff;padding:18px"><div class="label" style="color:var(--muted);font-size:9px">Divider</div><svg width="100%" height="26" viewBox="0 0 90 100" preserveAspectRatio="none"><use href="#rail" fill="#0A1F3D"/></svg></div>
+    <div style="background:#fff;padding:18px"><div class="label" style="color:var(--muted);font-size:9px">Card accent</div><div style="border-left:3px solid #E8A33D;padding-left:10px;margin-top:6px"><b>Diagnose</b><br><span style="font-size:11px;color:#6B7280">Finance functie</span></div></div>
+    <div style="background:#0A1F3D;padding:18px"><div class="label" style="color:#8ea0bd;font-size:9px">Pattern / bg</div><svg width="100%" height="28" viewBox="0 0 90 100" preserveAspectRatio="none" style="opacity:.4"><use href="#rail" fill="#E8A33D"/></svg></div>
+    <div style="background:#fff;padding:18px"><div class="label" style="color:var(--muted);font-size:9px">Micro / KPI</div><span style="display:inline-flex;gap:7px;align-items:center;margin-top:6px"><svg width="16" height="17" viewBox="0 0 90 100"><use href="#rail" fill="#E8A33D"/></svg><span class="mono" style="font-size:11px">+18.4%</span></span></div>
+  </div></div>
+</div></section>
+
+<!-- COLOUR -->
+<section id="colour"><div class="wrap">
+  <div class="sh"><span class="n">05</span><h2>Colour system</h2></div>
+  <div style="display:flex;flex-wrap:wrap;gap:12px">
+    <div class="sw"><div class="c" style="background:#0A1F3D"></div><div class="m"><b>Navy</b><span class="h">#0A1F3D</span></div></div>
+    <div class="sw"><div class="c" style="background:#1A3358"></div><div class="m"><b>Navy Alt</b><span class="h">#1A3358</span></div></div>
+    <div class="sw"><div class="c" style="background:#E8A33D"></div><div class="m"><b>Amber</b><span class="h">#E8A33D</span></div></div>
+    <div class="sw"><div class="c" style="background:#FAF8F3;border-bottom:1px solid var(--line)"></div><div class="m"><b>Paper</b><span class="h">#FAF8F3</span></div></div>
+    <div class="sw"><div class="c" style="background:#6B7280"></div><div class="m"><b>Text Light</b><span class="h">#6B7280</span></div></div>
+  </div>
+  <p class="label" style="color:var(--muted);margin:22px 0 6px">Navy scale</p>
+  <div class="scale"><div style="background:#EFF2F7"><span>50</span></div><div style="background:#DCE2EC"><span>100</span></div><div style="background:#BCC6D6"><span>200</span></div><div style="background:#8A9CB4"><span>300</span></div><div style="background:#5A7191"><span style="color:#fff">400</span></div><div style="background:#345477"><span style="color:#fff">500</span></div><div style="background:#1E3C61"><span style="color:#fff">600</span></div><div style="background:#14304F"><span style="color:#fff">700</span></div><div style="background:#0A1F3D"><span style="color:#fff">800</span></div><div style="background:#06152B"><span style="color:#fff">900</span></div></div>
+  <p class="label" style="color:var(--muted);margin:18px 0 6px">Amber scale</p>
+  <div class="scale"><div style="background:#FDF6EA"><span>50</span></div><div style="background:#FBEAD3"><span>100</span></div><div style="background:#F8DBB4"><span>200</span></div><div style="background:#F3C888"><span>300</span></div><div style="background:#EEB55F"><span>400</span></div><div style="background:#E8A33D"><span>500</span></div><div style="background:#D08F2D"><span style="color:#fff">600</span></div><div style="background:#B87A22"><span style="color:#fff">700</span></div><div style="background:#8F5C16"><span style="color:#fff">800</span></div><div style="background:#7A4E12"><span style="color:#fff">900</span></div></div>
+  <p class="label" style="color:var(--muted);margin:18px 0 6px">Semantic (kept)</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap">
+    <div class="opt" style="cursor:default"><span style="width:18px;height:18px;border-radius:5px;background:#4A7A5A"></span>Success #4A7A5A</div>
+    <div class="opt" style="cursor:default"><span style="width:18px;height:18px;border-radius:5px;background:#C28F3D"></span>Warning #C28F3D</div>
+    <div class="opt" style="cursor:default"><span style="width:18px;height:18px;border-radius:5px;background:#B85648"></span>Error #B85648</div>
+    <div class="opt" style="cursor:default"><span style="width:18px;height:18px;border-radius:5px;background:#4A6390"></span>Info #4A6390</div>
+  </div>
+</div></section>
+
+<!-- TYPE -->
+<section id="type"><div class="wrap">
+  <div class="sh"><span class="n">06</span><h2>Typography — Archivo</h2></div>
+  <div class="tp" style="padding:0"><div style="padding:24px;background:var(--navy);color:#fff">
+    <div class="label" style="color:#E8A33D">Start to Scale · Diagnose</div>
+    <div style="font-weight:800;font-size:32px;line-height:1.04;margin-top:8px">Van chaos naar controle.</div>
+    <div style="margin-top:10px;color:#C4CEDE">Senior finance leadership that turns gut-feel into grip.</div>
+  </div></div>
+  <table class="ts" style="margin-top:8px">
+    <tr><td class="k">Display XL · 800</td><td style="font-weight:800;font-size:40px">Van start-up naar scale-up</td></tr>
+    <tr><td class="k">H1 · 700</td><td style="font-weight:700;font-size:30px">Diagnose van de finance functie</td></tr>
+    <tr><td class="k">H2 · 600</td><td style="font-weight:600;font-size:23px">Structuur en processen</td></tr>
+    <tr><td class="k">Body · 400</td><td style="font-size:16px">Schaalbare processen die foutloos draaien en meegroeien.</td></tr>
+    <tr><td class="k">Label · 600 caps 0.2em</td><td class="label" style="font-size:12px;color:#0A1F3D">Financial Management · Amersfoort</td></tr>
+    <tr><td class="k">Mono · JetBrains</td><td class="mono" style="font-size:14px">EBITDA +18.4%  ·  DSO 42d  ·  ARR €4.2M</td></tr>
+  </table>
+</div></section>
+
+<!-- MOCKUPS -->
+<section id="mock"><div class="wrap">
+  <div class="sh"><span class="n">07</span><h2>In context</h2></div>
+  <div class="two">
+    <div class="mock"><div class="cover">
+      <div class="label eb">Start to Scale · Financial Management</div>
+      <h3>Van onderbuik<br>naar inzicht.</h3><div class="tl">Finance that scales with you.</div>
+      <div class="ft">Diagnose · Structuur · Systemen</div>
+      <svg style="position:absolute;right:0;bottom:0;opacity:.42" width="180" height="140" viewBox="0 0 90 100" preserveAspectRatio="xMaxYMax meet"><use href="#rail" fill="#E8A33D"/></svg>
+    </div></div>
+    <div class="mock"><div class="cover" style="background:var(--paper);color:var(--ink)">
+      <div class="label" style="color:#B08A3E">Diagnose &amp; Richting</div>
+      <h3 style="color:#0A1F3D">Van chaos<br>naar controle.</h3><div class="tl" style="color:#3a4759">Haarscherp inzicht in waar geld en kansen weglekken.</div>
+      <div class="ft" style="color:#9a8a6a">Start to Scale Financial Management · Amersfoort</div>
+      <svg style="position:absolute;right:0;bottom:0;opacity:.5" width="180" height="140" viewBox="0 0 90 100" preserveAspectRatio="xMaxYMax meet"><use href="#rail" fill="#0A1F3D"/></svg>
+    </div></div>
+  </div>
+</div></section>
+
+<!-- DECISIONS -->
+<section id="decisions"><div class="wrap">
+  <div class="sh"><span class="n">08</span><h2>Decisions for you</h2></div>
+  <p style="color:var(--muted);margin:-8px 0 20px;max-width:70ch">These are the genuine calls — I've marked my recommended default on each. Click your choice; unpicked = you accept my default.</p>
+  <div id="decs"></div>
+</div></section>
+
+</div>
+
+<div class="bar"><div class="wrap">
+  <span class="st">Approved <b id="cok">0</b> · Rejected <b id="cno">0</b> · Decisions <b id="cd">0</b>/7</span>
+  <button id="copy">Copy review → paste to me</button>
+</div></div>
+
+<script>
+const decisions=[
+ {id:'D1',q:'Favicon / app icon style',opts:['F1 navy tile + amber (rec)','F2 bare amber bars','F3 amber tile + navy','F4 white tile + navy']},
+ {id:'D2',q:'Default standalone symbol colour',opts:['Navy (rec)','Amber']},
+ {id:'D3',q:'Step Rail checkpoint node',opts:['Plain rail (rec)','With amber node']},
+ {id:'D4',q:'Short-form logo (drop "Financial Management" for tight spaces)',opts:['Provide both full + short (rec)','Always full lockup']},
+ {id:'D5',q:'Data / numerals face',opts:['Keep JetBrains Mono (rec)','All-Archivo tabular figures']},
+ {id:'D6',q:'Hero display weight',opts:['Archivo 800 (rec)','Archivo 700']},
+ {id:'D7',q:'Amber discipline',opts:['One amber signal per surface (rec)','Allow freer amber use']},
+];
+const decState={};
+document.getElementById('decs').innerHTML=decisions.map(d=>`<div class="dec"><h3>${d.id} · ${d.q}</h3><div class="opts" data-d="${d.id}">${d.opts.map((o,i)=>`<div class="opt" data-i="${i}">${o.replace(/\\(rec\\)/,'<span class="rec">rec</span>')}</div>`).join('')}</div></div>`).join('');
+document.querySelectorAll('.opts').forEach(g=>{const id=g.dataset.d;g.querySelectorAll('.opt').forEach(o=>{o.addEventListener('click',()=>{g.querySelectorAll('.opt').forEach(x=>x.classList.remove('sel'));o.classList.add('sel');decState[id]=o.textContent.trim();refresh();});});});
+
+const appr={};
+document.querySelectorAll('.appr').forEach(c=>{
+  const y=document.createElement('div'),x=document.createElement('div');
+  const cap=c.querySelector('.cap')||c;
+  const tb=document.createElement('div');tb.className='toolbar';
+  tb.innerHTML='<button class="y">✓ keep</button><button class="x">✗</button>';
+  cap.appendChild(tb);
+  tb.querySelector('.y').addEventListener('click',e=>{e.stopPropagation();appr[c.dataset.a]='ok';c.classList.remove('no');c.classList.add('ok');refresh();});
+  tb.querySelector('.x').addEventListener('click',e=>{e.stopPropagation();appr[c.dataset.a]='no';c.classList.remove('ok');c.classList.add('no');refresh();});
+});
+function refresh(){
+  const ok=Object.values(appr).filter(v=>v==='ok').length, no=Object.values(appr).filter(v=>v==='no').length;
+  document.getElementById('cok').textContent=ok;document.getElementById('cno').textContent=no;
+  document.getElementById('cd').textContent=Object.keys(decState).length;
+}
+document.getElementById('copy').addEventListener('click',()=>{
+  let t='Start to Scale — Brand System Review\\n\\nAPPROVALS:\\n';
+  Object.entries(appr).forEach(([k,v])=>t+=`  ${v==='ok'?'✓':'✗'} ${k}\\n`);
+  t+='\\nDECISIONS:\\n';
+  decisions.forEach(d=>t+=`  ${d.id}: ${decState[d.id]||'(accept default)'}\\n`);
+  t+='\\nNOTES: ';
+  navigator.clipboard.writeText(t).then(()=>{const b=document.getElementById('copy');b.textContent='Copied ✓';setTimeout(()=>b.textContent='Copy review → paste to me',1600);});
+});
+// scrollspy
+const links=[...document.querySelectorAll('nav a.nl')],map={};links.forEach(a=>map[a.getAttribute('href').slice(1)]=a);
+new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));map[e.target.id]?.classList.add('active');}}),{rootMargin:'-45% 0px -50% 0px'}).observe;
+['logo','symbol','favicon','motif','colour','type','mock','decisions'].forEach(id=>{const el=document.getElementById(id);if(el)new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));map[id]?.classList.add('active');}}),{rootMargin:'-45% 0px -50% 0px'}).observe(el);});
+</script>
