@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "a73d5ac76e86268cb0840dbfd4eae0d589cbabe16263eb1eaf7c18cda2e99ba9",
+    "charterSha": "cdee3519c6e8857203b742f73935ed701219abdf9d266a7146c43a24b05aa704",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -223,7 +223,7 @@
       "typeExpression": "utilitarian",
       "imageTreatment": "documentary-muted",
       "motifProminence": "accent",
-      "colorRhythm": "dark-light-indexed",
+      "colorRhythm": "light-dominant",
       "ornament": "restrained"
     },
     "signatureElements": [
@@ -514,7 +514,7 @@
         "typeExpression": "utilitarian",
         "imageTreatment": "documentary-muted",
         "motifProminence": "accent",
-        "colorRhythm": "dark-light-indexed",
+        "colorRhythm": "light-dominant",
         "ornament": "restrained"
       },
       "principles": [
@@ -536,7 +536,7 @@
         "typeExpression": "utilitarian",
         "imageTreatment": "documentary-muted",
         "motifProminence": "accent",
-        "colorRhythm": "dark-light-indexed",
+        "colorRhythm": "light-dominant",
         "ornament": "restrained"
       },
       "principles": [
