@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "f39fd6f1c9680a3cd57968d9f184a4ffc68c8bb14f5833d30821264144c7d00e",
+    "charterSha": "a73d5ac76e86268cb0840dbfd4eae0d589cbabe16263eb1eaf7c18cda2e99ba9",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -285,7 +285,7 @@
           "rhythm": "light-dominant editorial — warm paper is the default surface; navy reserved for the cover, section dividers, and 'key figures' panels",
           "darkFrequency": 1,
           "photo": {
-            "treatment": "documentary-muted, full-bleed hero",
+            "treatment": "documentary-muted, navy-tinted full-bleed hero",
             "overlay": "structural navy #0A1F3D scrim, never gold"
           }
         },
@@ -339,7 +339,7 @@
         },
         "selected": "navy-gold-keyline",
         "spec": {
-          "style": "stroke-led geometric, rectilinear",
+          "style": "stroke-led geometric, keyline-weighted",
           "strokeWeight": "1.75px",
           "caps": "square",
           "joins": "miter",

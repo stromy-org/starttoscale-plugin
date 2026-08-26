@@ -749,7 +749,7 @@
               "rhythm": "light-dominant editorial — warm paper is the default surface; navy reserved for the cover, section dividers, and 'key figures' panels",
               "darkFrequency": 1,
               "photo": {
-                "treatment": "documentary-muted, full-bleed hero",
+                "treatment": "documentary-muted, navy-tinted full-bleed hero",
                 "overlay": "structural navy #0A1F3D scrim, never gold"
               }
             },
@@ -898,7 +898,7 @@
             "id": "navy-gold-keyline",
             "label": "Navy-gold keyline",
             "spec": {
-              "style": "stroke-led geometric, rectilinear",
+              "style": "stroke-led geometric, keyline-weighted",
               "strokeWeight": "1.75px",
               "caps": "square",
               "joins": "miter",
