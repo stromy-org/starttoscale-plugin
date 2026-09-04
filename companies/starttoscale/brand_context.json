@@ -33,7 +33,8 @@
         "Arial",
         "sans-serif"
       ],
-      "webSafe": "Arial"
+      "webSafe": "Arial",
+      "rightsStatus": "unknown"
     },
     "body": {
       "family": "Archivo",
@@ -46,7 +47,8 @@
         "Helvetica",
         "sans-serif"
       ],
-      "webSafe": "Segoe UI"
+      "webSafe": "Segoe UI",
+      "rightsStatus": "unknown"
     },
     "mono": {
       "family": "JetBrains Mono",
@@ -58,7 +60,8 @@
         "Courier New",
         "monospace"
       ],
-      "webSafe": "Consolas"
+      "webSafe": "Consolas",
+      "rightsStatus": "unknown"
     },
     "label": {
       "family": "Archivo",
@@ -71,6 +74,7 @@
         "sans-serif"
       ],
       "webSafe": "Arial",
+      "rightsStatus": "unknown",
       "case": "upper",
       "tracking": "0.2em"
     },
@@ -1602,5 +1606,57 @@
     "fps": 30
   },
   "fallbacksUsed": [],
-  "warnings": []
+  "warnings": [],
+  "token_roles": {
+    "surface": null,
+    "surfaceAlt": null,
+    "elevation": "--shadow-md",
+    "radius": "--radius-md",
+    "lineWeight": null,
+    "tracking": "--tracking-wide",
+    "textStrong": null,
+    "textMuted": null,
+    "edge": null
+  },
+  "integrity": {
+    "compiler": "brand_compile.py",
+    "compiler_version": "1.0",
+    "key_set": [
+      "boilerplate",
+      "client_slug",
+      "colors",
+      "document",
+      "excalidraw_theme",
+      "expression",
+      "fallbacksUsed",
+      "formatting",
+      "generatedFrom",
+      "identity",
+      "images",
+      "logo",
+      "plotly_theme",
+      "schemaVersion",
+      "surfaceExpression",
+      "templates",
+      "tier",
+      "token_roles",
+      "tokens_css",
+      "typography",
+      "version",
+      "video",
+      "warnings"
+    ],
+    "visual_grammar_dimensions": [
+      "backgrounds",
+      "elevation",
+      "gradients",
+      "grid",
+      "iconography",
+      "motifs",
+      "motion",
+      "patterns",
+      "photo"
+    ],
+    "sha256": "28d3fa55862309b0b27eada26ab0dcb0e909d7445b52a517ce350c7216de3e8f"
+  }
 }

@@ -15,7 +15,7 @@ does not sound like the same writer as these anchors, simplify until it does.
 > duurzamer met een financiële functie die staat als een huis. In deze fase is
 > professionalisering geen luxe maar een keiharde voorwaarde.
 
-## Anchor — outcome register (NL, from proposition)
+## Anchor — outcome register (NL, verbatim from proposition)
 
 > Het resultaat is rust, overzicht en financiële grip: precies wat nodig is om
 > gecontroleerd en duurzaam door te groeien.
