@@ -442,5 +442,10 @@
       "sha256": "792322a205f4d0f7d3832d53ae2f0d63616b50bb2a7736207b569d0fecfbf9ed",
       "mime": "image/png"
     }
-  ]
+  ],
+  "brand_context": {
+    "sha256": "03fb9331f023771ec4c7a7cbbbdaf35405d9da57388e92d378306929d6a10723",
+    "mime": "application/json",
+    "bytes": 62062
+  }
 }
