@@ -18,8 +18,8 @@ Via marketplace:
 
 For local development:
 ```bash
-git clone https://github.com/stromy-org/starttoscale.git
-cd starttoscale
+git clone https://github.com/stromy-org/starttoscale-plugin.git
+cd starttoscale-plugin
 npm install
 uv sync
 claude --plugin-dir .
