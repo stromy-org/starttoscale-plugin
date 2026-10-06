@@ -1,0 +1,19 @@
+diff a/.github/workflows/dependabot-auto-merge.yml b/.github/workflows/dependabot-auto-merge.yml	(rejected hunks)
+@@ -28,15 +28,14 @@ jobs:
+     steps:
+       - name: Fetch Dependabot metadata
+         id: meta
+-        uses: dependabot/fetch-metadata@v2
++        uses: dependabot/fetch-metadata@v3
+         with:
+           github-token: ${{ secrets.GITHUB_TOKEN }}
+ 
+       - name: Enable auto-merge for low-risk updates
+         if: >-
+           ${{ steps.meta.outputs.update-type == 'version-update:semver-patch' ||
+-              (steps.meta.outputs.update-type == 'version-update:semver-minor' &&
+-               steps.meta.outputs.dependency-type != 'direct:production') }}
++              steps.meta.outputs.update-type == 'version-update:semver-minor' }}
+         run: |
+           # `gh pr merge --auto` needs TWO preconditions, not the one documented
+           # above:
