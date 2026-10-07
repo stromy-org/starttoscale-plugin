@@ -5,11 +5,7 @@
     "stromy-format": {
       "transport": "http",
       "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp",
-      "_consumed_by": [
-        "claude",
-        "codex",
-        "gemini"
-      ],
+      "_consumed_by": ["claude"],
       "_codex_via": "mcp-remote",
       "_gemini_via": "mcp-remote",
       "_notes": "Hosted format skills (format-pptx, format-pptx-hd, format-docx, format-pdf, format-pdf-hd, format-xlsx, format-mermaid, format-diagram, format-chart, format-video-hd). Fetched at runtime via fs_read — see skills/<name>/SKILL.md stubs."
